@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 60" role="img" aria-label="Fondation Solaris">
+  <g transform="translate(30,30)" stroke="#1C355C" stroke-width="2" stroke-linecap="round">
+    <circle r="9" fill="none"/>
+    <line x1="0" y1="-19" x2="0" y2="-15"/>
+    <line x1="0" y1="19" x2="0" y2="15"/>
+    <line x1="-19" y1="0" x2="-15" y2="0"/>
+    <line x1="19" y1="0" x2="15" y2="0"/>
+    <line x1="-13.4" y1="-13.4" x2="-10.6" y2="-10.6"/>
+    <line x1="13.4" y1="13.4" x2="10.6" y2="10.6"/>
+    <line x1="-13.4" y1="13.4" x2="-10.6" y2="10.6"/>
+    <line x1="13.4" y1="-13.4" x2="10.6" y2="-10.6"/>
+  </g>
+  <text x="58" y="27" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="600" fill="#1C355C">Fondation</text>
+  <text x="58" y="45" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-style="italic" fill="#1C355C">Solaris</text>
+</svg>

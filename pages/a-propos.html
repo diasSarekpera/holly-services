@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Découvrez Lato Corps ONG : notre mission, notre histoire, nos valeurs, notre équipe dirigeante et notre impact auprès des populations vulnérables en Afrique." />
+  <title>À propos — Lato Corps ONG</title>
+  <!-- @partial:meta:start -->
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="../assets/fonts/outfit/outfit-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="../assets/fonts/cormorant-garamond/cormorant-garamond-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="canonical" href="https://www.EXEMPLE.org/pages/a-propos.html" />
+  <meta property="og:title" content="À propos — Lato Corps ONG" />
+  <meta property="og:description" content="Découvrez Lato Corps ONG : notre mission, notre histoire, nos valeurs, notre équipe dirigeante et notre impact auprès des populations vulnérables en Afrique." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.EXEMPLE.org/pages/a-propos.html" />
+  <meta property="og:image" content="https://www.EXEMPLE.org/assets/images/og-default.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#10233F" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://www.EXEMPLE.org/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "À propos",
+        "item": "https://www.EXEMPLE.org/pages/a-propos.html"
+      }
+    ]
+  }
+  </script>
+  <!-- @partial:meta:end -->
+
+  <!-- Polices (identiques au reste du site) -->
+
+  <link rel="stylesheet" href="../styles/a-propos.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Aller au contenu principal</a>
+
+  <main id="main-content">
+
+    <!-- ═══════════════════════════════════════════════
+         1. HERO — À propos
+         Image de fond + fil d'Ariane + titre de page.
+    ═══════════════════════════════════════════════ -->
+    <section class="about-hero" id="about-hero" aria-labelledby="about-hero-title">
+
+      <!-- Navbar -->
+    <!-- @partial:navbar:start -->
+    <header class="navbar">
+      <div class="navbar__inner">
+
+        <a href="../index.html#hero" class="navbar__brand" aria-label="Lato Corps ONG — Accueil">
+          <div class="navbar__logo-mark" aria-hidden="true">
+            <img src="../assets/images/logo.svg" alt="" />
+          </div>
+          <div class="navbar__brand-text">
+            <strong class="navbar__brand-name">Lato Corps</strong>
+            <span class="navbar__brand-sub">ONG Internationale</span>
+          </div>
+        </a>
+
+        <!-- role="list" conservé intentionnellement&nbsp;: Safari + VoiceOver supprime
+             le rôle list natif lorsque list-style est retiré via CSS. -->
+        <nav class="navbar__nav" aria-label="Navigation principale">
+          <ul class="navbar__list" id="navbar-menu" role="list">
+
+            <li><a href="../index.html#hero" class="navbar__link">Accueil</a></li>
+
+            <!-- Dropdown&nbsp;: À propos -->
+            <li class="navbar__item--dropdown">
+              <button
+                class="navbar__link navbar__link--dropdown navbar__link--active"
+                type="button"
+                aria-expanded="false"
+                aria-haspopup="true"
+                aria-controls="dropdown-apropos"
+                data-dropdown-trigger
+              >
+                À propos
+                <svg class="navbar__caret" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <ul class="navbar__dropdown" id="dropdown-apropos" role="list">
+                <li>
+                  <a href="../pages/a-propos.html" class="navbar__dropdown-link" aria-current="page">
+                    <span class="navbar__dropdown-link-title">Qui sommes-nous</span>
+                    <span class="navbar__dropdown-link-desc">Notre histoire et notre mission</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="../pages/notre-approche.html" class="navbar__dropdown-link">
+                    <span class="navbar__dropdown-link-title">Notre approche</span>
+                    <span class="navbar__dropdown-link-desc">Comment nous travaillons</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="../pages/transparence-rapports.html" class="navbar__dropdown-link">
+                    <span class="navbar__dropdown-link-title">Transparence</span>
+                    <span class="navbar__dropdown-link-desc">Rapports annuels et gouvernance</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="../index.html#team" class="navbar__dropdown-link">
+                    <span class="navbar__dropdown-link-title">Notre équipe</span>
+                    <span class="navbar__dropdown-link-desc">Les personnes qui agissent</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="../index.html#temoignages" class="navbar__dropdown-link">
+                    <span class="navbar__dropdown-link-title">Témoignages</span>
+                    <span class="navbar__dropdown-link-desc">Ce qu'ils disent de nous</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="../index.html#partners" class="navbar__dropdown-link">
+                    <span class="navbar__dropdown-link-title">Nos partenaires</span>
+                    <span class="navbar__dropdown-link-desc">Ils nous accompagnent</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Dropdown&nbsp;: Notre impact -->
+            <li class="navbar__item--dropdown">
+              <button
+                class="navbar__link navbar__link--dropdown"
+                type="button"
+                aria-expanded="false"
+                aria-haspopup="true"
+                aria-controls="dropdown-impact"
+                data-dropdown-trigger
+              >
+                Notre impact
+                <svg class="navbar__caret" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <ul class="navbar__dropdown" id="dropdown-impact" role="list">
+                <li>
+                  <a href="../pages/nos-missions.html" class="navbar__dropdown-link">
+                    <span class="navbar__dropdown-link-title">Nos missions</span>
+                    <span class="navbar__dropdown-link-desc">Notre raison d'agir</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="../pages/actions.html" class="navbar__dropdown-link">
+                    <span class="navbar__dropdown-link-title">Nos actions terrain</span>
+                    <span class="navbar__dropdown-link-desc">Les initiatives récentes</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="../index.html#stats" class="navbar__dropdown-link">
+                    <span class="navbar__dropdown-link-title">Chiffres clés</span>
+                    <span class="navbar__dropdown-link-desc">Résultats vérifiés</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="../index.html#galerie" class="navbar__dropdown-link">
+                    <span class="navbar__dropdown-link-title">Galerie photo</span>
+                    <span class="navbar__dropdown-link-desc">Nos actions en images</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Dropdown&nbsp;: S'impliquer -->
+            <li class="navbar__item--dropdown">
+              <button
+                class="navbar__link navbar__link--dropdown"
+                type="button"
+                aria-expanded="false"
+                aria-haspopup="true"
+                aria-controls="dropdown-impliquer"
+                data-dropdown-trigger
+              >
+                S'impliquer
+                <svg class="navbar__caret" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <ul class="navbar__dropdown" id="dropdown-impliquer" role="list">
+                <li>
+                  <a href="../index.html#soutenir" class="navbar__dropdown-link">
+                    <span class="navbar__dropdown-link-title">Faire un don</span>
+                    <span class="navbar__dropdown-link-desc">Soutenir directement le terrain</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="../pages/devenir-benevole.html" class="navbar__dropdown-link">
+                    <span class="navbar__dropdown-link-title">Devenir bénévole</span>
+                    <span class="navbar__dropdown-link-desc">Rejoindre nos équipes</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="../pages/rejoindre-equipe.html" class="navbar__dropdown-link">
+                    <span class="navbar__dropdown-link-title">Rejoindre l'équipe</span>
+                    <span class="navbar__dropdown-link-desc">Offres d'emploi, stages, consultances</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="../pages/devenir-partenaire.html" class="navbar__dropdown-link">
+                    <span class="navbar__dropdown-link-title">Devenir partenaire</span>
+                    <span class="navbar__dropdown-link-desc">Entreprise, institution, ONG</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="../index.html#dons" class="navbar__dropdown-link">
+                    <span class="navbar__dropdown-link-title">Campagnes urgentes</span>
+                    <span class="navbar__dropdown-link-desc">Besoins prioritaires actuels</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li><a href="../pages/actualites.html" class="navbar__link">Actualités</a></li>
+            <li><a href="../index.html#contact" class="navbar__link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="navbar__actions">
+          <button class="navbar__lang" aria-label="Changer de langue — actuellement Français">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            FR
+          </button>
+          <a href="../index.html#soutenir" class="navbar__cta" aria-label="Faire un don">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+            Faire un don
+          </a>
+        </div>
+
+        <!-- Hamburger — visible uniquement sur mobile (≤ 1023px via CSS) -->
+        <button
+          class="navbar__hamburger"
+          id="nav-toggle"
+          aria-label="Ouvrir le menu"
+          aria-expanded="false"
+          aria-controls="nav-mobile"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+      </div>
+    </header>
+    <!-- @partial:navbar:end -->
+
+    <!-- @partial:mobile-menu:start -->
+    <!-- Menu mobile plein écran -->
+    <div class="mobile-menu" id="nav-mobile" role="dialog" aria-modal="true" aria-label="Menu principal" aria-hidden="true">
+
+      <div class="mobile-menu__deco" aria-hidden="true">
+        <span class="mobile-menu__deco-ring mobile-menu__deco-ring--1"></span>
+        <span class="mobile-menu__deco-ring mobile-menu__deco-ring--2"></span>
+        <span class="mobile-menu__deco-dots"></span>
+      </div>
+
+      <div class="mobile-menu__head">
+        <a href="../index.html#hero" class="mobile-menu__brand" aria-label="Lato Corps ONG — Accueil" data-mobile-link>
+          <div class="mobile-menu__logo" aria-hidden="true">
+            <img src="../assets/images/logo.svg" alt="" loading="lazy" decoding="async" width="120" height="120" />
+          </div>
+          <span class="mobile-menu__brand-name">Lato Corps</span>
+        </a>
+        <button class="mobile-menu__close" id="nav-close" aria-label="Fermer le menu">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <nav class="mobile-menu__nav" aria-label="Navigation principale mobile">
+        <span class="mobile-menu__nav-label">Menu</span>
+        <ul class="mobile-menu__list" role="list">
+
+          <li class="mobile-menu__item">
+            <a href="../index.html#hero" class="mobile-menu__link" data-mobile-link>Accueil</a>
+          </li>
+
+          <li class="mobile-menu__item mobile-menu__item--group">
+            <button class="mobile-menu__link mobile-menu__link--toggle" type="button" data-mobile-toggle aria-expanded="false" aria-controls="mobile-submenu-apropos">
+              À propos
+            </button>
+            <ul class="mobile-submenu" id="mobile-submenu-apropos" role="list">
+              <li><a href="../pages/a-propos.html" class="mobile-submenu__link" data-mobile-link aria-current="page">Qui sommes-nous</a></li>
+              <li><a href="../pages/notre-approche.html" class="mobile-submenu__link" data-mobile-link>Notre approche</a></li>
+              <li><a href="../pages/transparence-rapports.html" class="mobile-submenu__link" data-mobile-link>Transparence</a></li>
+              <li><a href="../index.html#team" class="mobile-submenu__link" data-mobile-link>Notre équipe</a></li>
+              <li><a href="../index.html#temoignages" class="mobile-submenu__link" data-mobile-link>Témoignages</a></li>
+              <li><a href="../index.html#partners" class="mobile-submenu__link" data-mobile-link>Nos partenaires</a></li>
+            </ul>
+          </li>
+
+          <li class="mobile-menu__item mobile-menu__item--group">
+            <button class="mobile-menu__link mobile-menu__link--toggle" type="button" data-mobile-toggle aria-expanded="false" aria-controls="mobile-submenu-impact">
+              Notre impact
+            </button>
+            <ul class="mobile-submenu" id="mobile-submenu-impact" role="list">
+              <li><a href="../pages/nos-missions.html" class="mobile-submenu__link" data-mobile-link>Nos missions</a></li>
+              <li><a href="../pages/actions.html" class="mobile-submenu__link" data-mobile-link>Nos actions terrain</a></li>
+              <li><a href="../index.html#stats" class="mobile-submenu__link" data-mobile-link>Chiffres clés</a></li>
+              <li><a href="../index.html#galerie" class="mobile-submenu__link" data-mobile-link>Galerie photo</a></li>
+            </ul>
+          </li>
+
+          <li class="mobile-menu__item mobile-menu__item--group">
+            <button class="mobile-menu__link mobile-menu__link--toggle" type="button" data-mobile-toggle aria-expanded="false" aria-controls="mobile-submenu-impliquer">
+              S'impliquer
+            </button>
+            <ul class="mobile-submenu" id="mobile-submenu-impliquer" role="list">
+              <li><a href="../index.html#soutenir" class="mobile-submenu__link" data-mobile-link>Faire un don</a></li>
+              <li><a href="../pages/devenir-benevole.html" class="mobile-submenu__link" data-mobile-link>Devenir bénévole</a></li>
+              <li><a href="../pages/rejoindre-equipe.html" class="mobile-submenu__link" data-mobile-link>Rejoindre l'équipe</a></li>
+              <li><a href="../pages/devenir-partenaire.html" class="mobile-submenu__link" data-mobile-link>Devenir partenaire</a></li>
+              <li><a href="../index.html#dons" class="mobile-submenu__link" data-mobile-link>Campagnes urgentes</a></li>
+            </ul>
+          </li>
+
+          <li class="mobile-menu__item">
+            <a href="../pages/actualites.html" class="mobile-menu__link" data-mobile-link>Actualités</a>
+          </li>
+
+          <li class="mobile-menu__item">
+            <a href="../index.html#contact" class="mobile-menu__link" data-mobile-link>Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="mobile-menu__foot">
+        <a href="../index.html#soutenir" class="mobile-menu__cta" data-mobile-link>
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          Faire un don
+        </a>
+        <button class="mobile-menu__lang" type="button" aria-label="Changer de langue — actuellement Français">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          Français
+        </button>
+      </div>
+
+    </div>
+    <!-- @partial:mobile-menu:end -->
+
+      <figure class="about-hero__bg" aria-hidden="true">
+        <img src="https://loremflickr.com/1600/900/africa,children,sunny?lock=127" alt="" />
+      </figure>
+      <div class="about-hero__bg-top" aria-hidden="true"></div>
+      <div class="about-hero__bg-bottom" aria-hidden="true"></div>
+
+      <!-- Repère vertical décoratif (trait le long du bord gauche) -->
+      <div class="about-hero__accent" aria-hidden="true"></div>
+
+      <div class="about-hero__container">
+
+        <div class="eyebrow">
+          <span class="eyebrow__line" aria-hidden="true"></span>
+          <span class="eyebrow__label">Notre organisation</span>
+          <span class="eyebrow__dot" aria-hidden="true"></span>
+        </div>
+
+        <h1 id="about-hero-title" class="about-hero__title">
+          Une organisation
+          <em class="about-hero__title-accent">engagée</em>
+          pour un avenir meilleur.
+        </h1>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         3. MISSION & HISTOIRE
+         Colonne texte (récit + citation) / colonne média
+         (intro + stats + image avec badge superposé).
+    ═══════════════════════════════════════════════ -->
+    <section class="mission" id="mission" aria-labelledby="mission-title">
+      <div class="mission__container">
+
+        <header class="section-header">
+          <div class="section-header__left">
+            <div class="eyebrow">
+              <span class="eyebrow__line" aria-hidden="true"></span>
+              <span class="eyebrow__label">Notre mission &amp; notre histoire</span>
+              <span class="eyebrow__dot" aria-hidden="true"></span>
+            </div>
+            <h2 id="mission-title" class="section-title">
+              Agir avec <em class="section-title-accent">humanitaire</em>
+              au cœur de notre mission.
+            </h2>
+          </div>
+        </header>
+
+        <div class="mission__body">
+
+          <div class="mission__narrative">
+            <p class="mission__paragraph">
+              Lato Corps ONG est née d'une conviction simple&nbsp;: chaque enfant
+              doit avoir la chance de grandir dans un environnement sûr, d'accéder
+              à l'éducation et de réaliser son potentiel.
+            </p>
+            <p class="mission__paragraph">
+              Nous intervenons dans les domaines de l'éducation, de la santé,
+              de la protection de l'enfance et du développement communautaire,
+              en collaboration étroite avec les acteurs locaux.
+            </p>
+
+            <blockquote class="mission__quote">
+              <p class="mission__quote-text">
+                Nous croyons en la dignité humaine, en la force des communautés
+                et en un monde plus juste et solidaire.
+              </p>
+              <footer class="mission__quote-footer">
+                <cite class="mission__quote-author">L'équipe Lato Corps ONG</cite>
+              </footer>
+            </blockquote>
+          </div>
+
+          <div class="mission__media">
+
+            <figure class="mission__figure">
+              <img src="https://loremflickr.com/800/600/children,school,africa?lock=128" alt="Enfants assis à une table dans une salle de classe communautaire" loading="lazy" decoding="async" width="800" height="600" />
+              <figcaption class="mission__figure-badge">
+                <span class="mission__figure-badge-number">85 000+</span>
+                <span class="mission__figure-badge-label">Vies transformées</span>
+              </figcaption>
+            </figure>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         4. NOS VALEURS
+         Grille de cartes identiques (composant value-card).
+    ═══════════════════════════════════════════════ -->
+    <section class="values" id="values" aria-labelledby="values-title">
+      <div class="values__container">
+
+        <header class="section-header">
+          <div class="section-header__left">
+            <div class="eyebrow">
+              <span class="eyebrow__line" aria-hidden="true"></span>
+              <span class="eyebrow__label">Nos valeurs</span>
+              <span class="eyebrow__dot" aria-hidden="true"></span>
+            </div>
+            <h2 id="values-title" class="section-title">
+              Les <em class="section-title-accent">valeurs</em>
+              qui guident chacune de nos actions.
+            </h2>
+          </div>
+        </header>
+
+        <ul class="values__grid" role="list">
+
+          <li class="value-card">
+            <div class="value-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M20 8.5c0 4.5-8 9.5-8 9.5s-8-5-8-9.5a4.5 4.5 0 0 1 8-2.8 4.5 4.5 0 0 1 8 2.8z"/></svg>
+            </div>
+            <h3 class="value-card__title">Humanité</h3>
+            <p class="value-card__desc">
+              Nous plaçons la dignité humaine au centre de toutes nos interventions.
+            </p>
+          </li>
+
+          <li class="value-card">
+            <div class="value-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M2 12h4l3 8 4-16 3 8h6"/></svg>
+            </div>
+            <h3 class="value-card__title">Intégrité</h3>
+            <p class="value-card__desc">
+              Nous agissons avec transparence, honnêteté et responsabilité.
+            </p>
+          </li>
+
+          <li class="value-card">
+            <div class="value-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M2 20c0-3.3 3-6 7-6s7 2.7 7 6M15 14c3 0 5 2 5 4.5"/></svg>
+            </div>
+            <h3 class="value-card__title">Solidarité</h3>
+            <p class="value-card__desc">
+              Nous croyons en la force du collectif et en la cohésion sociale.
+            </p>
+          </li>
+
+          <li class="value-card">
+            <div class="value-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 22V10M12 10c0-4 3-7 7-7 0 4-3 7-7 7zM12 14c0-3-2.5-5-6-5 0 3 2.5 5 6 5z"/></svg>
+            </div>
+            <h3 class="value-card__title">Durabilité</h3>
+            <p class="value-card__desc">
+              Nous privilégions des solutions pérennes pour un impact à long terme.
+            </p>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         5. IMPACT EN CHIFFRES
+         Variante "sombre / pleine largeur" du composant
+         stats-banner, avec en-tête et note de source.
+    ═══════════════════════════════════════════════ -->
+    <section class="impact" id="impact" aria-labelledby="impact-title">
+      <div class="impact__container">
+
+        <header class="section-header section-header--dark section-header--center">
+          <div class="eyebrow">
+            <span class="eyebrow__line" aria-hidden="true"></span>
+            <span class="eyebrow__label">Notre impact en chiffres</span>
+            <span class="eyebrow__dot" aria-hidden="true"></span>
+          </div>
+          <h2 id="impact-title" class="section-title">
+            Des résultats concrets, un <em class="section-title-accent">impact</em> durable.
+          </h2>
+        </header>
+
+        <ul class="stats-banner__list stats-banner__list--impact" role="list">
+          <li class="stat-item">
+            <span class="stat-item__number">125 000+</span>
+            <span class="stat-item__label">Enfants scolarisés</span>
+          </li>
+          <li class="stat-item">
+            <span class="stat-item__number">450+</span>
+            <span class="stat-item__label">Écoles soutenues</span>
+          </li>
+          <li class="stat-item">
+            <span class="stat-item__number">320+</span>
+            <span class="stat-item__label">Centres de santé appuyés</span>
+          </li>
+          <li class="stat-item">
+            <span class="stat-item__number">95%</span>
+            <span class="stat-item__label">Des fonds sur le terrain</span>
+          </li>
+        </ul>
+
+        <p class="impact__source">
+          Source&nbsp;: Rapport annuel Lato Corps ONG 2023 — Données vérifiées par un audit indépendant.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         6. ÉQUIPE DIRIGEANTE
+         Grille de cartes personnes (composant team-card).
+    ═══════════════════════════════════════════════ -->
+    <section class="team" id="team" aria-labelledby="team-title">
+      <div class="team__container">
+
+        <header class="section-header">
+          <div class="section-header__left">
+            <div class="eyebrow">
+              <span class="eyebrow__line" aria-hidden="true"></span>
+              <span class="eyebrow__label">Notre équipe dirigeante</span>
+              <span class="eyebrow__dot" aria-hidden="true"></span>
+            </div>
+            <h2 id="team-title" class="section-title">
+              Une équipe <em class="section-title-accent">expérimentée</em> et passionnée.
+            </h2>
+          </div>
+        </header>
+
+        <ul class="team__grid" role="list">
+
+          <li class="team-card">
+            <div class="team-card__row">
+              <figure class="team-card__photo">
+                <img src="https://loremflickr.com/800/600/african,man,portrait?lock=129" alt="Portrait de Jean-Baptiste K." loading="lazy" decoding="async" width="800" height="600" />
+              </figure>
+              <div class="team-card__info">
+                <h3 class="team-card__name">Jean-Baptiste K.</h3>
+                <p class="team-card__role">Directeur Exécutif</p>
+                <p class="team-card__bio">
+                  Plus de 15 ans d'expérience dans le développement humanitaire
+                  et la gestion de programmes en Afrique.
+                </p>
+              </div>
+            </div>
+            <ul class="team-card__stats" role="list">
+              <li class="team-card__stat"><strong>15+</strong>&nbsp;ans</li>
+              <li class="team-card__stat"><strong>200+</strong>&nbsp;projets</li>
+            </ul>
+          </li>
+
+          <li class="team-card">
+            <div class="team-card__row">
+              <figure class="team-card__photo">
+                <img src="https://loremflickr.com/800/600/african,woman,portrait?lock=130" alt="Portrait d'Aïssata M." loading="lazy" decoding="async" width="800" height="600" />
+              </figure>
+              <div class="team-card__info">
+                <h3 class="team-card__name">Aïssata M.</h3>
+                <p class="team-card__role">Directrice des Programmes</p>
+                <p class="team-card__bio">
+                  Spécialiste de l'éducation et de la protection de l'enfance,
+                  elle supervise l'ensemble des projets terrain.
+                </p>
+              </div>
+            </div>
+            <ul class="team-card__stats" role="list">
+              <li class="team-card__stat"><strong>12+</strong>&nbsp;ans</li>
+              <li class="team-card__stat"><strong>150+</strong>&nbsp;projets</li>
+            </ul>
+          </li>
+
+          <li class="team-card">
+            <div class="team-card__row">
+              <figure class="team-card__photo">
+                <img src="https://loremflickr.com/800/600/african,man,portrait?lock=131" alt="Portrait de Moussa T." loading="lazy" decoding="async" width="800" height="600" />
+              </figure>
+              <div class="team-card__info">
+                <h3 class="team-card__name">Moussa T.</h3>
+                <p class="team-card__role">Directeur Administratif</p>
+                <p class="team-card__bio">
+                  Expert en gestion financière et en conformité, garant de la
+                  transparence et de l'efficacité de nos opérations.
+                </p>
+              </div>
+            </div>
+            <ul class="team-card__stats" role="list">
+              <li class="team-card__stat"><strong>10+</strong>&nbsp;ans</li>
+              <li class="team-card__stat"><strong>100+</strong>&nbsp;projets</li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         7. NOTRE APPROCHE
+         Deux blocs média/texte alternés, chacun autonome
+         et réutilisable (modificateur de sens d'alternance).
+    ═══════════════════════════════════════════════ -->
+    <section class="approach" id="approach" aria-labelledby="approach-title">
+      <div class="approach__container">
+
+        <h2 id="approach-title" class="visually-hidden">Notre approche</h2>
+
+        <div class="eyebrow">
+          <span class="eyebrow__line" aria-hidden="true"></span>
+          <span class="eyebrow__label">Notre approche</span>
+          <span class="eyebrow__dot" aria-hidden="true"></span>
+        </div>
+
+        <article class="approach__block approach__block--media-first">
+          <figure class="approach__figure">
+            <img src="https://loremflickr.com/800/600/children,africa,smile?lock=132" alt="Enfants souriants dans un espace communautaire" loading="lazy" decoding="async" width="800" height="600" />
+          </figure>
+          <div class="approach__content">
+            <h3 class="approach__title">
+              Approche centrée sur les <em class="approach__title-accent">communautés</em>
+            </h3>
+            <p class="approach__text">
+              Nous plaçons les communautés au cœur de chaque projet. En écoutant
+              leurs besoins et en valorisant leurs savoirs, nous construisons
+              ensemble des solutions adaptées et durables.
+            </p>
+                        <a href="notre-approche.html" class="btn btn--ghost approach__link">
+              <span>En savoir plus</span>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="approach__block approach__block--media-last">
+          <div class="approach__content">
+            <h3 class="approach__title">
+              Partenariats locaux et <em class="approach__title-accent">durables</em>
+            </h3>
+            <p class="approach__text">
+              Nous collaborons avec des partenaires locaux de confiance pour
+              renforcer les capacités, mutualiser les ressources et assurer
+              la pérennité des actions sur le terrain.
+            </p>
+                        <a href="devenir-partenaire.html" class="btn btn--ghost approach__link">
+              <span>Découvrir nos partenaires</span>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+          <figure class="approach__figure">
+            <img src="https://loremflickr.com/800/600/children,school,africa?lock=133" alt="Enfants levant la main dans une salle de classe" loading="lazy" decoding="async" width="800" height="600" />
+          </figure>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         8. PARTENAIRES & CERTIFICATIONS
+         Deux listes distinctes&nbsp;: logos institutionnels
+         et badges de certification.
+    ═══════════════════════════════════════════════ -->
+    <section class="partners-certif" id="partners-certif" aria-labelledby="partners-certif-title">
+      <div class="partners-certif__container">
+
+        <h2 id="partners-certif-title" class="partners-certif__title">
+          Nos partenaires &amp; <em class="partners-certif__title-accent">certifications</em>
+        </h2>
+
+        <ul class="partners-certif__logos" role="list" aria-label="Nos partenaires institutionnels">
+          <li class="partners-certif__logo">
+            <img src="../assets/images/placeholder.svg" alt="SANAA" loading="lazy" decoding="async" width="800" height="600" />
+            <span class="partners-certif__logo-name">SANAA</span>
+          </li>
+          <li class="partners-certif__logo">
+            <img src="../assets/images/placeholder.svg" alt="ONG Espoir" loading="lazy" decoding="async" width="800" height="600" />
+            <span class="partners-certif__logo-name">ONG Espoir</span>
+          </li>
+          <li class="partners-certif__logo">
+            <img src="../assets/images/placeholder.svg" alt="Alfred Alepinos" loading="lazy" decoding="async" width="800" height="600" />
+            <span class="partners-certif__logo-name">Alfred Alepinos</span>
+          </li>
+          <li class="partners-certif__logo">
+            <img src="../assets/images/placeholder.svg" alt="SOBEDO" loading="lazy" decoding="async" width="800" height="600" />
+            <span class="partners-certif__logo-name">SOBEDO</span>
+          </li>
+          <li class="partners-certif__logo">
+            <img src="../assets/images/placeholder.svg" alt="Corrida Padimi" loading="lazy" decoding="async" width="800" height="600" />
+            <span class="partners-certif__logo-name">Corrida Padimi</span>
+          </li>
+        </ul>
+
+        <ul class="partners-certif__badges" role="list" aria-label="Nos certifications">
+          <li class="badge">Certifiée ISO 9001</li>
+          <li class="badge">Transparence financière</li>
+          <li class="badge">Conformité RGPD</li>
+          <li class="badge">Agréée par l'État</li>
+          <li class="badge">Membre de Coordination Sud</li>
+        </ul>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         9. APPEL AU DON + FORMULAIRE DE CONTACT
+    ═══════════════════════════════════════════════ -->
+    <section class="cta-contact" id="cta-contact" aria-labelledby="cta-contact-title contact-form-title">
+      <div class="cta-contact__container">
+
+        <div class="cta-contact__cta">
+          <h2 id="cta-contact-title" class="cta-contact__title">Rejoignez notre cause</h2>
+          <p class="cta-contact__text">
+            Chaque geste compte. Ensemble, nous pouvons changer des vies et
+            construire un avenir meilleur pour les générations futures.
+          </p>
+          <a href="../index.html#soutenir" class="btn btn--primary cta-contact__button">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+            <span>Faire un don maintenant</span>
+          </a>
+        </div>
+
+        <form class="contact-form" novalidate>
+          <h2 id="contact-form-title" class="contact-form__title">Contactez-nous</h2>
+
+          <div class="contact-form__row">
+            <div class="contact-form__field">
+              <label for="cf-name" class="contact-form__label">Nom complet</label>
+              <input
+                type="text"
+                id="cf-name"
+                name="name"
+                class="contact-form__input"
+                autocomplete="name"
+                required
+              />
+            </div>
+            <div class="contact-form__field">
+              <label for="cf-email" class="contact-form__label">Email</label>
+              <input
+                type="email"
+                id="cf-email"
+                name="email"
+                class="contact-form__input"
+                autocomplete="email"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="contact-form__field">
+            <label for="cf-subject" class="contact-form__label">Sujet</label>
+            <input
+              type="text"
+              id="cf-subject"
+              name="subject"
+              class="contact-form__input"
+              required
+            />
+          </div>
+
+          <div class="contact-form__field">
+            <label for="cf-message" class="contact-form__label">Votre message</label>
+            <textarea
+              id="cf-message"
+              name="message"
+              class="contact-form__textarea"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary contact-form__submit">
+            <span>Envoyer le message</span>
+          </button>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════
+       FOOTER — Pied de page global du site
+  ═══════════════════════════════════════════════ -->
+  <!-- @partial:footer:start -->
+  <footer class="footer" id="footer">
+
+    <!-- Zone 1 — Bande mission -->
+    <div class="footer__mission-band">
+      <div class="footer__mission-inner">
+
+        <div class="footer__mission-left">
+          <span class="footer__mission-eyebrow" aria-hidden="true">Notre raison d'être</span>
+          <blockquote class="footer__mission-quote">
+            Protéger la dignité, l'accès aux soins et les droits fondamentaux
+            des enfants atteints d'albinisme en Afrique.
+          </blockquote>
+        </div>
+
+        <div class="footer__mission-right">
+          <a href="../index.html#dons" class="footer__mission-cta" aria-label="Faire un don maintenant">
+            <svg viewBox="0 0 24 24" aria-hidden="true" fill="none">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+            <span>Faire un don</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" class="footer__cta-arrow">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="../pages/rejoindre-equipe.html" class="footer__mission-cta footer__mission-cta--ghost" aria-label="Rejoindre l'équipe">
+            <span>Rejoindre l'équipe</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" class="footer__cta-arrow">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Zone 2 — Corps principal -->
+    <div class="footer__body">
+      <div class="footer__inner">
+
+        <!-- Col 1 — Identité & réseaux -->
+        <div class="footer__col footer__col--brand">
+
+          <a href="../index.html#hero" class="footer__logo" aria-label="Lato Corps ONG — Accueil">
+            <div class="footer__logo-mark" aria-hidden="true">
+              <img src="../assets/images/logo.svg" alt="" loading="lazy" decoding="async" width="120" height="120" />
+            </div>
+            <div class="footer__logo-text">
+              <span class="footer__logo-name">Lato Corps</span>
+              <span class="footer__logo-tag">ONG Internationale</span>
+            </div>
+          </a>
+
+          <p class="footer__brand-desc">
+            Notre organisation agit pour soutenir les enfants atteints
+            d'albinisme, sensibiliser les communautés et défendre les droits
+            fondamentaux des personnes vulnérables en Afrique.
+          </p>
+
+          <!-- URL cible&nbsp;: page Facebook réelle (lien externe) -->
+          <div class="footer__socials" aria-label="Nos réseaux sociaux">
+            <a href="../pages/maintenance.html" class="footer__social" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M14 8h3V4h-3c-3 0-5 2-5 5v3H6v4h3v8h4v-8h3l1-4h-4V9c0-.6.4-1 1-1z"/>
+              </svg>
+            </a>
+            <!-- URL cible&nbsp;: page Instagram réelle (lien externe) -->
+            <a href="../pages/maintenance.html" class="footer__social" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+              </svg>
+            </a>
+            <!-- URL cible&nbsp;: page LinkedIn réelle (lien externe) -->
+            <a href="../pages/maintenance.html" class="footer__social" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+            <!-- URL cible&nbsp;: chaîne YouTube réelle (lien externe) -->
+            <a href="../pages/maintenance.html" class="footer__social" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.54C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/>
+                <polygon points="9.75,15.02 15.5,12 9.75,8.98 9.75,15.02" fill="currentColor"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Mini newsletter -->
+          <div class="footer__mini-nl" id="newsletter" aria-label="S'abonner à la newsletter">
+            <p class="footer__mini-nl-label">Restez informé de nos actions</p>
+            <form class="footer__nl-form" action="#" method="POST" novalidate aria-label="Newsletter rapide">
+              <input
+                class="footer__nl-input"
+                type="email"
+                name="email"
+                placeholder="votre@email.com"
+                autocomplete="email"
+                required
+                aria-required="true"
+                aria-label="Votre adresse email"
+              />
+              <button class="footer__nl-btn" type="submit" aria-label="S'abonner">
+                <svg viewBox="0 0 24 24" aria-hidden="true" fill="none">
+                  <line x1="22" y1="2" x2="11" y2="13"/>
+                  <polygon points="22,2 15,22 11,13 2,9" fill="currentColor"/>
+                </svg>
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+        <!-- Col 2 — Navigation -->
+        <div class="footer__col">
+
+          <h3 class="footer__col-title">
+            <span class="footer__col-title-line" aria-hidden="true"></span>
+            Navigation
+          </h3>
+
+          <nav aria-label="Navigation du pied de page">
+            <ul class="footer__nav-list">
+              <li><a href="../index.html#hero" class="footer__nav-link">Accueil</a></li>
+              <li><a href="../pages/a-propos.html" class="footer__nav-link">Qui sommes-nous</a></li>
+              <li><a href="../pages/nos-missions.html" class="footer__nav-link">Nos missions</a></li>
+              <li><a href="../pages/actions.html" class="footer__nav-link">Nos actions</a></li>
+              <li><a href="../index.html#team" class="footer__nav-link">Notre équipe</a></li>
+              <li><a href="../index.html#partners" class="footer__nav-link">Partenaires</a></li>
+              <li><a href="../pages/transparence-rapports.html" class="footer__nav-link">Transparence</a></li>
+              <li><a href="../pages/actualites.html" class="footer__nav-link">Actualités</a></li>
+              <li><a href="../index.html#galerie" class="footer__nav-link">Galerie</a></li>
+              <li><a href="../index.html#contact" class="footer__nav-link">Contact</a></li>
+            </ul>
+          </nav>
+
+        </div>
+
+        <!-- Col 3 — Nous soutenir -->
+        <div class="footer__col">
+
+          <h3 class="footer__col-title">
+            <span class="footer__col-title-line" aria-hidden="true"></span>
+            Nous soutenir
+          </h3>
+
+          <ul class="footer__support-list" aria-label="Façons de nous soutenir">
+
+            <li class="footer__support-item">
+              <div class="footer__support-icon footer__support-icon--donate" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                </svg>
+              </div>
+              <div>
+                <a href="../index.html#soutenir" class="footer__support-link">Faire un don</a>
+                <span class="footer__support-sub">Impact direct sur le terrain</span>
+              </div>
+            </li>
+
+            <li class="footer__support-item">
+              <div class="footer__support-icon footer__support-icon--volunteer" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <line x1="19" y1="8" x2="19" y2="14"/>
+                  <line x1="22" y1="11" x2="16" y2="11"/>
+                </svg>
+              </div>
+              <div>
+                <a href="../pages/devenir-benevole.html" class="footer__support-link">Devenir bénévole</a>
+                <span class="footer__support-sub">Rejoindre nos équipes terrain</span>
+              </div>
+            </li>
+
+            <li class="footer__support-item">
+              <div class="footer__support-icon footer__support-icon--partner" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <div>
+                <a href="../pages/devenir-partenaire.html" class="footer__support-link">Devenir partenaire</a>
+                <span class="footer__support-sub">Institutionnel ou entreprise</span>
+              </div>
+            </li>
+
+            <li class="footer__support-item">
+              <div class="footer__support-icon footer__support-icon--campagne" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+                  <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+                  <line x1="6" y1="1" x2="6" y2="4"/>
+                  <line x1="10" y1="1" x2="10" y2="4"/>
+                  <line x1="14" y1="1" x2="14" y2="4"/>
+                </svg>
+              </div>
+              <div>
+                <a href="../index.html#dons" class="footer__support-link">Nos campagnes</a>
+                <span class="footer__support-sub">Actions urgentes en cours</span>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <!-- Col 4 — Contact & Légal -->
+        <div class="footer__col">
+
+          <h3 class="footer__col-title">
+            <span class="footer__col-title-line" aria-hidden="true"></span>
+            Contact
+          </h3>
+
+          <ul class="footer__contact-list" aria-label="Informations de contact">
+
+            <li class="footer__contact-item">
+              <div class="footer__contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                  <circle cx="12" cy="9" r="2.5"/>
+                </svg>
+              </div>
+              <span>Cotonou, Bénin<br /><small>Afrique de l'Ouest</small></span>
+            </li>
+
+            <li class="footer__contact-item">
+              <div class="footer__contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <rect x="2" y="4" width="20" height="16" rx="2"/>
+                  <polyline points="2,4 12,13 22,4"/>
+                </svg>
+              </div>
+              <a href="mailto:contact@latocorps.org" class="footer__contact-link">contact@latocorps.org</a>
+            </li>
+
+            <li class="footer__contact-item">
+              <div class="footer__contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.13 6.13l.96-.94a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.02z"/>
+                </svg>
+              </div>
+              <a href="tel:+22997000000" class="footer__contact-link">+229 97 00 00 00</a>
+            </li>
+
+            <li class="footer__contact-item">
+              <div class="footer__contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12,6 12,12 16,14"/>
+                </svg>
+              </div>
+              <span>Lun – Ven, 8h00 – 17h00</span>
+            </li>
+
+          </ul>
+
+                    <nav class="footer__legal-links" aria-label="Liens légaux">
+            <a href="../pages/mentions-legales.html" class="footer__legal-link">Mentions légales</a>
+            <span aria-hidden="true">·</span>
+            <a href="../pages/politique-confidentialite.html" class="footer__legal-link">Confidentialité</a>
+            <span aria-hidden="true">·</span>
+            <a href="../pages/conditions-utilisation.html" class="footer__legal-link">CGU</a>
+          </nav>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Zone 3 — Bande certifications -->
+    <div class="footer__certs-band">
+      <div class="footer__certs-inner">
+
+        <div class="footer__cert-item">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <polyline points="9,12 11,14 15,10"/>
+          </svg>
+          <span>Organisation certifiée</span>
+        </div>
+
+        <div class="footer__cert-sep" aria-hidden="true"></div>
+
+        <a href="../pages/transparence-rapports.html" class="footer__cert-item footer__cert-item--link">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14,2 14,8 20,8"/>
+          </svg>
+          <span>Rapport annuel publié</span>
+        </a>
+
+        <div class="footer__cert-sep" aria-hidden="true"></div>
+
+        <div class="footer__cert-item">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="12" y1="8" x2="12" y2="16"/>
+            <line x1="8" y1="12" x2="16" y2="12"/>
+          </svg>
+          <span>94% des fonds au terrain</span>
+        </div>
+
+        <div class="footer__cert-sep" aria-hidden="true"></div>
+
+        <div class="footer__cert-item">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+          </svg>
+          <span>1 200+ donateurs engagés</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Zone 4 — Pied de page -->
+    <div class="footer__bottom">
+      <div class="footer__bottom-inner">
+
+        <p class="footer__copyright">
+          © <time datetime="2025">2025</time> Lato Corps ONG.
+          Tous droits réservés.
+        </p>
+
+                <nav class="footer__bottom-links" aria-label="Liens institutionnels">
+          <a href="../pages/mentions-legales.html" class="footer__bottom-link">Mentions légales</a>
+          <span class="footer__bottom-sep" aria-hidden="true"></span>
+          <a href="../pages/politique-confidentialite.html" class="footer__bottom-link">Politique de confidentialité</a>
+          <span class="footer__bottom-sep" aria-hidden="true"></span>
+          <a href="../pages/conditions-utilisation.html" class="footer__bottom-link">Conditions d'utilisation</a>
+        </nav>
+
+        <p class="footer__made-with" aria-label="Fait avec soin">
+          Conçu avec
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="none">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" fill="currentColor"/>
+          </svg>
+          pour les enfants albinos
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+  <!-- @partial:footer:end -->
+
+  <!-- Bouton retour en haut -->
+  <button type="button" class="back-to-top" aria-label="Revenir en haut de la page">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+  </button>
+
+  <script src="../scripts/components/nav-dropdown.js"></script>
+  <script src="../scripts/components/hero-mobile.js"></script>
+  <script src="../scripts/components/sticky-header.js"></script>
+  <script src="../scripts/components/back-to-top.js"></script>
+
+</body>
+</html>

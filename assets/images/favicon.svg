@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Lato Corps</title>
+  <!-- Dérivé de logo.svg : globe doré (cercle, méridien, équateur) simplifié et épaissi pour 16–32 px, sur fond navy (#10233F, couleur secondaire du site). -->
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F0D28A"/>
+      <stop offset="45%" stop-color="#C9A24B"/>
+      <stop offset="100%" stop-color="#8F6E23"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#10233F"/>
+  <g transform="translate(32 32) scale(0.4) translate(-60 -60)" fill="none" stroke="url(#gold)">
+    <circle cx="60" cy="60" r="46" stroke-width="9"/>
+    <ellipse cx="60" cy="60" rx="18" ry="46" stroke-width="7"/>
+    <line x1="14" y1="60" x2="106" y2="60" stroke-width="7"/>
+  </g>
+</svg>
