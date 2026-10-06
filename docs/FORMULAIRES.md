@@ -45,7 +45,7 @@ Champs relevés dans les prototypes (`grep` des balises) ; les `name` sont **sug
 
 | Formulaire | Prototype → page cible | Champs (type, obligatoire) | Remarques |
 |---|---|---|---|
-| Newsletter Actualités | `actualites` | `email` (email, requis) ; `interests` (3 cases : Santé, Éducation, Événements) ; `consent` (case, requise : « J’accepte de recevoir des communications de Lato Corps ONG. ») | Bouton « S’abonner ». |
+| Newsletter Actualités | `actualites` | `email` (email, requis) ; `interests` (3 cases : Santé, Éducation, Événements) ; `consent` (case, requise : « J’accepte de recevoir des communications de Holly Services ONG. ») | Bouton « S’abonner ». |
 | Newsletter Article | `article-prevention-cancer-peau` | `email` (email, requis) ; `interests` (cases : Santé, Éducation, Urgences) ; `consent` (case, requise : mention de confidentialité des données) | Même bloc que ci-dessus, centres d’intérêt différents ; seul formulaire déjà doté de `name`/`value` sur les cases. |
 | Bénévole | `devenir-benevole` | `prenom` (text) ; `nom` (text) ; `email` (email) ; `telephone` (tel) ; `message` (textarea, « 800 caractères max » → `maxlength="800"`) | Aucun `required` dans le prototype : à décider. Bouton « Passer à l’étape suivante » = première étape d’un parcours ; étapes suivantes `[À COMPLÉTER]`. |
 | Témoignage | `partager-temoignage` | `[À COMPLÉTER]` — prototype = squelette (« Formulaire complet ici (Étapes 1 à 4) ») | Champs, consentement (+ éventuelle photo : `accept`, `data-max-size`) à fournir par l’ONG. |

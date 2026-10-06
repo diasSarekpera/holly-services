@@ -1,5 +1,5 @@
 /* ════════════════════════════════════════════════
-   LATO CORPS ONG — hero-mobile.js
+   HOLLY SERVICES ONG — hero-mobile.js
    Ouverture / fermeture du menu mobile plein écran.
 
    Comportements couverts :

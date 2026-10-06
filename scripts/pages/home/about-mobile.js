@@ -1,5 +1,5 @@
 /* ════════════════════════════════════════════════
-   LATO CORPS ONG — about-mobile.js
+   HOLLY SERVICES ONG — about-mobile.js
    Indicateur dynamique du scroll horizontal des
    "piliers" (.about__pillars) sur mobile.
 

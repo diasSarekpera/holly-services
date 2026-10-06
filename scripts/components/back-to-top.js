@@ -1,5 +1,5 @@
 /* ════════════════════════════════════════════════
-   LATO CORPS ONG — components/back-to-top.js
+   HOLLY SERVICES ONG — components/back-to-top.js
    Affiche le bouton "retour en haut" dès que la page est
    scrollée, le masque en haut de page. Mutualisé sur
    toutes les pages (Accueil, À propos, Actions).
