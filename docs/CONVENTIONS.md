@@ -8,7 +8,7 @@
 ## Règles
 1. **Tokens uniquement** : `styles/global/variables.css` (`--clr-*`, `--font-display`, `--font-body`, `--radius-*`, `--shadow-*`, `--container-max`, `--section-pad-*`). Pas de couleur en dur dans les CSS de page.
 2. **Zéro dépendance externe** : pas de CDN, Google Fonts, Remixicon CDN, GTM/analytics, image distante. Tout en local dans `assets/`.
-   *Exception provisoire (V47, demande client)* : les photos de contenu sont des images distantes LoremFlickr (`https://loremflickr.com/<l>/<h>/<mots-clés>?lock=<n>`, le paramètre `lock` fige l'image). À remplacer par de vraies photos locales avant la mise en ligne.
+   *Exception provisoire (V49, demande client)* : les photos de contenu sont des images distantes `https://images.unsplash.com/photo-<id>?auto=format&fit=crop&q=75&w=<l>&h=<h>` (licence Unsplash, usage libre). Ce sont des photos de substitution, réutilisées à plusieurs endroits : à remplacer par de vraies photos locales avant la mise en ligne.
 3. **Pas de CSS/JS inline** (sauf JSON-LD). Nommage BEM.
 4. **Contenu** : textes des prototypes repris tels quels (typographie française : espaces insécables avant `; : ? !`, guillemets « »). Ne jamais inventer chiffres, noms, dates, textes juridiques → marqueur `[À COMPLÉTER]` + entrée dans `docs/A-FOURNIR.md`.
 5. **Images** : tant qu'aucune photo n'est fournie, placeholder CSS (`.media-placeholder` ou pattern `*__bg-placeholder` de la home) + entrée dans `A-FOURNIR.md`.
