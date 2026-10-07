@@ -40,357 +40,321 @@
   <!-- @partial:meta:end -->
   <!-- Étape ultérieure (Phase 3)&nbsp;: feuille de style dédiée à cette page -->
   <link rel="stylesheet" href="../styles/action.css" />
+  <link rel="stylesheet" href="../styles/hero-photo.css" />
 </head>
 <body>
 
   <a class="skip-link" href="#main-content">Aller au contenu principal</a>
 
-  <!-- ═══════════════════════════════════════════════
-       NAVBAR — Composant global, partagé par toutes
-       les pages du site (identique à l'accueil).
-  ═══════════════════════════════════════════════ -->
+  <!-- @partial:navbar:start -->
+  <header class="navbar">
+    <div class="navbar__inner">
 
-    <!-- @partial:mobile-menu:start -->
-    <!-- Menu mobile plein écran -->
-    <div class="mobile-menu" id="nav-mobile" role="dialog" aria-modal="true" aria-label="Menu principal" aria-hidden="true">
+      <a href="../index.html#hero" class="navbar__brand" aria-label="Holly Services ONG — Accueil">
+        <div class="navbar__logo-mark" aria-hidden="true">
+          <img src="../assets/images/logo.svg" alt="" />
+        </div>
+        <div class="navbar__brand-text">
+          <strong class="navbar__brand-name">Holly Services</strong>
+          <span class="navbar__brand-sub">ONG Internationale</span>
+        </div>
+      </a>
 
-      <div class="mobile-menu__deco" aria-hidden="true">
-        <span class="mobile-menu__deco-ring mobile-menu__deco-ring--1"></span>
-        <span class="mobile-menu__deco-ring mobile-menu__deco-ring--2"></span>
-        <span class="mobile-menu__deco-dots"></span>
-      </div>
+      <!-- role="list" conservé intentionnellement&nbsp;: Safari + VoiceOver supprime
+           le rôle list natif lorsque list-style est retiré via CSS. -->
+      <nav class="navbar__nav" aria-label="Navigation principale">
+        <ul class="navbar__list" id="navbar-menu" role="list">
 
-      <div class="mobile-menu__head">
-        <a href="../index.html#hero" class="mobile-menu__brand" aria-label="Holly Services ONG — Accueil" data-mobile-link>
-          <div class="mobile-menu__logo" aria-hidden="true">
-            <img src="../assets/images/logo.svg" alt="" loading="lazy" decoding="async" width="120" height="120" />
-          </div>
-          <span class="mobile-menu__brand-name">Holly Services</span>
-        </a>
-        <button class="mobile-menu__close" id="nav-close" aria-label="Fermer le menu">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-        </button>
-      </div>
+          <li><a href="../index.html#hero" class="navbar__link">Accueil</a></li>
 
-      <nav class="mobile-menu__nav" aria-label="Navigation principale mobile">
-        <span class="mobile-menu__nav-label">Menu</span>
-        <ul class="mobile-menu__list" role="list">
-
-          <li class="mobile-menu__item">
-            <a href="../index.html#hero" class="mobile-menu__link" data-mobile-link>Accueil</a>
-          </li>
-
-          <li class="mobile-menu__item mobile-menu__item--group">
-            <button class="mobile-menu__link mobile-menu__link--toggle" type="button" data-mobile-toggle aria-expanded="false" aria-controls="mobile-submenu-apropos">
+          <!-- Dropdown&nbsp;: À propos -->
+          <li class="navbar__item--dropdown">
+            <button
+              class="navbar__link navbar__link--dropdown"
+              type="button"
+              aria-expanded="false"
+              aria-haspopup="true"
+              aria-controls="dropdown-apropos"
+              data-dropdown-trigger
+            >
               À propos
+              <svg class="navbar__caret" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
-            <ul class="mobile-submenu" id="mobile-submenu-apropos" role="list">
-              <li><a href="../pages/a-propos.html" class="mobile-submenu__link" data-mobile-link>Qui sommes-nous</a></li>
-              <li><a href="../pages/notre-approche.html" class="mobile-submenu__link" data-mobile-link>Notre approche</a></li>
-              <li><a href="../pages/transparence-rapports.html" class="mobile-submenu__link" data-mobile-link>Transparence</a></li>
-              <li><a href="../index.html#team" class="mobile-submenu__link" data-mobile-link>Notre équipe</a></li>
-              <li><a href="../index.html#temoignages" class="mobile-submenu__link" data-mobile-link>Témoignages</a></li>
-              <li><a href="../index.html#partners" class="mobile-submenu__link" data-mobile-link>Nos partenaires</a></li>
+            <ul class="navbar__dropdown" id="dropdown-apropos" role="list">
+              <li>
+                <a href="../pages/a-propos.html" class="navbar__dropdown-link">
+                  <span class="navbar__dropdown-link-title">Qui sommes-nous</span>
+                  <span class="navbar__dropdown-link-desc">Notre histoire et notre mission</span>
+                </a>
+              </li>
+              <li>
+                <a href="../pages/notre-approche.html" class="navbar__dropdown-link">
+                  <span class="navbar__dropdown-link-title">Notre approche</span>
+                  <span class="navbar__dropdown-link-desc">Comment nous travaillons</span>
+                </a>
+              </li>
+              <li>
+                <a href="../pages/transparence-rapports.html" class="navbar__dropdown-link">
+                  <span class="navbar__dropdown-link-title">Transparence</span>
+                  <span class="navbar__dropdown-link-desc">Rapports annuels et gouvernance</span>
+                </a>
+              </li>
+              <li>
+                <a href="../index.html#team" class="navbar__dropdown-link">
+                  <span class="navbar__dropdown-link-title">Notre équipe</span>
+                  <span class="navbar__dropdown-link-desc">Les personnes qui agissent</span>
+                </a>
+              </li>
+              <li>
+                <a href="../index.html#temoignages" class="navbar__dropdown-link">
+                  <span class="navbar__dropdown-link-title">Témoignages</span>
+                  <span class="navbar__dropdown-link-desc">Ce qu'ils disent de nous</span>
+                </a>
+              </li>
+              <li>
+                <a href="../index.html#partners" class="navbar__dropdown-link">
+                  <span class="navbar__dropdown-link-title">Nos partenaires</span>
+                  <span class="navbar__dropdown-link-desc">Ils nous accompagnent</span>
+                </a>
+              </li>
             </ul>
           </li>
 
-          <li class="mobile-menu__item mobile-menu__item--group">
-            <button class="mobile-menu__link mobile-menu__link--toggle" type="button" data-mobile-toggle aria-expanded="false" aria-controls="mobile-submenu-impact">
+          <!-- Dropdown&nbsp;: Notre impact -->
+          <li class="navbar__item--dropdown">
+            <button
+              class="navbar__link navbar__link--dropdown navbar__link--active"
+              type="button"
+              aria-expanded="false"
+              aria-haspopup="true"
+              aria-controls="dropdown-impact"
+              data-dropdown-trigger
+            >
               Notre impact
+              <svg class="navbar__caret" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
-            <ul class="mobile-submenu" id="mobile-submenu-impact" role="list">
-              <li><a href="../pages/nos-missions.html" class="mobile-submenu__link" data-mobile-link>Nos missions</a></li>
-              <li><a href="../pages/actions.html" class="mobile-submenu__link" data-mobile-link aria-current="page">Nos actions terrain</a></li>
-              <li><a href="../index.html#stats" class="mobile-submenu__link" data-mobile-link>Chiffres clés</a></li>
-              <li><a href="../index.html#galerie" class="mobile-submenu__link" data-mobile-link>Galerie photo</a></li>
+            <ul class="navbar__dropdown" id="dropdown-impact" role="list">
+              <li>
+                <a href="../pages/nos-missions.html" class="navbar__dropdown-link">
+                  <span class="navbar__dropdown-link-title">Nos missions</span>
+                  <span class="navbar__dropdown-link-desc">Notre raison d'agir</span>
+                </a>
+              </li>
+              <li>
+                <a href="../pages/actions.html" class="navbar__dropdown-link" aria-current="page">
+                  <span class="navbar__dropdown-link-title">Nos actions terrain</span>
+                  <span class="navbar__dropdown-link-desc">Les initiatives récentes</span>
+                </a>
+              </li>
+              <li>
+                <a href="../index.html#stats" class="navbar__dropdown-link">
+                  <span class="navbar__dropdown-link-title">Chiffres clés</span>
+                  <span class="navbar__dropdown-link-desc">Résultats vérifiés</span>
+                </a>
+              </li>
+              <li>
+                <a href="../index.html#galerie" class="navbar__dropdown-link">
+                  <span class="navbar__dropdown-link-title">Galerie photo</span>
+                  <span class="navbar__dropdown-link-desc">Nos actions en images</span>
+                </a>
+              </li>
             </ul>
           </li>
 
-          <li class="mobile-menu__item mobile-menu__item--group">
-            <button class="mobile-menu__link mobile-menu__link--toggle" type="button" data-mobile-toggle aria-expanded="false" aria-controls="mobile-submenu-impliquer">
+          <!-- Dropdown&nbsp;: S'impliquer -->
+          <li class="navbar__item--dropdown">
+            <button
+              class="navbar__link navbar__link--dropdown"
+              type="button"
+              aria-expanded="false"
+              aria-haspopup="true"
+              aria-controls="dropdown-impliquer"
+              data-dropdown-trigger
+            >
               S'impliquer
+              <svg class="navbar__caret" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
-            <ul class="mobile-submenu" id="mobile-submenu-impliquer" role="list">
-              <li><a href="../index.html#soutenir" class="mobile-submenu__link" data-mobile-link>Faire un don</a></li>
-              <li><a href="../pages/devenir-benevole.html" class="mobile-submenu__link" data-mobile-link>Devenir bénévole</a></li>
-              <li><a href="../pages/rejoindre-equipe.html" class="mobile-submenu__link" data-mobile-link>Rejoindre l'équipe</a></li>
-              <li><a href="../pages/devenir-partenaire.html" class="mobile-submenu__link" data-mobile-link>Devenir partenaire</a></li>
-              <li><a href="../index.html#dons" class="mobile-submenu__link" data-mobile-link>Campagnes urgentes</a></li>
+            <ul class="navbar__dropdown" id="dropdown-impliquer" role="list">
+              <li>
+                <a href="../index.html#soutenir" class="navbar__dropdown-link">
+                  <span class="navbar__dropdown-link-title">Faire un don</span>
+                  <span class="navbar__dropdown-link-desc">Soutenir directement le terrain</span>
+                </a>
+              </li>
+              <li>
+                <a href="../pages/devenir-benevole.html" class="navbar__dropdown-link">
+                  <span class="navbar__dropdown-link-title">Devenir bénévole</span>
+                  <span class="navbar__dropdown-link-desc">Rejoindre nos équipes</span>
+                </a>
+              </li>
+              <li>
+                <a href="../pages/rejoindre-equipe.html" class="navbar__dropdown-link">
+                  <span class="navbar__dropdown-link-title">Rejoindre l'équipe</span>
+                  <span class="navbar__dropdown-link-desc">Offres d'emploi, stages, consultances</span>
+                </a>
+              </li>
+              <li>
+                <a href="../pages/devenir-partenaire.html" class="navbar__dropdown-link">
+                  <span class="navbar__dropdown-link-title">Devenir partenaire</span>
+                  <span class="navbar__dropdown-link-desc">Entreprise, institution, ONG</span>
+                </a>
+              </li>
+              <li>
+                <a href="../index.html#dons" class="navbar__dropdown-link">
+                  <span class="navbar__dropdown-link-title">Campagnes urgentes</span>
+                  <span class="navbar__dropdown-link-desc">Besoins prioritaires actuels</span>
+                </a>
+              </li>
             </ul>
           </li>
 
-          <li class="mobile-menu__item">
-            <a href="../pages/actualites.html" class="mobile-menu__link" data-mobile-link>Actualités</a>
-          </li>
-
-          <li class="mobile-menu__item">
-            <a href="../index.html#contact" class="mobile-menu__link" data-mobile-link>Contact</a>
-          </li>
-
+          <li><a href="../pages/actualites.html" class="navbar__link">Actualités</a></li>
+          <li><a href="../index.html#contact" class="navbar__link">Contact</a></li>
         </ul>
       </nav>
 
-      <div class="mobile-menu__foot">
-        <a href="../index.html#soutenir" class="mobile-menu__cta" data-mobile-link>
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      <div class="navbar__actions">
+        <button class="navbar__lang" aria-label="Changer de langue — actuellement Français">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          FR
+        </button>
+        <a href="../index.html#soutenir" class="navbar__cta" aria-label="Faire un don">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+          </svg>
           Faire un don
         </a>
-        <button class="mobile-menu__lang" type="button" aria-label="Changer de langue — actuellement Français">
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-          Français
-        </button>
       </div>
 
-    </div>
-    <!-- @partial:mobile-menu:end -->
+      <!-- Hamburger — visible uniquement sur mobile (≤ 1023px via CSS) -->
+      <button
+        class="navbar__hamburger"
+        id="nav-toggle"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false"
+        aria-controls="nav-mobile"
+      >
+        <span></span><span></span><span></span>
+      </button>
 
+    </div>
+  </header>
+  <!-- @partial:navbar:end -->
+
+  <!-- @partial:mobile-menu:start -->
+  <!-- Menu mobile plein écran -->
+  <div class="mobile-menu" id="nav-mobile" role="dialog" aria-modal="true" aria-label="Menu principal" aria-hidden="true">
+
+    <div class="mobile-menu__deco" aria-hidden="true">
+      <span class="mobile-menu__deco-ring mobile-menu__deco-ring--1"></span>
+      <span class="mobile-menu__deco-ring mobile-menu__deco-ring--2"></span>
+      <span class="mobile-menu__deco-dots"></span>
+    </div>
+
+    <div class="mobile-menu__head">
+      <a href="../index.html#hero" class="mobile-menu__brand" aria-label="Holly Services ONG — Accueil" data-mobile-link>
+        <div class="mobile-menu__logo" aria-hidden="true">
+          <img src="../assets/images/logo.svg" alt="" loading="lazy" decoding="async" width="120" height="120" />
+        </div>
+        <span class="mobile-menu__brand-name">Holly Services</span>
+      </a>
+      <button class="mobile-menu__close" id="nav-close" aria-label="Fermer le menu">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+
+    <nav class="mobile-menu__nav" aria-label="Navigation principale mobile">
+      <span class="mobile-menu__nav-label">Menu</span>
+      <ul class="mobile-menu__list" role="list">
+
+        <li class="mobile-menu__item">
+          <a href="../index.html#hero" class="mobile-menu__link" data-mobile-link>Accueil</a>
+        </li>
+
+        <li class="mobile-menu__item mobile-menu__item--group">
+          <button class="mobile-menu__link mobile-menu__link--toggle" type="button" data-mobile-toggle aria-expanded="false" aria-controls="mobile-submenu-apropos">
+            À propos
+          </button>
+          <ul class="mobile-submenu" id="mobile-submenu-apropos" role="list">
+            <li><a href="../pages/a-propos.html" class="mobile-submenu__link" data-mobile-link>Qui sommes-nous</a></li>
+            <li><a href="../pages/notre-approche.html" class="mobile-submenu__link" data-mobile-link>Notre approche</a></li>
+            <li><a href="../pages/transparence-rapports.html" class="mobile-submenu__link" data-mobile-link>Transparence</a></li>
+            <li><a href="../index.html#team" class="mobile-submenu__link" data-mobile-link>Notre équipe</a></li>
+            <li><a href="../index.html#temoignages" class="mobile-submenu__link" data-mobile-link>Témoignages</a></li>
+            <li><a href="../index.html#partners" class="mobile-submenu__link" data-mobile-link>Nos partenaires</a></li>
+          </ul>
+        </li>
+
+        <li class="mobile-menu__item mobile-menu__item--group">
+          <button class="mobile-menu__link mobile-menu__link--toggle" type="button" data-mobile-toggle aria-expanded="false" aria-controls="mobile-submenu-impact">
+            Notre impact
+          </button>
+          <ul class="mobile-submenu" id="mobile-submenu-impact" role="list">
+            <li><a href="../pages/nos-missions.html" class="mobile-submenu__link" data-mobile-link>Nos missions</a></li>
+            <li><a href="../pages/actions.html" class="mobile-submenu__link" data-mobile-link aria-current="page">Nos actions terrain</a></li>
+            <li><a href="../index.html#stats" class="mobile-submenu__link" data-mobile-link>Chiffres clés</a></li>
+            <li><a href="../index.html#galerie" class="mobile-submenu__link" data-mobile-link>Galerie photo</a></li>
+          </ul>
+        </li>
+
+        <li class="mobile-menu__item mobile-menu__item--group">
+          <button class="mobile-menu__link mobile-menu__link--toggle" type="button" data-mobile-toggle aria-expanded="false" aria-controls="mobile-submenu-impliquer">
+            S'impliquer
+          </button>
+          <ul class="mobile-submenu" id="mobile-submenu-impliquer" role="list">
+            <li><a href="../index.html#soutenir" class="mobile-submenu__link" data-mobile-link>Faire un don</a></li>
+            <li><a href="../pages/devenir-benevole.html" class="mobile-submenu__link" data-mobile-link>Devenir bénévole</a></li>
+            <li><a href="../pages/rejoindre-equipe.html" class="mobile-submenu__link" data-mobile-link>Rejoindre l'équipe</a></li>
+            <li><a href="../pages/devenir-partenaire.html" class="mobile-submenu__link" data-mobile-link>Devenir partenaire</a></li>
+            <li><a href="../index.html#dons" class="mobile-submenu__link" data-mobile-link>Campagnes urgentes</a></li>
+          </ul>
+        </li>
+
+        <li class="mobile-menu__item">
+          <a href="../pages/actualites.html" class="mobile-menu__link" data-mobile-link>Actualités</a>
+        </li>
+
+        <li class="mobile-menu__item">
+          <a href="../index.html#contact" class="mobile-menu__link" data-mobile-link>Contact</a>
+        </li>
+
+      </ul>
+    </nav>
+
+    <div class="mobile-menu__foot">
+      <a href="../index.html#soutenir" class="mobile-menu__cta" data-mobile-link>
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        Faire un don
+      </a>
+      <button class="mobile-menu__lang" type="button" aria-label="Changer de langue — actuellement Français">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        Français
+      </button>
+    </div>
+
+  </div>
+  <!-- @partial:mobile-menu:end -->
 
   <main id="main-content">
 
-    <!-- ═══════════════════════════════════════════════
-         1. PAGE HERO — Bannière d'introduction de la page
-         Variante du composant hero global, propre aux
-         pages internes (image de fond + fil d'Ariane).
-    ═══════════════════════════════════════════════ -->
-    <section class="page-hero page-hero--actions" aria-labelledby="page-hero-title">
-
-      <!-- Navbar -->
-    <!-- @partial:navbar:start -->
-    <header class="navbar">
-      <div class="navbar__inner">
-
-        <a href="../index.html#hero" class="navbar__brand" aria-label="Holly Services ONG — Accueil">
-          <div class="navbar__logo-mark" aria-hidden="true">
-            <img src="../assets/images/logo.svg" alt="" />
-          </div>
-          <div class="navbar__brand-text">
-            <strong class="navbar__brand-name">Holly Services</strong>
-            <span class="navbar__brand-sub">ONG Internationale</span>
-          </div>
-        </a>
-
-        <!-- role="list" conservé intentionnellement&nbsp;: Safari + VoiceOver supprime
-             le rôle list natif lorsque list-style est retiré via CSS. -->
-        <nav class="navbar__nav" aria-label="Navigation principale">
-          <ul class="navbar__list" id="navbar-menu" role="list">
-
-            <li><a href="../index.html#hero" class="navbar__link">Accueil</a></li>
-
-            <!-- Dropdown&nbsp;: À propos -->
-            <li class="navbar__item--dropdown">
-              <button
-                class="navbar__link navbar__link--dropdown"
-                type="button"
-                aria-expanded="false"
-                aria-haspopup="true"
-                aria-controls="dropdown-apropos"
-                data-dropdown-trigger
-              >
-                À propos
-                <svg class="navbar__caret" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-              </button>
-              <ul class="navbar__dropdown" id="dropdown-apropos" role="list">
-                <li>
-                  <a href="../pages/a-propos.html" class="navbar__dropdown-link">
-                    <span class="navbar__dropdown-link-title">Qui sommes-nous</span>
-                    <span class="navbar__dropdown-link-desc">Notre histoire et notre mission</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="../pages/notre-approche.html" class="navbar__dropdown-link">
-                    <span class="navbar__dropdown-link-title">Notre approche</span>
-                    <span class="navbar__dropdown-link-desc">Comment nous travaillons</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="../pages/transparence-rapports.html" class="navbar__dropdown-link">
-                    <span class="navbar__dropdown-link-title">Transparence</span>
-                    <span class="navbar__dropdown-link-desc">Rapports annuels et gouvernance</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="../index.html#team" class="navbar__dropdown-link">
-                    <span class="navbar__dropdown-link-title">Notre équipe</span>
-                    <span class="navbar__dropdown-link-desc">Les personnes qui agissent</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="../index.html#temoignages" class="navbar__dropdown-link">
-                    <span class="navbar__dropdown-link-title">Témoignages</span>
-                    <span class="navbar__dropdown-link-desc">Ce qu'ils disent de nous</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="../index.html#partners" class="navbar__dropdown-link">
-                    <span class="navbar__dropdown-link-title">Nos partenaires</span>
-                    <span class="navbar__dropdown-link-desc">Ils nous accompagnent</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <!-- Dropdown&nbsp;: Notre impact -->
-            <li class="navbar__item--dropdown">
-              <button
-                class="navbar__link navbar__link--dropdown navbar__link--active"
-                type="button"
-                aria-expanded="false"
-                aria-haspopup="true"
-                aria-controls="dropdown-impact"
-                data-dropdown-trigger
-              >
-                Notre impact
-                <svg class="navbar__caret" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-              </button>
-              <ul class="navbar__dropdown" id="dropdown-impact" role="list">
-                <li>
-                  <a href="../pages/nos-missions.html" class="navbar__dropdown-link">
-                    <span class="navbar__dropdown-link-title">Nos missions</span>
-                    <span class="navbar__dropdown-link-desc">Notre raison d'agir</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="../pages/actions.html" class="navbar__dropdown-link" aria-current="page">
-                    <span class="navbar__dropdown-link-title">Nos actions terrain</span>
-                    <span class="navbar__dropdown-link-desc">Les initiatives récentes</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="../index.html#stats" class="navbar__dropdown-link">
-                    <span class="navbar__dropdown-link-title">Chiffres clés</span>
-                    <span class="navbar__dropdown-link-desc">Résultats vérifiés</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="../index.html#galerie" class="navbar__dropdown-link">
-                    <span class="navbar__dropdown-link-title">Galerie photo</span>
-                    <span class="navbar__dropdown-link-desc">Nos actions en images</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <!-- Dropdown&nbsp;: S'impliquer -->
-            <li class="navbar__item--dropdown">
-              <button
-                class="navbar__link navbar__link--dropdown"
-                type="button"
-                aria-expanded="false"
-                aria-haspopup="true"
-                aria-controls="dropdown-impliquer"
-                data-dropdown-trigger
-              >
-                S'impliquer
-                <svg class="navbar__caret" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-              </button>
-              <ul class="navbar__dropdown" id="dropdown-impliquer" role="list">
-                <li>
-                  <a href="../index.html#soutenir" class="navbar__dropdown-link">
-                    <span class="navbar__dropdown-link-title">Faire un don</span>
-                    <span class="navbar__dropdown-link-desc">Soutenir directement le terrain</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="../pages/devenir-benevole.html" class="navbar__dropdown-link">
-                    <span class="navbar__dropdown-link-title">Devenir bénévole</span>
-                    <span class="navbar__dropdown-link-desc">Rejoindre nos équipes</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="../pages/rejoindre-equipe.html" class="navbar__dropdown-link">
-                    <span class="navbar__dropdown-link-title">Rejoindre l'équipe</span>
-                    <span class="navbar__dropdown-link-desc">Offres d'emploi, stages, consultances</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="../pages/devenir-partenaire.html" class="navbar__dropdown-link">
-                    <span class="navbar__dropdown-link-title">Devenir partenaire</span>
-                    <span class="navbar__dropdown-link-desc">Entreprise, institution, ONG</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="../index.html#dons" class="navbar__dropdown-link">
-                    <span class="navbar__dropdown-link-title">Campagnes urgentes</span>
-                    <span class="navbar__dropdown-link-desc">Besoins prioritaires actuels</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <li><a href="../pages/actualites.html" class="navbar__link">Actualités</a></li>
-            <li><a href="../index.html#contact" class="navbar__link">Contact</a></li>
-          </ul>
-        </nav>
-
-        <div class="navbar__actions">
-          <button class="navbar__lang" aria-label="Changer de langue — actuellement Français">
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <circle cx="12" cy="12" r="10"/>
-              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-            </svg>
-            FR
-          </button>
-          <a href="../index.html#soutenir" class="navbar__cta" aria-label="Faire un don">
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-            </svg>
-            Faire un don
-          </a>
-        </div>
-
-        <!-- Hamburger — visible uniquement sur mobile (≤ 1023px via CSS) -->
-        <button
-          class="navbar__hamburger"
-          id="nav-toggle"
-          aria-label="Ouvrir le menu"
-          aria-expanded="false"
-          aria-controls="nav-mobile"
-        >
-          <span></span><span></span><span></span>
-        </button>
-
-      </div>
-    </header>
-    <!-- @partial:navbar:end -->
-
-
-      <div class="page-hero__media" aria-hidden="true">
-        <img
-          class="page-hero__img"
-          src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&amp;fit=crop&amp;q=75&amp;w=1600&amp;h=900"
-          alt=""
-          loading="eager"
-        />
-        <div class="page-hero__overlay"></div>
-      </div>
-      <div class="page-hero__media-bottom" aria-hidden="true"></div>
-
-      <div class="page-hero__content">
-
-        <div class="eyebrow">
-          <span class="eyebrow__line"></span>
-          <span class="eyebrow__label">Nos actions humanitaires</span>
-          <span class="eyebrow__dot"></span>
-        </div>
-
-        <h1 class="page-hero__title" id="page-hero-title">
-          Agir chaque jour sur le
-          <em class="page-hero__title-accent">terrain</em>,
-          aux côtés des populations.
-        </h1>
-
-        <nav class="breadcrumb" aria-label="Fil d'Ariane">
-          <ol class="breadcrumb__list">
-            <li class="breadcrumb__item"><a href="../index.html" class="breadcrumb__link">Accueil</a></li>
-            <li class="breadcrumb__item" aria-current="page">Nos Actions</li>
+    <header class="hero-photo hero-photo--actions" aria-labelledby="actions-title">
+      <div class="container hero-photo__inner">
+        <nav class="hero-photo__breadcrumb" aria-label="Fil d'Ariane">
+          <ol role="list">
+            <li><a href="../index.html">Accueil</a></li>
+            <li><span aria-current="page">Nos Actions</span></li>
           </ol>
         </nav>
-
+        <div class="eyebrow">
+          <span class="eyebrow__line" aria-hidden="true"></span>
+          <span class="eyebrow__label">Nos actions humanitaires</span>
+        </div>
+        <h1 id="actions-title" class="hero-photo__title">Agir chaque jour sur le <em>terrain</em>, aux côtés des populations.</h1>
       </div>
-
-    </section>
-    <!-- /.page-hero -->
-
+    </header>
 
     <!-- ═══════════════════════════════════════════════
          3. ACTIONS INTRO — Texte d'introduction

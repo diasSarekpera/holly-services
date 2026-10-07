@@ -346,36 +346,38 @@
   <main id="main-content" data-rapport="consultations-medicales-dassa-2026" data-categorie="medical" data-statut="termine">
 
     <!-- 1. HERO -->
-    <section class="rapport-hero" aria-labelledby="rapport-title">
-      <div class="container rapport-hero__content">
-        <nav class="rapport-hero__breadcrumbs" aria-label="Fil d'Ariane">
-          <ol>
-            <li><a href="../index.html#hero">Accueil</a></li>
+    <header class="hero-photo hero-photo--rapport" aria-labelledby="rapport-title">
+      <div class="container hero-photo__inner">
+        <nav class="hero-photo__breadcrumb" aria-label="Fil d'Ariane">
+          <ol role="list">
+            <li><a href="../index.html">Accueil</a></li>
             <li><a href="actions.html">Nos actions</a></li>
             <li><span aria-current="page">Consultations médicales à Dassa</span></li>
           </ol>
         </nav>
+        <div class="eyebrow">
+          <span class="eyebrow__line" aria-hidden="true"></span>
+          <span class="eyebrow__label">Rapport d'action</span>
+        </div>
+        <h1 id="rapport-title" class="hero-photo__title">Campagne de consultations médicales gratuites à <em>Dassa</em></h1>
+      </div>
+    </header>
 
-        <div class="rapport-hero__badges">
+    <!-- 2. BANDEAU RÉSULTATS -->
+    <section class="rapport-results container" aria-label="Chiffres clés de l'action">
+      <div class="rapport-intro">
+        <div class="rapport-intro__badges">
           <span class="rapport-badge rapport-badge--medical">Médical</span>
           <span class="rapport-badge rapport-badge--rapport">Rapport d'action</span>
           <span class="rapport-badge rapport-badge--termine"><i class="ri-check-line" aria-hidden="true"></i> Terminée</span>
         </div>
-
-        <h1 id="rapport-title">Campagne de consultations médicales gratuites à <em>Dassa</em></h1>
-
-        <p class="rapport-hero__chapo">
-          Consultations dermatologiques et ophtalmiques offertes aux enfants et adultes atteints d'albinisme, avec remise de protections solaires adaptées.
-        </p>
-
-        <div class="rapport-hero__meta">
+        <div class="rapport-intro__meta">
           <span><i class="ri-map-pin-line" aria-hidden="true"></i> Dassa, Bénin</span>
           <span><i class="ri-calendar-line" aria-hidden="true"></i> <time datetime="2026-03">Mars 2026</time></span>
           <span><i class="ri-time-line" aria-hidden="true"></i> 3 jours <span class="fictional-tag">[fictif]</span></span>
           <span><i class="ri-file-text-line" aria-hidden="true"></i> Publié le <time datetime="2026-04-15">15 avril 2026</time></span>
         </div>
-
-        <div class="rapport-hero__actions">
+        <div class="rapport-intro__actions">
           <!-- PDF à fournir&nbsp;: voir docs/A-FOURNIR.md -->
           <a href="maintenance.html" class="btn btn--primary">
             Télécharger le rapport complet <i class="ri-download-line" aria-hidden="true"></i>
@@ -386,10 +388,6 @@
         </div>
         <p class="visually-hidden" role="status" data-share-status></p>
       </div>
-    </section>
-
-    <!-- 2. BANDEAU RÉSULTATS -->
-    <section class="rapport-results container" aria-label="Chiffres clés de l'action">
       <div class="rapport-results__grid">
         <div class="rapport-result-card">
           <i class="ri-stethoscope-line rapport-result-card__icon" aria-hidden="true"></i>

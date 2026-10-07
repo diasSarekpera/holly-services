@@ -345,34 +345,23 @@
 
   <main id="main-content" class="mission-detail" data-mission="sante" data-numero="01">
 
-    <!-- 1. HERO -->
-    <section class="mission-detail__hero" aria-labelledby="mission-hero-title">
-      <div class="container">
-        <nav class="mission-detail__breadcrumb" aria-label="Fil d'Ariane">
-          <ol class="mission-detail__breadcrumb-list" role="list">
-            <li><a href="../index.html#hero">Accueil</a></li>
-            <li><a href="a-propos.html">À propos</a></li>
+    <!-- 1. HERO (gabarit des 3 missions : changer le slug du modificateur, l'id, le fil d'Ariane, l'eyebrow « Mission 0X / 03 · … » et le h1) -->
+    <header class="hero-photo hero-photo--mission-sante" aria-labelledby="mission-title">
+      <div class="container hero-photo__inner">
+        <nav class="hero-photo__breadcrumb" aria-label="Fil d'Ariane">
+          <ol role="list">
+            <li><a href="../index.html">Accueil</a></li>
             <li><a href="nos-missions.html">Nos missions</a></li>
             <li><span aria-current="page">Santé</span></li>
           </ol>
         </nav>
-        <p class="mission-detail__numbering">
-          <span aria-hidden="true">01 / 03</span>
-          <span class="mission-detail__badge">Santé</span>
-        </p>
-        <h1 id="mission-hero-title">Accès aux soins médicaux <em>spécialisés</em></h1>
-        <p class="mission-detail__chapo">Nous facilitons l'accès à des soins dermatologiques et ophtalmologiques adaptés afin de prévenir les cancers de la peau, les problèmes visuels et toutes complications liées à l'albinisme.</p>
-        <div class="mission-detail__actions">
-          <a href="../index.html#dons" class="btn btn--primary">Soutenir cette mission <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
-          <a href="actions.html" class="btn btn--ghost">Voir les actions</a>
+        <div class="eyebrow">
+          <span class="eyebrow__line" aria-hidden="true"></span>
+          <span class="eyebrow__label">Mission 01 / 03 · Santé</span>
         </div>
-        <ul class="mission-detail__facts" role="list">
-          <li class="mission-detail__fact"><span class="mission-detail__fact-val">350+</span><span class="mission-detail__fact-label">consultations médicales</span></li>
-          <li class="mission-detail__fact"><span class="mission-detail__fact-val">3</span><span class="mission-detail__fact-label">Bénin · Togo · Tanzanie</span></li>
-          <li class="mission-detail__fact"><span class="mission-detail__fact-val">2018</span><span class="mission-detail__fact-label">Depuis 2018</span></li>
-        </ul>
+        <h1 id="mission-title" class="hero-photo__title">Accès aux soins médicaux <em>spécialisés</em></h1>
       </div>
-    </section>
+    </header>
 
     <!-- 2. SÉLECTEUR DE MISSIONS -->
     <nav class="mission-detail__selector" aria-label="Sélecteur de missions">
@@ -388,6 +377,19 @@
     <!-- 3. L'ENJEU -->
     <section class="mission-detail__section mission-detail__section--center" aria-labelledby="mission-enjeu-title">
       <div class="container">
+        <div class="mission-detail__intro">
+          <p class="mission-detail__chapo">Nous facilitons l'accès à des soins dermatologiques et ophtalmologiques adaptés afin de prévenir les cancers de la peau, les problèmes visuels et toutes complications liées à l'albinisme.</p>
+          <div class="mission-detail__actions">
+            <a href="../index.html#dons" class="btn btn--primary">Soutenir cette mission <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+            <a href="actions.html" class="btn btn--ghost">Voir les actions</a>
+          </div>
+          <ul class="mission-detail__facts" role="list">
+            <li class="mission-detail__fact"><span class="mission-detail__fact-val">350+</span><span class="mission-detail__fact-label">consultations médicales</span></li>
+            <li class="mission-detail__fact"><span class="mission-detail__fact-val">3</span><span class="mission-detail__fact-label">Bénin · Togo · Tanzanie</span></li>
+            <li class="mission-detail__fact"><span class="mission-detail__fact-val">2018</span><span class="mission-detail__fact-label">Depuis 2018</span></li>
+          </ul>
+        </div>
+
         <div class="eyebrow">
           <span class="eyebrow__line" aria-hidden="true"></span>
           <span class="eyebrow__label">L'Enjeu</span>

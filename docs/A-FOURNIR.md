@@ -54,3 +54,4 @@ Suivi : `grep -rn "À COMPLÉTER" pages index.html 404.html` · `grep -rn "PAR L
 - [ ] Sections du prototype dont seul le CSS existait (supprimé) : « Rapports » et bandeau final des actualités ; Parcours et FAQ de Mission Santé.
 - [ ] Pages Droits humains et Éducation (modèle : `pages/mission-sante.html`, CSS `.mission-detail__…`).
 - [ ] Contrastes ouverts : `docs/AUDIT.md` (9 couples sous le seuil, arbitrage de couleur).
+- [ ] Hero : photos Unsplash provisoires, à remplacer par de vraies photos de l'ONG.

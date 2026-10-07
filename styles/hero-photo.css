@@ -1,14 +1,37 @@
 /* Photos d'arrière-plan des heros (pages intérieures) — voile marine pour garder le texte lisible */
-.missions-hero{background:linear-gradient(to bottom,rgba(16,35,63,0.55) 0%,rgba(16,35,63,0) 30%),linear-gradient(100deg,rgba(16,35,63,0.94) 0%,rgba(16,35,63,0.84) 45%,rgba(16,35,63,0.62) 100%),url("https://images.unsplash.com/photo-1571417814270-5cfb10916e02?auto=format&fit=crop&q=75&w=1600&h=900") center 35%/cover no-repeat,var(--clr-secondary)}
-.approche-hero{background:linear-gradient(to bottom,rgba(16,35,63,0.55) 0%,rgba(16,35,63,0) 30%),linear-gradient(100deg,rgba(16,35,63,0.94) 0%,rgba(16,35,63,0.84) 45%,rgba(16,35,63,0.62) 100%),url("https://images.unsplash.com/photo-1473649085228-583485e6e4d7?auto=format&fit=crop&q=75&w=1600&h=900") center 30%/cover no-repeat,var(--clr-secondary)}
-.mission-detail__hero{background:linear-gradient(to bottom,rgba(16,35,63,0.55) 0%,rgba(16,35,63,0) 30%),linear-gradient(100deg,rgba(16,35,63,0.94) 0%,rgba(16,35,63,0.84) 45%,rgba(16,35,63,0.62) 100%),url("https://images.unsplash.com/photo-1680713660046-67b7350ed679?auto=format&fit=crop&q=75&w=1600&h=900") center 30%/cover no-repeat,var(--clr-secondary)}
-.actualites-hero{background:linear-gradient(to bottom,rgba(16,35,63,0.55) 0%,rgba(16,35,63,0) 30%),linear-gradient(100deg,rgba(16,35,63,0.94) 0%,rgba(16,35,63,0.84) 45%,rgba(16,35,63,0.62) 100%),url("../assets/images/hero-savane.webp") 70% center/cover no-repeat,var(--clr-secondary)}
-.campagne-hero{background:linear-gradient(to bottom,rgba(16,35,63,0.55) 0%,rgba(16,35,63,0) 30%),linear-gradient(100deg,rgba(16,35,63,0.94) 0%,rgba(16,35,63,0.84) 45%,rgba(16,35,63,0.62) 100%),url("../assets/images/hero-accueil.webp") 70% center/cover no-repeat,var(--clr-secondary)}
-.article-hero{background:linear-gradient(to bottom,rgba(16,35,63,0.55) 0%,rgba(16,35,63,0) 30%),linear-gradient(100deg,rgba(16,35,63,0.94) 0%,rgba(16,35,63,0.84) 45%,rgba(16,35,63,0.62) 100%),url("../assets/images/hero-horizon.webp") 70% center/cover no-repeat,var(--clr-secondary)}
-.benevolat-hero{background:linear-gradient(to bottom,rgba(16,35,63,0.55) 0%,rgba(16,35,63,0) 30%),linear-gradient(100deg,rgba(16,35,63,0.94) 0%,rgba(16,35,63,0.84) 45%,rgba(16,35,63,0.62) 100%),url("https://images.unsplash.com/photo-1512596478480-88ba44446471?auto=format&fit=crop&q=75&w=1600&h=900") center 30%/cover no-repeat,var(--clr-secondary)}
-.rejoindre-hero{background:linear-gradient(to bottom,rgba(16,35,63,0.55) 0%,rgba(16,35,63,0) 30%),linear-gradient(100deg,rgba(16,35,63,0.94) 0%,rgba(16,35,63,0.84) 45%,rgba(16,35,63,0.62) 100%),url("https://images.unsplash.com/photo-1680713660046-67b7350ed679?auto=format&fit=crop&q=75&w=1600&h=900") center 60%/cover no-repeat,var(--clr-secondary)}
-.partenariats-hero{background:linear-gradient(to bottom,rgba(16,35,63,0.55) 0%,rgba(16,35,63,0) 30%),linear-gradient(100deg,rgba(16,35,63,0.94) 0%,rgba(16,35,63,0.84) 45%,rgba(16,35,63,0.62) 100%),url("https://images.unsplash.com/photo-1571417814270-5cfb10916e02?auto=format&fit=crop&q=75&w=1600&h=900") center 70%/cover no-repeat,var(--clr-secondary)}
-.temoignage-hero{background:linear-gradient(to bottom,rgba(16,35,63,0.55) 0%,rgba(16,35,63,0) 30%),linear-gradient(100deg,rgba(16,35,63,0.94) 0%,rgba(16,35,63,0.84) 45%,rgba(16,35,63,0.62) 100%),url("https://images.unsplash.com/photo-1512596478480-88ba44446471?auto=format&fit=crop&q=75&w=1600&h=900") center 65%/cover no-repeat,var(--clr-secondary)}
-.transparence-hero{background:linear-gradient(to bottom,rgba(16,35,63,0.55) 0%,rgba(16,35,63,0) 30%),linear-gradient(100deg,rgba(16,35,63,0.94) 0%,rgba(16,35,63,0.84) 45%,rgba(16,35,63,0.62) 100%),url("https://images.unsplash.com/photo-1473649085228-583485e6e4d7?auto=format&fit=crop&q=75&w=1600&h=900") center 60%/cover no-repeat,var(--clr-secondary)}
-.rapport-hero{background:linear-gradient(to bottom,rgba(16,35,63,0.55) 0%,rgba(16,35,63,0) 30%),linear-gradient(100deg,rgba(16,35,63,0.94) 0%,rgba(16,35,63,0.84) 45%,rgba(16,35,63,0.62) 100%),url("https://images.unsplash.com/photo-1680713660046-67b7350ed679?auto=format&fit=crop&q=75&w=1600&h=900") center 45%/cover no-repeat,var(--clr-secondary)}
-@media print{.missions-hero,.approche-hero,.mission-detail__hero,.actualites-hero,.campagne-hero,.article-hero,.benevolat-hero,.rejoindre-hero,.partenariats-hero,.temoignage-hero,.transparence-hero,.rapport-hero{background:none!important}}
+/* ===== Composant .hero-photo (hero minimal : fil d'Ariane, eyebrow, H1) ===== */
+.hero-photo{--hero-photo-img:none;--hero-photo-pos:center 40%;position:relative;padding-top:var(--navbar-h);padding-bottom:clamp(3rem,7vw,5rem);color:var(--clr-white);background:linear-gradient(to bottom,rgba(16,35,63,0.55) 0%,rgba(16,35,63,0) 30%),linear-gradient(100deg,rgba(16,35,63,0.94) 0%,rgba(16,35,63,0.84) 45%,rgba(16,35,63,0.62) 100%),var(--hero-photo-img) var(--hero-photo-pos)/cover no-repeat,var(--clr-secondary)}
+.hero-photo__inner{padding-top:clamp(2.5rem,6vw,4rem);text-align:left}
+.hero-photo__breadcrumb{margin-bottom:clamp(1.5rem,3.5vw,2.5rem);font-family:var(--font-body);font-size:0.85rem}
+.hero-photo__breadcrumb ol{display:flex;flex-wrap:wrap;align-items:center;gap:0.25rem 0.5rem;margin:0;padding:0;list-style:none}
+.hero-photo__breadcrumb li+li::before{content:"\203A";margin-right:0.5rem;color:var(--nm)}
+.hero-photo__breadcrumb a{color:var(--clr-secondary-soft);text-decoration:none;opacity:0.85}
+.hero-photo__breadcrumb a:hover{color:var(--clr-white);opacity:1;text-decoration:underline}
+.hero-photo__breadcrumb a:focus-visible{outline:2px solid var(--clr-white);outline-offset:3px}
+.hero-photo__breadcrumb [aria-current="page"]{color:var(--clr-white);font-weight:500}
+.hero-photo .eyebrow{margin-bottom:clamp(1rem,2.5vw,1.5rem)}
+.hero-photo .eyebrow__line{width:1.75rem;background:var(--clr-white)}
+.hero-photo .eyebrow__label{font-size:0.7rem;font-weight:700;letter-spacing:0.15em;color:var(--clr-white)}
+.hero-photo__title{max-width:52rem;margin:0;font-family:var(--font-display);font-size:clamp(2.5rem,5vw + 1rem,4rem);font-weight:400;line-height:1.1;color:var(--clr-white);text-wrap:balance}
+.hero-photo__title em{font-style:italic;color:inherit}
+@media(max-width:600px){.hero-photo__breadcrumb{font-size:0.8rem}}
+/* Modificateurs : image + cadrage uniquement */
+.hero-photo--actualites{--hero-photo-img:url("https://images.unsplash.com/photo-1473649085228-583485e6e4d7?auto=format&fit=crop&q=75&w=1600&h=900");--hero-photo-pos:center 40%}
+.hero-photo--article{--hero-photo-img:url("https://images.unsplash.com/photo-1512596478480-88ba44446471?auto=format&fit=crop&q=75&w=1600&h=900");--hero-photo-pos:center 30%}
+.hero-photo--campagne{--hero-photo-img:url("https://images.unsplash.com/photo-1571417814270-5cfb10916e02?auto=format&fit=crop&q=75&w=1600&h=900");--hero-photo-pos:center 55%}
+.hero-photo--rapport{--hero-photo-img:url("https://images.unsplash.com/photo-1680713660046-67b7350ed679?auto=format&fit=crop&q=75&w=1600&h=900");--hero-photo-pos:center 45%}
+.hero-photo--temoignage{--hero-photo-img:url("https://images.unsplash.com/photo-1512596478480-88ba44446471?auto=format&fit=crop&q=75&w=1600&h=900");--hero-photo-pos:center 65%}
+
+@media print{.hero-photo{background:none!important;color:var(--clr-secondary)}.hero-photo__title,.hero-photo .eyebrow__label,.hero-photo__breadcrumb a,.hero-photo__breadcrumb [aria-current="page"]{color:var(--clr-secondary)}.hero-photo .eyebrow__line{background:var(--clr-secondary)}}
+.hero-photo--benevolat{--hero-photo-img:url("https://images.unsplash.com/photo-1512596478480-88ba44446471?auto=format&fit=crop&q=75&w=1600&h=900");--hero-photo-pos:center 50%}
+.hero-photo--rejoindre{--hero-photo-img:url("https://images.unsplash.com/photo-1680713660046-67b7350ed679?auto=format&fit=crop&q=75&w=1600&h=900");--hero-photo-pos:center 60%}
+.hero-photo--partenariats{--hero-photo-img:url("https://images.unsplash.com/photo-1571417814270-5cfb10916e02?auto=format&fit=crop&q=75&w=1600&h=900");--hero-photo-pos:center 70%}
+.hero-photo--transparence{--hero-photo-img:url("https://images.unsplash.com/photo-1473649085228-583485e6e4d7?auto=format&fit=crop&q=75&w=1600&h=900");--hero-photo-pos:center 60%}
+.hero-photo--missions{--hero-photo-img:url("https://images.unsplash.com/photo-1571417814270-5cfb10916e02?auto=format&fit=crop&q=75&w=1600&h=900");--hero-photo-pos:center 35%}
+.hero-photo--approche{--hero-photo-img:url("https://images.unsplash.com/photo-1473649085228-583485e6e4d7?auto=format&fit=crop&q=75&w=1600&h=900");--hero-photo-pos:center 30%}
+.hero-photo--mission-sante{--hero-photo-img:url("https://images.unsplash.com/photo-1680713660046-67b7350ed679?auto=format&fit=crop&q=75&w=1600&h=900");--hero-photo-pos:center 30%}
+.hero-photo--a-propos{--hero-photo-img:url("https://images.unsplash.com/photo-1512596478480-88ba44446471?auto=format&fit=crop&q=75&w=1600&h=900");--hero-photo-pos:center 40%}
+.hero-photo--actions{--hero-photo-img:url("https://images.unsplash.com/photo-1680713660046-67b7350ed679?auto=format&fit=crop&q=75&w=1600&h=900");--hero-photo-pos:center 25%}
+.hero-photo--legales{--hero-photo-img:url("https://images.unsplash.com/photo-1473649085228-583485e6e4d7?auto=format&fit=crop&q=75&w=1600&h=900");--hero-photo-pos:center 35%}
+.hero-photo--cgu{--hero-photo-img:url("https://images.unsplash.com/photo-1571417814270-5cfb10916e02?auto=format&fit=crop&q=75&w=1600&h=900");--hero-photo-pos:center 55%}
+.hero-photo--confidentialite{--hero-photo-img:url("https://images.unsplash.com/photo-1680713660046-67b7350ed679?auto=format&fit=crop&q=75&w=1600&h=900");--hero-photo-pos:center 45%}

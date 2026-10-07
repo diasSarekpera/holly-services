@@ -39,6 +39,7 @@
   </script>
   <!-- @partial:meta:end -->
   <link rel="stylesheet" href="../styles/politique-confidentialite.css" />
+  <link rel="stylesheet" href="../styles/hero-photo.css" />
 </head>
 <body>
 
@@ -339,10 +340,19 @@
 
     <main id="main-content" data-page="confidentialite" data-version="1.0" data-maj="2026-10-01">
         
-        <header class="legal-hero">
-            <div class="container">
-                <h1 class="legal-hero__h1">Politique de <em>confidentialité</em></h1>
-                <p class="legal-hero__meta">Dernière mise à jour : 1 Octobre 2026 · Version 1.0</p>
+        <header class="hero-photo hero-photo--confidentialite" aria-labelledby="confidentialite-title">
+            <div class="container hero-photo__inner">
+                <nav class="hero-photo__breadcrumb" aria-label="Fil d'Ariane">
+                    <ol role="list">
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li><span aria-current="page">Politique de confidentialité</span></li>
+                    </ol>
+                </nav>
+                <div class="eyebrow">
+                    <span class="eyebrow__line" aria-hidden="true"></span>
+                    <span class="eyebrow__label">Informations légales</span>
+                </div>
+                <h1 id="confidentialite-title" class="hero-photo__title">Politique de <em>confidentialité</em></h1>
             </div>
         </header>
 
@@ -358,6 +368,8 @@
             </aside>
 
             <article class="legal-content">
+
+                <p class="legal-meta">Dernière mise à jour : 1 Octobre 2026 · Version 1.0</p>
                 
                 <div class="legal-box">
                     <strong>En bref :</strong>

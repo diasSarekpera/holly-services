@@ -345,12 +345,12 @@
 
   <main id="main-content">
     <!-- 1. HERO -->
-    <header class="transparence-hero">
-      <div class="container">
-        <nav class="transparence-breadcrumb" aria-label="Fil d'Ariane">
-          <ol>
-            <li><a href="../index.html#hero">Accueil</a></li>
-            <li><a href="../pages/a-propos.html">À propos</a></li>
+    <header class="hero-photo hero-photo--transparence" aria-labelledby="transparence-title">
+      <div class="container hero-photo__inner">
+        <nav class="hero-photo__breadcrumb" aria-label="Fil d'Ariane">
+          <ol role="list">
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
             <li><span aria-current="page">Transparence</span></li>
           </ol>
         </nav>
@@ -358,24 +358,27 @@
           <span class="eyebrow__line" aria-hidden="true"></span>
           <span class="eyebrow__label">Transparence et redevabilité</span>
         </div>
-        <h1 class="transparence-hero__h1">La transparence, <em>preuves à l'appui</em>.</h1>
-        <p class="transparence-hero__chapo">Rapports d'activité, comptes audités, chartes et gouvernance&nbsp;: retrouvez ici les documents qui permettent de vérifier ce que nous faisons de votre confiance.</p>
-        <div class="transparence-hero__actions">
-          <a href="#documents" class="btn btn--primary"><i class="ri-download-line" aria-hidden="true"></i> Télécharger le rapport annuel</a>
-          <a href="#demande" class="btn btn--ghost">Demander un document</a>
-        </div>
-        <ul class="transparence-hero__facts">
-          <li>94 % des fonds au terrain</li>
-          <li>Audit annuel indépendant</li>
-          <li>Depuis 2018</li>
-          <li>1 200+ donateurs engagés</li>
-        </ul>
+        <h1 id="transparence-title" class="hero-photo__title">La transparence, <em>preuves à l'appui</em>.</h1>
       </div>
     </header>
 
     <!-- 2. CHIFFRES -->
     <section class="transparence-section transparence-chiffres" aria-labelledby="transparence-chiffres-title">
       <div class="container">
+        <div class="transparence-intro">
+          <p class="transparence-intro__lead">Rapports d'activité, comptes audités, chartes et gouvernance&nbsp;: retrouvez ici les documents qui permettent de vérifier ce que nous faisons de votre confiance.</p>
+          <div class="transparence-intro__actions">
+            <a href="#documents" class="btn btn--primary"><i class="ri-download-line" aria-hidden="true"></i> Télécharger le rapport annuel</a>
+            <a href="#demande" class="btn btn--ghost">Demander un document</a>
+          </div>
+          <ul class="transparence-intro__facts" role="list">
+            <li>94 % des fonds au terrain</li>
+            <li>Audit annuel indépendant</li>
+            <li>Depuis 2018</li>
+            <li>1 200+ donateurs engagés</li>
+          </ul>
+        </div>
+
         <div class="eyebrow">
           <span class="eyebrow__line" aria-hidden="true"></span>
           <span class="eyebrow__label">Des chiffres, leurs périodes et leurs définitions</span>

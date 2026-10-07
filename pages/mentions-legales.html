@@ -39,6 +39,7 @@
   </script>
   <!-- @partial:meta:end -->
   <link rel="stylesheet" href="../styles/mentions-legales.css" />
+  <link rel="stylesheet" href="../styles/hero-photo.css" />
 </head>
 <body>
 
@@ -339,10 +340,19 @@
 
     <main id="main-content" data-page="mentions-legales">
 
-        <header class="legal-hero">
-            <div class="container">
-                <h1 class="legal-hero__h1">Mentions <em>légales</em></h1>
-                <p class="legal-hero__meta">Contenu provisoire · Version et date de mise à jour [À COMPLÉTER PAR L'ONG]</p>
+        <header class="hero-photo hero-photo--legales" aria-labelledby="legales-title">
+            <div class="container hero-photo__inner">
+                <nav class="hero-photo__breadcrumb" aria-label="Fil d'Ariane">
+                    <ol role="list">
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li><span aria-current="page">Mentions légales</span></li>
+                    </ol>
+                </nav>
+                <div class="eyebrow">
+                    <span class="eyebrow__line" aria-hidden="true"></span>
+                    <span class="eyebrow__label">Informations légales</span>
+                </div>
+                <h1 id="legales-title" class="hero-photo__title">Mentions <em>légales</em></h1>
             </div>
         </header>
 
@@ -361,6 +371,8 @@
             </aside>
 
             <article class="legal-content">
+
+                <p class="legal-meta">Contenu provisoire · Version et date de mise à jour [À COMPLÉTER PAR L'ONG]</p>
 
                 <div class="legal-box" role="note">
                     <strong>Contenu provisoire.</strong> Cette page est en cours de rédaction&nbsp;: les rubriques ci-dessous seront complétées par Holly Services ONG.

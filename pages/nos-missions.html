@@ -340,33 +340,40 @@
   <main id="main-content">
 
     <!-- 1. HERO — Nos missions -->
-    <section class="missions-hero" aria-labelledby="missions-hero-title">
-      <div class="container">
+    <header class="hero-photo hero-photo--missions" aria-labelledby="missions-title">
+      <div class="container hero-photo__inner">
+        <nav class="hero-photo__breadcrumb" aria-label="Fil d'Ariane">
+          <ol role="list">
+            <li><a href="../index.html">Accueil</a></li>
+            <li><span aria-current="page">Nos missions</span></li>
+          </ol>
+        </nav>
         <div class="eyebrow">
           <span class="eyebrow__line" aria-hidden="true"></span>
           <span class="eyebrow__label">Nos missions · Notre raison d'agir</span>
         </div>
-        <h1 id="missions-hero-title">Trois missions, <em>un seul</em> engagement.</h1>
-        <p class="missions-hero__chapo">Santé, droits humains, éducation : des actions complémentaires pour que chaque enfant atteint d'albinisme grandisse en sécurité, soit scolarisé et soit respecté.</p>
-
-        <nav class="missions-hero__anchors" aria-label="Nos trois missions">
-          <a href="#sante" class="missions-hero__anchor"><span class="missions-hero__anchor-num">01</span> Santé</a>
-          <a href="#droits" class="missions-hero__anchor"><span class="missions-hero__anchor-num">02</span> Droits humains</a>
-          <a href="#education" class="missions-hero__anchor"><span class="missions-hero__anchor-num">03</span> Éducation</a>
-        </nav>
-
-        <ul class="missions-hero__stats">
-          <li><i class="ri-user-heart-line" aria-hidden="true"></i> 1 024 enfants accompagnés</li>
-          <li><i class="ri-hospital-line" aria-hidden="true"></i> 48 campagnes médicales</li>
-          <li><i class="ri-map-pin-line" aria-hidden="true"></i> Bénin · Togo · Tanzanie</li>
-          <li><i class="ri-pie-chart-line" aria-hidden="true"></i> 94 % des fonds au terrain</li>
-        </ul>
+        <h1 id="missions-title" class="hero-photo__title">Trois missions, <em>un seul</em> engagement.</h1>
       </div>
-    </section>
+    </header>
 
     <!-- 2. BESOINS -->
     <section class="besoins" aria-labelledby="besoins-title">
       <div class="container">
+        <div class="missions-intro">
+          <nav class="missions-anchors" aria-label="Nos trois missions">
+            <a href="#sante" class="missions-anchors__link"><span class="missions-anchors__num">01</span> Santé</a>
+            <a href="#droits" class="missions-anchors__link"><span class="missions-anchors__num">02</span> Droits humains</a>
+            <a href="#education" class="missions-anchors__link"><span class="missions-anchors__num">03</span> Éducation</a>
+          </nav>
+          <p class="missions-intro__lead">Santé, droits humains, éducation : des actions complémentaires pour que chaque enfant atteint d'albinisme grandisse en sécurité, soit scolarisé et soit respecté.</p>
+          <ul class="missions-intro__stats">
+            <li><i class="ri-user-heart-line" aria-hidden="true"></i> 1 024 enfants accompagnés</li>
+            <li><i class="ri-hospital-line" aria-hidden="true"></i> 48 campagnes médicales</li>
+            <li><i class="ri-map-pin-line" aria-hidden="true"></i> Bénin · Togo · Tanzanie</li>
+            <li><i class="ri-pie-chart-line" aria-hidden="true"></i> 94 % des fonds au terrain</li>
+          </ul>
+        </div>
+
         <div class="eyebrow">
           <span class="eyebrow__line" aria-hidden="true"></span>
           <span class="eyebrow__label">Pourquoi nous agissons</span>
