@@ -24,3 +24,9 @@ input[type="checkbox"]:not(.form-checkbox):focus,input[type="checkbox"]:not(.for
 .campagne-choice__input:focus-visible + .campagne-choice__box{outline:none !important}
 .campagne-amounts .campagne-choice__input:focus-visible + .campagne-choice__box{border-color:var(--clr-secondary)}
 .campagne-segment .campagne-choice__input:focus-visible + .campagne-choice__box{box-shadow:inset 0 0 0 1.5px var(--clr-secondary)}
+
+/* Header desktop : jamais de retour à la ligne, compaction progressive selon la largeur */
+.navbar__link,.navbar__cta,.navbar__lang,.navbar__brand-name,.navbar__brand-sub{white-space:nowrap}
+@media (min-width:1024px) and (max-width:1439px){.navbar{padding:0 1.75rem}.navbar__inner{gap:1.5rem}.navbar__list{gap:0.2rem}.navbar__link{font-size:0.85rem;padding:0.65rem 0.75rem}.navbar__actions{margin-left:0.5rem;gap:0.75rem}.navbar__cta{padding:0.7rem 1.2rem;font-size:0.85rem}.navbar__lang{padding:0.6rem 0.85rem}.navbar__brand{gap:0.9rem}.navbar__brand-name{font-size:1.2rem}.navbar__brand-sub{font-size:0.66rem;letter-spacing:0.12em}}
+@media (min-width:1024px) and (max-width:1199px){.navbar,.navbar.is-scrolled{--logo-w:64px}.navbar{padding:0 1.25rem}.navbar__inner{gap:1rem}.navbar__link{font-size:0.8125rem;padding:0.6rem 0.55rem}.navbar__cta{padding:0.65rem 1rem;font-size:0.8125rem}.navbar__lang{padding:0.55rem 0.7rem}.navbar__brand{gap:0.75rem}.navbar__brand-name{font-size:1.1rem}.navbar__brand-sub{font-size:0.6rem;letter-spacing:0.1em}}
+@media (min-width:1024px) and (max-width:1099px){.navbar,.navbar.is-scrolled{--logo-w:56px}.navbar__link{font-size:0.78rem;padding:0.55rem 0.4rem}.navbar__actions{margin-left:0}.navbar__cta{padding:0.6rem 0.85rem}.navbar__brand-name{font-size:1.02rem}.navbar__brand-sub{font-size:0.56rem}}

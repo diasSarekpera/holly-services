@@ -32,7 +32,7 @@ Suivi : `grep -rn "À COMPLÉTER" pages index.html 404.html` · `grep -rn "PAR L
 - [ ] Home / missions / transparence / bénévole / partenaire : 1 024 enfants, 94 % des fonds au terrain (6 % de frais, exercice 2024), 312 kits, 48 campagnes, 350+ consultations, 80 bénévoles, 12+ partenaires, 1 200+ donateurs, « depuis 2018 », Bénin · Togo · Tanzanie, réponse sous 10 jours ouvrés, ISO 9001 (en cours), agrément de l'État, Coordination Sud, conformité RGPD, audit annuel indépendant.
 - [ ] Campagne « Protéger 500 enfants » : 7 800 € / 10 000 € (78 %), 214 donateurs, 342 enfants, reste 2 200 €, « 10 € = 1 kit » ; date de clôture (voir P3).
 - [ ] Article « cancer de la peau » : 340 enfants / 340 kits, 20 relais, 5 espaces d'ombre, citation du « Dr. Amina D., Coordinatrice médicale », date du 18 avril 2025, auteur, 5 min de lecture, légende photo (auteur, lieu, année, consentement des familles).
-- [ ] Actualités : « plus de 250 enfants », dates des articles, titres `[fictif]` (3 articles), e-mail presse.
+- [ ] Actualités : « plus de 250 enfants », dates des articles, titres `[fictif]` (3 articles).
 - [ ] Témoignage de nos-missions (« Parent d'un enfant accompagné ») ; phrase de conviction de notre-approche (« [formulation à valider] »).
 - [ ] Meta descriptions rédigées d'après le chapô (campagne, bénévole, 404) : relecture.
 
