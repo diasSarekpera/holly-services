@@ -63,6 +63,7 @@
     toggleBtn.setAttribute('aria-label', 'Fermer le menu');
 
     document.body.style.overflow = 'hidden';
+    document.documentElement.style.overflow = 'hidden';
     document.body.classList.add('nav-mobile-open');
 
     // Focus initial sur le bouton de fermeture, ou le premier élément focusable
@@ -85,6 +86,7 @@
     toggleBtn.setAttribute('aria-label', 'Ouvrir le menu');
 
     document.body.style.overflow = '';
+    document.documentElement.style.overflow = '';
     document.body.classList.remove('nav-mobile-open');
 
     document.removeEventListener('keydown', onKeydown);
@@ -171,6 +173,11 @@
     link.addEventListener('click', function () {
       closeMenu();
     });
+  });
+
+  // Retour arrière (cache de navigation) : ne jamais restaurer un menu resté ouvert
+  window.addEventListener('pageshow', function (e) {
+    if (e.persisted && isOpen) closeMenu();
   });
 
   // Sécurité : si la fenêtre est redimensionnée vers le format desktop

@@ -84,3 +84,25 @@
 - **Gabarit des pages mission** (`pages/mission-sante.html`, à copier pour Droits humains et Éducation) : le hero est un `.hero-photo` avec un modificateur **par mission** (`hero-photo--mission-sante`, puis `--mission-droits`, `--mission-education`, chacun avec sa photo du pool) ; fil d'Ariane `Accueil › Nos missions › {Mission}` ; eyebrow `Mission 0X / 03 · {Mission}` (remplace l'ancien numéro + badge) ; id `mission-title`. Chapo, boutons et faits clés vont dans `div.mission-detail__intro` en tête de la section « L'enjeu » ; le sélecteur de missions reste juste sous le hero. Ne plus utiliser `.mission-detail__hero`, `__breadcrumb`, `__numbering`, `__badge` (supprimés).
 - Barre d'ancres sortie d'un hero (ex. `.missions-anchors` de `nos-missions.html`) : elle ouvre la 1re section suivante, ses classes ne portent plus `hero` et ses couleurs sont celles d'un fond clair.
 
+## Typographie (T7)
+- Échelle unique dans le `:root` canonique : titres `--fs-h1…h4` (+ `--fw-hN`, `--lh-hN`, `--ls-hN`), `--fs-lede`, `--fs-body` (16 px), `--fs-base-sm`/`--fs-sm`/`--fs-xs` (14/13/12 px, plancher 12 px), `--fs-eyebrow`, `--fs-quote(-sm)`, `--fs-stat(-sm)`, `--measure` (48ch ≈ 70 caractères).
+- Un titre prend la marche de son rôle visuel : classe à ajouter à la liste du bloc « Typographie (T7) » (fin de chaque feuille, identique partout). Ne jamais écrire de `font-size` en dur sur un titre.
+- Corps de texte ≥ 16 px ; petit texte (légendes, notes, footer) 12–14 px ; liens dans un `<p>` : soulignés.
+
+## Rythme vertical (T8)
+- Padding de section : `padding-block: var(--section-pad-y)` (variantes `-compact`, `-band`) ; jamais de `rem` en dur ni de palier par media query. Détails et tableau mesuré : `docs/RYTHME.md`.
+- Dans un en-tête : eyebrow, `h2`, `p`, bloc = frères directs, sans `margin` ni `gap` propres (le bloc T8 règle les écarts). Deux sections voisines sans fond propre : mettre `padding-top: 0` à la seconde.
+
+## Cohérence visuelle (chantier clos en V122)
+Décisions de la charte, vérifiées par `python3 tools/regress.py` (Playwright, serveur HTTP local, 15 contrôles, sortie OK/KO, code 1 si KO ; `--quick` = 1280 px seul pour le débordement, `-v` = détail des KO). À lancer avant toute livraison ; **0 KO exigé**.
+- Palette : marine `--clr-secondary`, accent `--clr-primary`, or du logo ; Cormorant Garamond (titres) + Outfit (texte). Tokens `:root` identiques dans les feuilles (référentiel : docs/DESIGN-TOKENS.md). Aucune variable `var(--x)` sans définition ni repli.
+- Header 100 px au sommet / 80 px après défilement (≥ 1024 px), jamais de retour à la ligne.
+- Cartes (bloc T10, docs/CARTES-AUDIT.md) : fond blanc, bordure 1px rgba(16,35,63,0.18), ombre 0 1px 3px rgba(16,35,63,0.08) ; survol = bordure rgba(16,35,63,0.32) + ombre 0 2px 8px rgba(16,35,63,0.10), sans déplacement. Toute nouvelle classe de carte s'ajoute au bloc T10 dans les 21 feuilles.
+- Boutons ghost : bordure visible par défaut ; survol = fond seulement (bordure inchangée).
+- Citations sur fond marine : pas de filet rose latéral. Hero d'accueil : pas de bandeau de chiffres. Eyebrows d'accueil complets (ligne + libellé + point) et à signature unique.
+- Rythme vertical : tokens `--rhythm-*` (docs/RYTHME.md) ; section Mission de À propos mesurée (eyebrow→titre, paragraphe→paragraphe). Section Valeurs : fond `--clr-section-alt` (aucun canal > 244).
+- Héros photo (`.hero-photo`, h1, ≥ 200 px) sur toutes les pages de `pages/` sauf maintenance.
+- Mouvement (24D) : durées/courbes par tokens (`--dur-*`, `--ease-*`), aucun déplacement au survol, bloc « Mouvement (24D) » (mouvement réduit) identique dans toutes les feuilles. Survol réservé à `@media (hover:hover)` (24B). Focus clavier uniforme (24A).
+- Aucun défilement horizontal de 320 à 1920 px.
+- Limites connues : `tools/check.py` n'existe pas dans le projet (la section « Contrôle » ci-dessus est historique) ; regress.py ne contrôle que la 1re instance de chaque classe de carte par page et 4 boutons ghost par page.
+

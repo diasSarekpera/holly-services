@@ -1,20 +1,25 @@
 /* Photos d'arrière-plan des heros (pages intérieures) — voile marine pour garder le texte lisible */
 /* ===== Composant .hero-photo (hero minimal : fil d'Ariane, eyebrow, H1) ===== */
-.hero-photo{--hero-photo-img:none;--hero-photo-pos:center 40%;position:relative;padding-top:var(--navbar-h);padding-bottom:clamp(3rem,7vw,5rem);color:var(--clr-white);background:linear-gradient(to bottom,rgba(16,35,63,0.55) 0%,rgba(16,35,63,0) 30%),linear-gradient(100deg,rgba(16,35,63,0.94) 0%,rgba(16,35,63,0.84) 45%,rgba(16,35,63,0.62) 100%),var(--hero-photo-img) var(--hero-photo-pos)/cover no-repeat,var(--clr-secondary)}
+.hero-photo{--hero-photo-img:none;--hero-photo-pos:center 40%;position:relative;padding-top:var(--navbar-h);padding-bottom:clamp(3rem,7vw,5rem);color:var(--clr-white);background:linear-gradient(to bottom,rgba(16,35,63,0.55) 0%,rgba(16,35,63,0) 30%),linear-gradient(100deg,rgba(16,35,63,0.94) 0%,rgba(16,35,63,0.84) 45%,rgba(16,35,63,0.70) 100%),var(--hero-photo-img) var(--hero-photo-pos)/cover no-repeat,var(--clr-secondary)}
 .hero-photo__inner{padding-top:clamp(2.5rem,6vw,4rem);text-align:left}
-.hero-photo__breadcrumb{margin-bottom:clamp(1.5rem,3.5vw,2.5rem);font-family:var(--font-body);font-size:0.85rem}
+.hero-photo__breadcrumb{margin-bottom:clamp(1.5rem,3.5vw,2.5rem);font-family:var(--font-body);font-size:var(--fs-base-sm)}
 .hero-photo__breadcrumb ol{display:flex;flex-wrap:wrap;align-items:center;gap:0.25rem 0.5rem;margin:0;padding:0;list-style:none}
 .hero-photo__breadcrumb li+li::before{content:"\203A";margin-right:0.5rem;color:var(--nm)}
-.hero-photo__breadcrumb a{color:var(--clr-secondary-soft);text-decoration:none;opacity:0.85}
-.hero-photo__breadcrumb a:hover{color:var(--clr-white);opacity:1;text-decoration:underline}
-.hero-photo__breadcrumb a:focus-visible{outline:2px solid var(--clr-white);outline-offset:3px}
+.hero-photo__breadcrumb a{color:var(--clr-secondary-soft);text-decoration:none}
+@media (hover:hover){.hero-photo__breadcrumb a:hover{color:var(--clr-white);opacity:1;text-decoration:underline}}
+.hero-photo__breadcrumb a:focus-visible{outline:var(--focus-ring-w) solid var(--focus-ring);outline-offset:var(--focus-ring-offset)}
 .hero-photo__breadcrumb [aria-current="page"]{color:var(--clr-white);font-weight:500}
 .hero-photo .eyebrow{margin-bottom:clamp(1rem,2.5vw,1.5rem)}
 .hero-photo .eyebrow__line{width:1.75rem;background:var(--clr-white)}
-.hero-photo .eyebrow__label{font-size:0.7rem;font-weight:700;letter-spacing:0.15em;color:var(--clr-white)}
-.hero-photo__title{max-width:52rem;margin:0;font-family:var(--font-display);font-size:clamp(2.5rem,5vw + 1rem,4rem);font-weight:400;line-height:1.1;color:var(--clr-white);text-wrap:balance}
+.hero-photo .eyebrow__label{font-size:var(--fs-xs);font-weight:700;letter-spacing:0.15em;color:var(--clr-white)}
+.hero-photo__title{max-width:52rem;margin:0;font-family:var(--font-display);font-size:var(--fs-h1);font-weight:var(--fw-h1);line-height:var(--lh-h1);letter-spacing:var(--ls-h1);color:var(--clr-white);text-wrap:balance}
 .hero-photo__title em{font-style:italic;color:inherit}
-@media(max-width:600px){.hero-photo__breadcrumb{font-size:0.8rem}}
+@media(max-width:600px){.hero-photo__breadcrumb{font-size:var(--fs-sm)}}
+/* T12A : une seule hauteur minimale pour tous les heros interieurs ; voile plus soutenu sur mobile (texte blanc >= 4.5 meme sur photo claire) */
+.hero-photo{min-height:18rem}
+@media(min-width:768px){.hero-photo{min-height:21.5rem}}
+@media(min-width:1024px){.hero-photo{min-height:26rem}}
+@media(max-width:767px){.hero-photo{background:linear-gradient(to bottom,rgba(16,35,63,0.90) 0%,rgba(16,35,63,0.82) 100%),var(--hero-photo-img) var(--hero-photo-pos)/cover no-repeat,var(--clr-secondary)}}
 /* Modificateurs : image + cadrage uniquement */
 .hero-photo--actualites{--hero-photo-img:url("https://images.unsplash.com/photo-1473649085228-583485e6e4d7?auto=format&fit=crop&q=75&w=1600&h=900");--hero-photo-pos:center 40%}
 .hero-photo--article{--hero-photo-img:url("https://images.unsplash.com/photo-1512596478480-88ba44446471?auto=format&fit=crop&q=75&w=1600&h=900");--hero-photo-pos:center 30%}
@@ -35,3 +40,100 @@
 .hero-photo--legales{--hero-photo-img:url("https://images.unsplash.com/photo-1473649085228-583485e6e4d7?auto=format&fit=crop&q=75&w=1600&h=900");--hero-photo-pos:center 35%}
 .hero-photo--cgu{--hero-photo-img:url("https://images.unsplash.com/photo-1571417814270-5cfb10916e02?auto=format&fit=crop&q=75&w=1600&h=900");--hero-photo-pos:center 55%}
 .hero-photo--confidentialite{--hero-photo-img:url("https://images.unsplash.com/photo-1680713660046-67b7350ed679?auto=format&fit=crop&q=75&w=1600&h=900");--hero-photo-pos:center 45%}
+
+/* ===== Cartes (T10) : recette unique =====
+   Fond blanc, bordure --clr-border-card, ombre --shadow-card, rayon --radius-card ; survol = bordure + ombre seulement, sans deplacement.
+   Liste = docs/CARTES-AUDIT.md (une classe de carte ajoutee ici dans les 21 feuilles, identique). */
+.why-card,
+.card-besoin,
+.erreur404-card,
+.mission-detail__card,
+.value-card,
+.team-card,
+.article-cta__card,
+.benevolat-format-card,
+.maintenance__contact-card,
+.action-card,
+.action-tile,
+.actualites-card,
+.article-card,
+.campagne-card,
+.campagne-don,
+.benevolat-mission-card,
+.job-sidebar,
+.temoignage-card,
+.rapport-result-card,
+.card-soutien,
+.reason-card,
+.form-card,
+.metier-card,
+.banner-card,
+.chiffre-card,
+.cta-card,
+.partner-logo-tile{background:var(--clr-white);border:1px solid var(--clr-border-card);border-radius:var(--radius-card);box-shadow:var(--shadow-card);transition:border-color 0.2s ease,box-shadow 0.2s ease}
+@media (hover:hover){.why-card:hover,.card-besoin:hover,.erreur404-card:hover,.mission-detail__card:hover,.value-card:hover,.team-card:hover,.article-cta__card:hover,.benevolat-format-card:hover,.maintenance__contact-card:hover,.action-card:hover,.action-tile:hover,.actualites-card:hover,.article-card:hover,.campagne-card:hover,.campagne-don:hover,.benevolat-mission-card:hover,.job-sidebar:hover,.temoignage-card:hover,.rapport-result-card:hover,.card-soutien:hover,.reason-card:hover,.form-card:hover,.metier-card:hover,.banner-card:hover,.chiffre-card:hover,.cta-card:hover,.partner-logo-tile:hover{border-color:var(--clr-border-hover);box-shadow:var(--shadow-hover);transform:none}}
+/* ===== fin Cartes (T10) ===== */
+
+/* ===== Formulaires (T11) : socle des champs, labels, etats, cases, upload =====
+   Champs input / select / textarea : hauteur >= 44 px, police 16 px (pas de zoom iOS), rayon --radius-sm, bordure --clr-field-border (#7B8798, 3:1 WCAG 1.4.11 ; une regle existante impose cette couleur en !important, la valeur rgba(16,35,63,0.25) du brief est donc ignoree),
+   (11A) fond blanc, placeholder --clr-text-soft (>= 4.5:1), textarea redimensionnable en vertical. Hors socle : cases, radios, fichier, pot de miel, champs du pied de page (fond marine). */
+:root body :is(.form-input,.form-control,.benevolat-input,.contact-form__input,.contact-form__textarea,.actualites-nl__input,.article-nl__input,.search-input),
+:root body :is(:where(.form__field) input:not([type=checkbox]):not([type=radio]):not([type=file]):not([type=hidden]):not([type=submit]):not([type=button]):not([name=_gotcha])),
+:root body :is(:where(.form__field) select),
+:root body :is(:where(.form__field) textarea),
+:root body :is(:where(.erreur404-search__input-wrapper) input){box-sizing:border-box;width:100%;min-height:44px;padding:0.75rem 1rem;font-family:var(--font-body);font-size:var(--fs-body);font-weight:400;line-height:1.4;color:var(--clr-text);background-color:var(--clr-white);border:1px solid var(--clr-field-border);border-radius:var(--radius-sm);transition:border-color 0.2s ease,box-shadow 0.2s ease}
+:root body :is(.form-input,.form-control,.benevolat-input,.contact-form__input,.contact-form__textarea,.actualites-nl__input,.article-nl__input,.search-input)::placeholder,
+:root body :is(:where(.form__field) input:not([type=checkbox]):not([type=radio]):not([type=file]):not([type=hidden]):not([type=submit]):not([type=button]):not([name=_gotcha]))::placeholder,
+:root body :is(:where(.form__field) select)::placeholder,
+:root body :is(:where(.form__field) textarea)::placeholder,
+:root body :is(:where(.erreur404-search__input-wrapper) input)::placeholder{color:var(--clr-text-soft);opacity:1;font-weight:400}
+:root body :is(.form-input,.form-control,.benevolat-input,.contact-form__input,.contact-form__textarea,.actualites-nl__input,.article-nl__input,.search-input):focus,
+:root body :is(:where(.form__field) input:not([type=checkbox]):not([type=radio]):not([type=file]):not([type=hidden]):not([type=submit]):not([type=button]):not([name=_gotcha])):focus,
+:root body :is(:where(.form__field) select):focus,
+:root body :is(:where(.form__field) textarea):focus,
+:root body :is(:where(.erreur404-search__input-wrapper) input):focus{border-color:var(--clr-primary)}
+:root body :where(.erreur404-search__input-wrapper) input{padding-inline:3rem}
+:root body select:is(.form-select,.form-input,.form-control),
+:root body :where(.form__field) select{padding-right:2.5rem}
+:root body textarea:is(.form-textarea,.contact-form__textarea,.benevolat-input,.form-control,.form-input),
+:root body :where(.form__field) textarea{min-height:120px;resize:vertical}
+/* 11B : labels, astérisque, anneau, erreur, désactivé, cases, radios, upload */
+:root body :is(.form-label,.contact-form__label,.benevolat-label,:where(.form__field,.form-group,.form__group)>label):not(.visually-hidden):not(:has(input)){display:block;margin:0 0 0.5rem;font-family:var(--font-body);font-size:var(--fs-base-sm);font-weight:500;line-height:1.4;color:var(--clr-text)}
+:root body :is(.form-label,.contact-form__label,.benevolat-label,:where(.form__field,.form-group,.form__group)>label):not(.visually-hidden):not(:has(input)):has(+ :is(input,select,textarea)[required]):not(:has(> [aria-hidden="true"]))::after{content:" *";content:" *" / "";color:var(--clr-urgent)}
+:root body label > span[aria-hidden="true"]{color:var(--clr-urgent)}
+:root body :is(.form-input,.form-control,.benevolat-input,.contact-form__input,.contact-form__textarea,.actualites-nl__input,.article-nl__input,.search-input):focus-visible,
+:root body :is(:where(.form__field) input:not([type=checkbox]):not([type=radio]):not([type=file]):not([type=hidden]):not([type=submit]):not([type=button]):not([name=_gotcha])):focus-visible,
+:root body :is(:where(.form__field) select):focus-visible,
+:root body :is(:where(.form__field) textarea):focus-visible,
+:root body :is(:where(.erreur404-search__input-wrapper) input):focus-visible,
+:root body input[type="file"]:focus-visible{}
+:root body input[type="file"]:focus-visible{border-color:var(--clr-primary)}
+:root body :is(.form-input,.form-control,.benevolat-input,.contact-form__input,.contact-form__textarea,.actualites-nl__input,.article-nl__input,.search-input)[aria-invalid="true"],
+:root body :is(:where(.form__field) input:not([type=checkbox]):not([type=radio]):not([type=file]):not([type=hidden]):not([type=submit]):not([type=button]):not([name=_gotcha]))[aria-invalid="true"],
+:root body :is(:where(.form__field) select)[aria-invalid="true"],
+:root body :is(:where(.form__field) textarea)[aria-invalid="true"],
+:root body :is(:where(.erreur404-search__input-wrapper) input)[aria-invalid="true"]{border-color:var(--clr-urgent) !important}
+:root body :is(.form-input,.form-control,.benevolat-input,.contact-form__input,.contact-form__textarea,.actualites-nl__input,.article-nl__input,.search-input)[aria-invalid="true"]:focus-visible,
+:root body :is(:where(.form__field) input:not([type=checkbox]):not([type=radio]):not([type=file]):not([type=hidden]):not([type=submit]):not([type=button]):not([name=_gotcha]))[aria-invalid="true"]:focus-visible,
+:root body :is(:where(.form__field) select)[aria-invalid="true"]:focus-visible,
+:root body :is(:where(.form__field) textarea)[aria-invalid="true"]:focus-visible,
+:root body :is(:where(.erreur404-search__input-wrapper) input)[aria-invalid="true"]:focus-visible{box-shadow:0 0 0 3px color-mix(in srgb,var(--clr-urgent) 18%,transparent) !important}
+:root body :is(.form-input,.form-control,.benevolat-input,.contact-form__input,.contact-form__textarea,.actualites-nl__input,.article-nl__input,.search-input):disabled,
+:root body :is(:where(.form__field) input:not([type=checkbox]):not([type=radio]):not([type=file]):not([type=hidden]):not([type=submit]):not([type=button]):not([name=_gotcha])):disabled,
+:root body :is(:where(.form__field) select):disabled,
+:root body :is(:where(.form__field) textarea):disabled,
+:root body :is(:where(.erreur404-search__input-wrapper) input):disabled{background-color:var(--clr-surface);color:var(--clr-text-soft);cursor:not-allowed}
+:root body :is(.form__error,.form__status--error,.form__status--success)::before{content:"";display:inline-block;width:1em;height:1em;margin-right:0.375rem;vertical-align:-0.15em;background-color:currentColor;-webkit-mask:var(--ico-form-alert) center/contain no-repeat;mask:var(--ico-form-alert) center/contain no-repeat}
+:root body .form__status--success::before{-webkit-mask-image:var(--ico-form-ok);mask-image:var(--ico-form-ok)}
+:root{--ico-form-alert:url(data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20viewBox=%270%200%2024%2024%27%20fill=%27none%27%20stroke=%27black%27%20stroke-width=%272.2%27%20stroke-linecap=%27round%27%20stroke-linejoin=%27round%27%3E%3Ccircle%20cx=%2712%27%20cy=%2712%27%20r=%2710%27/%3E%3Cpath%20d=%27M12%208v5M12%2016h.01%27/%3E%3C/svg%3E);--ico-form-ok:url(data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20viewBox=%270%200%2024%2024%27%20fill=%27none%27%20stroke=%27black%27%20stroke-width=%272.2%27%20stroke-linecap=%27round%27%20stroke-linejoin=%27round%27%3E%3Ccircle%20cx=%2712%27%20cy=%2712%27%20r=%2710%27/%3E%3Cpath%20d=%27M8%2012.5l3%203%205-6%27/%3E%3C/svg%3E)}
+:root body label:has(input[type="checkbox"],input[type="radio"]):not(.campagne-choice):not(.form-checkbox-label){display:flex;align-items:flex-start;gap:0.75rem;min-height:44px;padding-block:0.5rem;cursor:pointer;font-weight:400}
+:root body label:has(input[type="checkbox"],input[type="radio"]):not(.campagne-choice):not(.form-checkbox-label) > input{margin-top:0.1rem}
+:root body input[type="radio"]:not(.campagne-choice__input){width:1.125rem;height:1.125rem;margin:0;flex-shrink:0;accent-color:var(--clr-primary)}
+:root body :is(input[type="checkbox"]:not(.form-checkbox),input[type="radio"]:not(.campagne-choice__input)):focus-visible{}
+:root body input[type="file"]{box-sizing:border-box;width:100%;min-height:44px;padding:0.375rem 0.5rem;font-family:var(--font-body);font-size:var(--fs-body);color:var(--clr-text);background-color:var(--clr-white);border:1px solid var(--clr-field-border);border-radius:var(--radius-sm);cursor:pointer}
+:root body input[type="file"]::file-selector-button{min-height:32px;margin-right:0.75rem;padding:0.25rem 0.75rem;font:inherit;font-weight:500;color:var(--clr-text);background-color:var(--clr-surface);border:1px solid var(--clr-field-border);border-radius:var(--radius-sm);cursor:pointer;transition:background-color 0.2s ease}
+@media (hover:hover){:root body input[type="file"]::file-selector-button:hover{background-color:var(--clr-section-alt)}}
+/* ===== fin Formulaires (T11) ===== */
+
+/* ===== Mouvement (24D) : mouvement réduit ===== */
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:0.01ms !important;animation-delay:0s !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important;transition-delay:0s !important;scroll-behavior:auto !important}form[data-form][aria-busy="true"] [type="submit"]::after{animation-duration:1.6s !important;animation-iteration-count:infinite !important}}
