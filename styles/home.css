@@ -302,3 +302,5 @@ input[type="checkbox"]:not(.form-checkbox):focus,input[type="checkbox"]:not(.for
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:0.01ms !important;animation-delay:0s !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important;transition-delay:0s !important;scroll-behavior:auto !important}form[data-form][aria-busy="true"] [type="submit"]::after{animation-duration:1.6s !important;animation-iteration-count:infinite !important}}
 /* Partenaire sans logo exploitable : nom en typographie du site */
 .partner-logo-tile__name{font-family:var(--font-display);font-size:var(--fs-h3);font-weight:600;letter-spacing:0.14em;color:var(--clr-secondary);line-height:1}
+/* Hero accueil : eyebrow masque sur mobile */
+@media (max-width:767px){.hero__badge{display:none}}
