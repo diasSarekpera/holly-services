@@ -1,6 +1,6 @@
 # Suivi du projet
 
-**Version actuelle : V125**
+**Version actuelle : V126**
 
 ## Protocole de fin de session
 1. Lire CONVENTIONS.md et ce fichier. 2. Ne faire QUE la tâche demandée. 3. Cocher la case ci-dessous + une ligne de journal. 4. Livrer le zip complet `Holly-services-V{N}.zip` (N = version actuelle + 1, un seul dossier racine `Holly-services/`). 5. Résumé de 5 lignes max.
@@ -214,3 +214,4 @@ Composant `.hero-photo` (voir CONVENTIONS.md « Hero photo »). Une ligne de che
 - V123 : logos réels. `assets/images/logo.svg` (médaillon), `logo-full.svg`, `logo-emblem.svg`, `logo-512.png`, `apple-touch-icon.png`, `favicon.svg` redessinés depuis `assets/byONG/…WA0033` (palette du site inchangée ; logo provisoire, voir docs/LOGOS.md). Section Partenaires de `index.html` : 8 faux logos et bloc « Fondation Solaris » supprimés, mur de 6 vrais partenaires en grille 3 x 2 (SANAA = nom seul), compteur 9 -> 6, logos en couleur (filtre gris retiré), tuiles plus hautes. JSON-LD `logo` de `index.html` -> `logo-512.png`. `docs/LOGOS.md` ajouté.
 - V124 : hero accueil, eyebrow (`.hero__badge`) masqué sous 768 px (`styles/home.css`, fin de fichier) ; inchangé sur desktop.
 - V125 : logo du header en badge blanc collé en haut (coins du bas arrondis 18 px, 16 px sur mobile, ombre légère), emblème seul `logo-emblem.svg` (19 pages). Bloc CSS « Logo du header » ajouté en fin des 19 feuilles portant la navbar. Footer et menu mobile gardent le médaillon `logo.svg`. Correctif : les `<img>` des pages intérieures avaient été pointés par erreur vers `logo-512.png` en V123, remis sur `logo.svg`.
+- V126 : nom « Holly Services » en Nunito ExtraBold (police de marque, `--font-brand`) dans le header (1.65rem au-dessus de 1440 px, 1.45 / 1.3 / 1.2rem selon les paliers, 1.25rem mobile), le menu mobile (1.45rem) et le footer (1.5rem). Fichier local `assets/fonts/nunito/nunito-latin-800-normal.woff2` (16 Ko), `@font-face` dans les 20 feuilles, préchargement dans les pages ; header à 1440 px+ resserré (gap 1.75rem, liens 0.95rem) pour que le nom plus large ne déborde pas. Regress : 15 contrôles, 0 KO.
