@@ -259,3 +259,11 @@ img.media-placeholder{display:block;height:auto;object-fit:cover}
 
 /* ===== Mouvement (24D) : mouvement réduit ===== */
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:0.01ms !important;animation-delay:0s !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important;transition-delay:0s !important;scroll-behavior:auto !important}form[data-form][aria-busy="true"] [type="submit"]::after{animation-duration:1.6s !important;animation-iteration-count:infinite !important}}
+
+/* Logo du header : badge blanc colle en haut, coins du bas arrondis (emblème seul) */
+.navbar__brand{margin-left:0;align-self:stretch;align-items:stretch}
+.navbar__brand-text{align-self:center}
+.navbar__logo-mark{align-self:stretch;width:calc(var(--logo-w) + 1.25rem);height:auto;padding:0 0.625rem;background:var(--clr-white);border-radius:0 0 1.125rem 1.125rem;box-shadow:0 4px 14px rgba(5,12,24,0.28)}
+.navbar__logo-mark img{width:100%;height:auto;max-height:100%}
+@media (min-width:1440px){.navbar__inner{gap:2.25rem}}
+@media (max-width:767px){.navbar__logo-mark{border-radius:0 0 1rem 1rem}}

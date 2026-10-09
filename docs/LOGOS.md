@@ -5,9 +5,9 @@ Sources reçues : `assets/byONG/` (JPG WhatsApp). Le logo de Holly Services (IMG
 
 | Fichier | Usage |
 |---|---|
-| `assets/images/logo.svg` | Médaillon (emblème dans un disque blanc, 120 x 120) : header, menu mobile, footer. Lisible sur fond marine quel que soit le logo. |
+| `assets/images/logo.svg` | Médaillon (emblème dans un disque blanc, 120 x 120) : menu mobile, footer, fond sombre. |
+| `assets/images/logo-emblem.svg` | **Header** : affiché dans un badge blanc collé en haut (CSS « Logo du header »). |
 | `assets/images/logo-full.svg` | Logo complet avec texte, fond transparent (fonds clairs, impression, documents). |
-| `assets/images/logo-emblem.svg` | Emblème seul, fond transparent. |
 | `assets/images/logo-512.png` | PNG 512 px du médaillon (JSON-LD `logo`). |
 | `assets/images/apple-touch-icon.png` | 180 px, **non référencé** dans les `<head>` (à ajouter si souhaité). |
 | `assets/images/favicon.svg` | Favicon allégé (4 Ko). |

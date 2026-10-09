@@ -304,3 +304,11 @@ input[type="checkbox"]:not(.form-checkbox):focus,input[type="checkbox"]:not(.for
 .partner-logo-tile__name{font-family:var(--font-display);font-size:var(--fs-h3);font-weight:600;letter-spacing:0.14em;color:var(--clr-secondary);line-height:1}
 /* Hero accueil : eyebrow masque sur mobile */
 @media (max-width:767px){.hero__badge{display:none}}
+
+/* Logo du header : badge blanc colle en haut, coins du bas arrondis (emblème seul) */
+.navbar__brand{margin-left:0;align-self:stretch;align-items:stretch}
+.navbar__brand-text{align-self:center}
+.navbar__logo-mark{align-self:stretch;width:calc(var(--logo-w) + 1.25rem);height:auto;padding:0 0.625rem;background:var(--clr-white);border-radius:0 0 1.125rem 1.125rem;box-shadow:0 4px 14px rgba(5,12,24,0.28)}
+.navbar__logo-mark img{width:100%;height:auto;max-height:100%}
+@media (min-width:1440px){.navbar__inner{gap:2.25rem}}
+@media (max-width:767px){.navbar__logo-mark{border-radius:0 0 1rem 1rem}}
