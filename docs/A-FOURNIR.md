@@ -47,7 +47,8 @@ Suivi : `grep -rn "À COMPLÉTER" pages index.html 404.html` · `grep -rn "PAR L
 - [ ] Photo de fond du hero de la home (≈ 1600 px), photos et avatars de la home / à propos / actions, logos de partenaires (260 × 60 ou 280 × 60), photos de l'équipe.
 - [ ] Nos missions : 3 photos (3:2). Campagne : portrait d'enfant 16:9 (consentement et protection de l'image). Actualités : « À la une » 16:9 + 3 vignettes 3:2. Article : image principale 16:9 + 3 cartes « À lire également » 3:2.
 - [ ] À chaque photo livrée : `alt`, aligner `width`/`height` sur le ratio réel, retirer `loading="lazy"` seulement si l'image est visible dès le haut de page.
-- [ ] Logo : `logo.svg` est déclaré tel quel en JSON-LD (un PNG ≥ 112 × 112 est préférable) ; `favicon.svg` dérivé du logo actuel, à refaire si le logo change.
+- [x] Logo : intégré (V123, voir docs/LOGOS.md), JSON-LD sur `logo-512.png`. À refaire quand l'ONG changera de logo.
+- [ ] Partenaires : nom exact, rôle, ancienneté, site web de chacun des 6 ; logo original de SANAA (affiché en texte pour l'instant) ; confirmer le compteur « 6 partenaires actifs » et les 2 autres chiffres de la section (3 secteurs, 6 pays), toujours fictifs.
 
 ## P5 — Facultatif / plus tard
 - [ ] JSON-LD : `image` et `publisher` de l'article, `JobPosting` pour les vraies offres, `sameAs`, adresse et n° d'enregistrement de l'`NGO`.
