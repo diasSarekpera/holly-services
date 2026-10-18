@@ -155,12 +155,6 @@
                     <span class="navbar__dropdown-link-desc">Ce que nous faisons</span>
                   </a>
                 </li>
-                <li>
-                  <a href="pages/galerie.html" class="navbar__dropdown-link">
-                    <span class="navbar__dropdown-link-title">Galerie photo</span>
-                    <span class="navbar__dropdown-link-desc">Nos actions en images</span>
-                  </a>
-                </li>
               </ul>
             </li>
 
@@ -205,6 +199,7 @@
               </ul>
             </li>
 
+            <li><a href="pages/galerie.html" class="navbar__link">Galerie</a></li>
             <li><a href="pages/actualites.html" class="navbar__link">Actualités</a></li>
             <li><a href="#contact" class="navbar__link">Contact</a></li>
           </ul>
@@ -291,7 +286,6 @@
             <ul class="mobile-submenu" id="mobile-submenu-impact" role="list">
               <li><a href="pages/nos-missions.html" class="mobile-submenu__link" data-mobile-link>Nos missions</a></li>
               <li><a href="pages/actions.html" class="mobile-submenu__link" data-mobile-link>Nos actions terrain</a></li>
-              <li><a href="pages/galerie.html" class="mobile-submenu__link" data-mobile-link>Galerie photo</a></li>
             </ul>
           </li>
 
@@ -305,6 +299,10 @@
               <li><a href="pages/rejoindre-equipe.html" class="mobile-submenu__link" data-mobile-link>Rejoindre l'équipe</a></li>
               <li><a href="pages/devenir-partenaire.html" class="mobile-submenu__link" data-mobile-link>Devenir partenaire</a></li>
             </ul>
+          </li>
+
+          <li class="mobile-menu__item">
+            <a href="pages/galerie.html" class="mobile-menu__link" data-mobile-link>Galerie</a>
           </li>
 
           <li class="mobile-menu__item">
@@ -847,6 +845,13 @@
        8. TEAM
   ═══════════════════════════════════════════════ -->
   <section class="team" id="team" aria-labelledby="team-title">
+    <style>
+      #team .team__grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:20px}
+      #team .team-card{grid-column:auto!important;grid-row:auto!important}
+      #team .team-card__photo-wrap{aspect-ratio:4/3;overflow:hidden;position:relative}
+      #team .team-card__photo-wrap [role=img]{position:absolute;inset:0;width:100%;height:100%;aspect-ratio:auto;z-index:1;color:#fff}
+      #team .team-card__index{z-index:2}
+    </style>
 
     <div class="section-header">
       <div class="section-header__left">
@@ -862,10 +867,172 @@
         </h2>
 
         <p style="margin-top:1.25rem;max-width:40rem;font-size:1.125rem;line-height:1.7;color:var(--clr-text-soft)">
-          Une équipe de 11&nbsp;membres (bureau directeur et organe de contrôle).
+          Une équipe de 11&nbsp;membres : un bureau directeur de 8&nbsp;personnes et un organe de contrôle de 3&nbsp;personnes.
         </p>
 
       </div>
+    </div>
+
+    <h3 style="margin:2.5rem 0 1rem;font-family:var(--font-display);font-size:1.5rem">Bureau directeur</h3>
+    <div class="team__grid">
+        <article class="team-card">
+          <div class="team-card__photo-wrap">
+            <div role="img" aria-label="Photo à venir de Nounagnon Sylvain Curtis" style="width:100%;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--clr-secondary),#1d3a63);color:#fff;font-family:var(--font-display);font-size:3.2rem;letter-spacing:.05em">NC</div>
+            <span class="team-card__index" aria-hidden="true">01</span>
+          </div>
+          <div class="team-card__body">
+            <div class="team-card__header">
+              <div>
+                <h3 class="team-card__name">Nounagnon Sylvain CURTIS</h3>
+                <p class="team-card__role">Président</p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="team-card">
+          <div class="team-card__photo-wrap">
+            <div role="img" aria-label="Photo à venir de Fidèle Hubertine Zounon" style="width:100%;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--clr-secondary),#1d3a63);color:#fff;font-family:var(--font-display);font-size:3.2rem;letter-spacing:.05em">FZ</div>
+            <span class="team-card__index" aria-hidden="true">02</span>
+          </div>
+          <div class="team-card__body">
+            <div class="team-card__header">
+              <div>
+                <h3 class="team-card__name">Fidèle Hubertine ZOUNON</h3>
+                <p class="team-card__role">Vice-présidente</p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="team-card">
+          <div class="team-card__photo-wrap">
+            <div role="img" aria-label="Photo à venir de Sèna Nadège Fanou" style="width:100%;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--clr-secondary),#1d3a63);color:#fff;font-family:var(--font-display);font-size:3.2rem;letter-spacing:.05em">SF</div>
+            <span class="team-card__index" aria-hidden="true">03</span>
+          </div>
+          <div class="team-card__body">
+            <div class="team-card__header">
+              <div>
+                <h3 class="team-card__name">Sèna Nadège FANOU</h3>
+                <p class="team-card__role">Secrétaire générale</p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="team-card">
+          <div class="team-card__photo-wrap">
+            <div role="img" aria-label="Photo à venir de Patricia Houssou" style="width:100%;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--clr-secondary),#1d3a63);color:#fff;font-family:var(--font-display);font-size:3.2rem;letter-spacing:.05em">PH</div>
+            <span class="team-card__index" aria-hidden="true">04</span>
+          </div>
+          <div class="team-card__body">
+            <div class="team-card__header">
+              <div>
+                <h3 class="team-card__name">Patricia HOUSSOU</h3>
+                <p class="team-card__role">Secrétaire adjointe</p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="team-card">
+          <div class="team-card__photo-wrap">
+            <div role="img" aria-label="Photo à venir de Zinsou F. Xavier Amoussou" style="width:100%;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--clr-secondary),#1d3a63);color:#fff;font-family:var(--font-display);font-size:3.2rem;letter-spacing:.05em">ZA</div>
+            <span class="team-card__index" aria-hidden="true">05</span>
+          </div>
+          <div class="team-card__body">
+            <div class="team-card__header">
+              <div>
+                <h3 class="team-card__name">Zinsou F. Xavier AMOUSSOU</h3>
+                <p class="team-card__role">Trésorier général et coordonnateur des missions</p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="team-card">
+          <div class="team-card__photo-wrap">
+            <div role="img" aria-label="Photo à venir de Sènade Josiane Houedanou" style="width:100%;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--clr-secondary),#1d3a63);color:#fff;font-family:var(--font-display);font-size:3.2rem;letter-spacing:.05em">SH</div>
+            <span class="team-card__index" aria-hidden="true">06</span>
+          </div>
+          <div class="team-card__body">
+            <div class="team-card__header">
+              <div>
+                <h3 class="team-card__name">Sènade Josiane HOUEDANOU</h3>
+                <p class="team-card__role">Trésorière adjointe</p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="team-card">
+          <div class="team-card__photo-wrap">
+            <div role="img" aria-label="Photo à venir de Emmanuelle Miribelle Agokoli" style="width:100%;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--clr-secondary),#1d3a63);color:#fff;font-family:var(--font-display);font-size:3.2rem;letter-spacing:.05em">EA</div>
+            <span class="team-card__index" aria-hidden="true">07</span>
+          </div>
+          <div class="team-card__body">
+            <div class="team-card__header">
+              <div>
+                <h3 class="team-card__name">Emmanuelle Miribelle AGOKOLI</h3>
+                <p class="team-card__role">Secrétaire à l'information et à la communication</p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="team-card">
+          <div class="team-card__photo-wrap">
+            <div role="img" aria-label="Photo à venir de Thomas Kadani N'Dah" style="width:100%;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--clr-secondary),#1d3a63);color:#fff;font-family:var(--font-display);font-size:3.2rem;letter-spacing:.05em">TK</div>
+            <span class="team-card__index" aria-hidden="true">08</span>
+          </div>
+          <div class="team-card__body">
+            <div class="team-card__header">
+              <div>
+                <h3 class="team-card__name">Thomas KADANI N'DAH</h3>
+                <p class="team-card__role">Secrétaire à l'organisation</p>
+              </div>
+            </div>
+          </div>
+        </article>
+    </div>
+
+    <h3 style="margin:3rem 0 1rem;font-family:var(--font-display);font-size:1.5rem">Organe de contrôle</h3>
+    <div class="team__grid">
+        <article class="team-card">
+          <div class="team-card__photo-wrap">
+            <div role="img" aria-label="Photo à venir de Saliou Houndounougbo" style="width:100%;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--clr-secondary),#1d3a63);color:#fff;font-family:var(--font-display);font-size:3.2rem;letter-spacing:.05em">SH</div>
+            <span class="team-card__index" aria-hidden="true">09</span>
+          </div>
+          <div class="team-card__body">
+            <div class="team-card__header">
+              <div>
+                <h3 class="team-card__name">Saliou HOUNDOUNOUGBO</h3>
+                <p class="team-card__role">Président de l'organe de contrôle</p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="team-card">
+          <div class="team-card__photo-wrap">
+            <div role="img" aria-label="Photo à venir de Dah-Yovo Laurenda Winsou" style="width:100%;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--clr-secondary),#1d3a63);color:#fff;font-family:var(--font-display);font-size:3.2rem;letter-spacing:.05em">DW</div>
+            <span class="team-card__index" aria-hidden="true">10</span>
+          </div>
+          <div class="team-card__body">
+            <div class="team-card__header">
+              <div>
+                <h3 class="team-card__name">Dah-Yovo Laurenda WINSOU</h3>
+                <p class="team-card__role">Rapporteur</p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="team-card">
+          <div class="team-card__photo-wrap">
+            <div role="img" aria-label="Photo à venir de Alionou K. Florentin Amoussou" style="width:100%;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--clr-secondary),#1d3a63);color:#fff;font-family:var(--font-display);font-size:3.2rem;letter-spacing:.05em">AA</div>
+            <span class="team-card__index" aria-hidden="true">11</span>
+          </div>
+          <div class="team-card__body">
+            <div class="team-card__header">
+              <div>
+                <h3 class="team-card__name">Alionou K. Florentin AMOUSSOU</h3>
+                <p class="team-card__role">Directeur exécutif</p>
+              </div>
+            </div>
+          </div>
+        </article>
     </div>
 
   </section>
@@ -875,6 +1042,22 @@
   <!-- ═══════════════════════════════════════════════
        10. PARTENAIRES
   ═══════════════════════════════════════════════ -->
+  <section class="galerie-home" id="galerie" aria-labelledby="galerie-title" style="padding:clamp(3.5rem,7vw,6rem) 1.5rem;background:var(--clr-off-white)">
+    <style>
+      .galerie-home__grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;margin:2rem 0}
+      .galerie-home__grid li{aspect-ratio:1/1;overflow:hidden;border-radius:12px;background:#e9edf3}
+      .galerie-home__grid a{display:block;height:100%}
+      .galerie-home__grid img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
+      .galerie-home__grid a:hover img{transform:scale(1.04)}
+    </style>
+    <div style="max-width:1200px;margin:0 auto">
+      <div class="eyebrow"><span class="eyebrow__line"></span><span class="eyebrow__label">Galerie</span><span class="eyebrow__dot"></span></div>
+      <h2 id="galerie-title">Nos actions <em>en images</em></h2>
+      <ul class="galerie-home__grid" role="list"><li><a href="pages/galerie.html"><img src="assets/images/galerie/sante-01.webp" alt="Photo d'une action de Holly Services" width="1080" height="810" loading="lazy" decoding="async"></a></li><li><a href="pages/galerie.html"><img src="assets/images/galerie/sante-07.webp" alt="Photo d'une action de Holly Services" width="1400" height="1050" loading="lazy" decoding="async"></a></li><li><a href="pages/galerie.html"><img src="assets/images/galerie/sante-12.webp" alt="Photo d'une action de Holly Services" width="1280" height="720" loading="lazy" decoding="async"></a></li><li><a href="pages/galerie.html"><img src="assets/images/galerie/dents-01.webp" alt="Photo d'une action de Holly Services" width="1080" height="810" loading="lazy" decoding="async"></a></li><li><a href="pages/galerie.html"><img src="assets/images/galerie/cadeaux-12.webp" alt="Photo d'une action de Holly Services" width="810" height="1080" loading="lazy" decoding="async"></a></li><li><a href="pages/galerie.html"><img src="assets/images/galerie/terrain-05.webp" alt="Photo d'une action de Holly Services" width="1080" height="810" loading="lazy" decoding="async"></a></li><li><a href="pages/galerie.html"><img src="assets/images/galerie/sante-13.webp" alt="Photo d'une action de Holly Services" width="720" height="1280" loading="lazy" decoding="async"></a></li><li><a href="pages/galerie.html"><img src="assets/images/galerie/cadeaux-01.webp" alt="Photo d'une action de Holly Services" width="1080" height="810" loading="lazy" decoding="async"></a></li></ul>
+      <a href="pages/galerie.html" class="btn btn--primary"><span>Voir toute la galerie</span></a>
+    </div>
+  </section>
+
   <section class="partners" id="partners" aria-labelledby="partners-title">
 
     <div class="section-header section-header--dark">
