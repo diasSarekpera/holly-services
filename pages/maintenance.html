@@ -11,13 +11,13 @@
   <link rel="preload" href="../assets/fonts/cormorant-garamond/cormorant-garamond-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin />
   <meta name="robots" content="noindex, nofollow" />
   <meta property="og:title" content="Page en construction — Holly Services ONG" />
-  <meta property="og:description" content="Cette page est en cours de finalisation. Holly Services ONG." />
+  <meta property="og:description" content="Cette page est en cours de finalisation. Holly Services ONG — Protection des enfants atteints d&#x27;albinisme." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://www.EXEMPLE.org/assets/images/og-default.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="theme-color" content="#10233F" />
   <!-- @partial:meta:end -->
-  <meta name="description" content="Cette page est en cours de finalisation. Holly Services ONG." />
+  <meta name="description" content="Cette page est en cours de finalisation. Holly Services ONG — Protection des enfants atteints d'albinisme." />
   <link rel="stylesheet" href="../styles/maintenance.css" />
 </head>
 <body>
@@ -52,7 +52,7 @@
         </h1>
 
         <p class="maintenance__desc">
-          Cette page n'est pas encore disponible. Merci de votre patience.
+          Nous travaillons à la finaliser pour vous offrir une expérience à la hauteur de notre mission. Merci de votre patience.
         </p>
 
         <a href="../index.html" class="btn btn--primary maintenance__btn">
@@ -82,9 +82,28 @@
             decoding="async"
           />
         </div>
-<!-- Carte contact rapide -->
+
+        <!-- Barre de progression globale -->
+        <div class="maintenance__progress">
+          <div class="maintenance__progress-header">
+            <span class="maintenance__progress-label">Avancement global</span>
+            <span class="maintenance__progress-pct">75%</span>
+          </div>
+          <div
+            class="maintenance__progress-track"
+            role="progressbar"
+            aria-valuenow="75"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            aria-label="Page terminée à 75%"
+          >
+            <div class="maintenance__progress-fill" style="--fill: 75%"></div>
+          </div>
+        </div>
+
+        <!-- Carte contact rapide -->
         <div class="maintenance__contact-card" role="complementary" aria-label="Coordonnées de contact rapide">
-          <p class="maintenance__contact-title">Une question&nbsp;?</p>
+          <p class="maintenance__contact-title">Une question urgente&nbsp;?</p>
           <ul class="maintenance__contact-list">
             <li class="maintenance__contact-item">
               <div class="maintenance__contact-icon" aria-hidden="true">
@@ -93,15 +112,16 @@
                   <polyline points="2,4 12,13 22,4"/>
                 </svg>
               </div>
-              <a href="mailto:onghollyservices@gmail.com" class="maintenance__contact-link">onghollyservices@gmail.com</a>
+              <a href="mailto:contact@hollyservices.org" class="maintenance__contact-link">contact@hollyservices.org</a>
             </li>
             <li class="maintenance__contact-item">
               <div class="maintenance__contact-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
-                  <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.8a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/>
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                  <circle cx="12" cy="9" r="2.5"/>
                 </svg>
               </div>
-              <a href="https://wa.me/2290191298585" class="maintenance__contact-link">WhatsApp : +229 01 91 29 85 85</a>
+              <span>Cotonou, Bénin — Lun–Ven, 8h–17h</span>
             </li>
           </ul>
         </div>

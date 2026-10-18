@@ -1,6 +1,6 @@
 # Suivi du projet
 
-**Version actuelle : V126**
+**Version actuelle : V127**
 
 ## Protocole de fin de session
 1. Lire CONVENTIONS.md et ce fichier. 2. Ne faire QUE la tâche demandée. 3. Cocher la case ci-dessous + une ligne de journal. 4. Livrer le zip complet `Holly-services-V{N}.zip` (N = version actuelle + 1, un seul dossier racine `Holly-services/`). 5. Résumé de 5 lignes max.
@@ -215,3 +215,4 @@ Composant `.hero-photo` (voir CONVENTIONS.md « Hero photo »). Une ligne de che
 - V124 : hero accueil, eyebrow (`.hero__badge`) masqué sous 768 px (`styles/home.css`, fin de fichier) ; inchangé sur desktop.
 - V125 : logo du header en badge blanc collé en haut (coins du bas arrondis 18 px, 16 px sur mobile, ombre légère), emblème seul `logo-emblem.svg` (19 pages). Bloc CSS « Logo du header » ajouté en fin des 19 feuilles portant la navbar. Footer et menu mobile gardent le médaillon `logo.svg`. Correctif : les `<img>` des pages intérieures avaient été pointés par erreur vers `logo-512.png` en V123, remis sur `logo.svg`.
 - V126 : nom « Holly Services » en Nunito ExtraBold (police de marque, `--font-brand`) dans le header (1.65rem au-dessus de 1440 px, 1.45 / 1.3 / 1.2rem selon les paliers, 1.25rem mobile), le menu mobile (1.45rem) et le footer (1.5rem). Fichier local `assets/fonts/nunito/nunito-latin-800-normal.woff2` (16 Ko), `@font-face` dans les 20 feuilles, préchargement dans les pages ; header à 1440 px+ resserré (gap 1.75rem, liens 0.95rem) pour que le nom plus large ne déborde pas. Regress : 15 contrôles, 0 KO.
+- V127 : focus des champs de formulaire (input texte / email / recherche / select / textarea, champs du footer et des newsletters) : anneau `outline` rose supprimé, seule la bordure change (rose, épaissie à 2 px par un `box-shadow: inset` sans décalage de mise en page ; rouge en état invalide, halo rouge retiré). Cases à cocher et radios gardent leur anneau. Repli `forced-colors` (outline Highlight). Bloc ajouté en fin des 21 feuilles concernées.
