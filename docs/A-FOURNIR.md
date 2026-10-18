@@ -56,3 +56,14 @@ Suivi : `grep -rn "À COMPLÉTER" pages index.html 404.html` · `grep -rn "PAR L
 - [ ] Pages Droits humains et Éducation (modèle : `pages/mission-sante.html`, CSS `.mission-detail__…`).
 - [ ] Contrastes ouverts : `docs/AUDIT.md` (9 couples sous le seuil, arbitrage de couleur).
 - [ ] Hero : photos Unsplash provisoires, à remplacer par de vraies photos de l'ONG.
+
+## Remplacé en V128 (confirmé officiellement)
+- [x] Email et téléphone publics, siège social, année de fondation (2024), éditeur des mentions légales.
+## Toujours à fournir (laissé en l'état sur le site)
+- [ ] Directeur de la publication, hébergeur, version et date des pages légales.
+- [ ] Réseaux sociaux, horaires, numéro WhatsApp à afficher, moyen de don Mobile Money (opérateur, numéro, titulaire).
+- [ ] Équipe réelle avec photos et accord de chaque membre ; chiffres, témoignages, campagnes, rapports.
+- [ ] Pour chaque groupe de photos (soins dentaires, école et pirogue, distribution de cadeaux, grande salle, cérémonie avec sachets) : date, lieu, partenaire, nom de l'événement, afin de corriger les légendes encore fictives.
+- [ ] Portraits réels (avec accord) du bureau pour remplacer les 7 portraits externes de l'équipe fictive.
+- [ ] Orthographe des lieux (Tangbo / Tangbodjédié, Sèkanmè, Banikanni), pays de SOBEDO et de la Dra. Stevanato, nom exact du dermatologue et lien avec SANAA, autres partenaires, validation écrite de l'histoire par M. Amoussou (voir docs/INFOS-ONG.md).
+

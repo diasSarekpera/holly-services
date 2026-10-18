@@ -21,25 +21,25 @@
 @media(min-width:1024px){.hero-photo{min-height:26rem}}
 @media(max-width:767px){.hero-photo{background:linear-gradient(to bottom,rgba(16,35,63,0.90) 0%,rgba(16,35,63,0.82) 100%),var(--hero-photo-img) var(--hero-photo-pos)/cover no-repeat,var(--clr-secondary)}}
 /* Modificateurs : image + cadrage uniquement */
-.hero-photo--actualites{--hero-photo-img:url("https://images.unsplash.com/photo-1473649085228-583485e6e4d7?auto=format&fit=crop&q=75&w=1600&h=900");--hero-photo-pos:center 40%}
-.hero-photo--article{--hero-photo-img:url("https://images.unsplash.com/photo-1512596478480-88ba44446471?auto=format&fit=crop&q=75&w=1600&h=900");--hero-photo-pos:center 30%}
-.hero-photo--campagne{--hero-photo-img:url("https://images.unsplash.com/photo-1571417814270-5cfb10916e02?auto=format&fit=crop&q=75&w=1600&h=900");--hero-photo-pos:center 55%}
-.hero-photo--rapport{--hero-photo-img:url("https://images.unsplash.com/photo-1680713660046-67b7350ed679?auto=format&fit=crop&q=75&w=1600&h=900");--hero-photo-pos:center 45%}
-.hero-photo--temoignage{--hero-photo-img:url("https://images.unsplash.com/photo-1512596478480-88ba44446471?auto=format&fit=crop&q=75&w=1600&h=900");--hero-photo-pos:center 65%}
+.hero-photo--actualites{--hero-photo-img:url("../assets/images/terrain/terrain-14.webp");--hero-photo-pos:center 50%}
+.hero-photo--article{--hero-photo-img:url("../assets/images/terrain/terrain-20.webp");--hero-photo-pos:center 50%}
+.hero-photo--campagne{--hero-photo-img:url("../assets/images/terrain/terrain-07.webp");--hero-photo-pos:center 40%}
+.hero-photo--rapport{--hero-photo-img:url("../assets/images/terrain/terrain-02.webp");--hero-photo-pos:center 45%}
+.hero-photo--temoignage{--hero-photo-img:url("../assets/images/terrain/terrain-51.webp");--hero-photo-pos:center 45%}
 
 @media print{.hero-photo{background:none!important;color:var(--clr-secondary)}.hero-photo__title,.hero-photo .eyebrow__label,.hero-photo__breadcrumb a,.hero-photo__breadcrumb [aria-current="page"]{color:var(--clr-secondary)}.hero-photo .eyebrow__line{background:var(--clr-secondary)}}
-.hero-photo--benevolat{--hero-photo-img:url("https://images.unsplash.com/photo-1512596478480-88ba44446471?auto=format&fit=crop&q=75&w=1600&h=900");--hero-photo-pos:center 50%}
-.hero-photo--rejoindre{--hero-photo-img:url("https://images.unsplash.com/photo-1680713660046-67b7350ed679?auto=format&fit=crop&q=75&w=1600&h=900");--hero-photo-pos:center 60%}
-.hero-photo--partenariats{--hero-photo-img:url("https://images.unsplash.com/photo-1571417814270-5cfb10916e02?auto=format&fit=crop&q=75&w=1600&h=900");--hero-photo-pos:center 70%}
-.hero-photo--transparence{--hero-photo-img:url("https://images.unsplash.com/photo-1473649085228-583485e6e4d7?auto=format&fit=crop&q=75&w=1600&h=900");--hero-photo-pos:center 60%}
-.hero-photo--missions{--hero-photo-img:url("https://images.unsplash.com/photo-1571417814270-5cfb10916e02?auto=format&fit=crop&q=75&w=1600&h=900");--hero-photo-pos:center 35%}
-.hero-photo--approche{--hero-photo-img:url("https://images.unsplash.com/photo-1473649085228-583485e6e4d7?auto=format&fit=crop&q=75&w=1600&h=900");--hero-photo-pos:center 30%}
-.hero-photo--mission-sante{--hero-photo-img:url("https://images.unsplash.com/photo-1680713660046-67b7350ed679?auto=format&fit=crop&q=75&w=1600&h=900");--hero-photo-pos:center 30%}
-.hero-photo--a-propos{--hero-photo-img:url("https://images.unsplash.com/photo-1512596478480-88ba44446471?auto=format&fit=crop&q=75&w=1600&h=900");--hero-photo-pos:center 40%}
-.hero-photo--actions{--hero-photo-img:url("https://images.unsplash.com/photo-1680713660046-67b7350ed679?auto=format&fit=crop&q=75&w=1600&h=900");--hero-photo-pos:center 25%}
-.hero-photo--legales{--hero-photo-img:url("https://images.unsplash.com/photo-1473649085228-583485e6e4d7?auto=format&fit=crop&q=75&w=1600&h=900");--hero-photo-pos:center 35%}
-.hero-photo--cgu{--hero-photo-img:url("https://images.unsplash.com/photo-1571417814270-5cfb10916e02?auto=format&fit=crop&q=75&w=1600&h=900");--hero-photo-pos:center 55%}
-.hero-photo--confidentialite{--hero-photo-img:url("https://images.unsplash.com/photo-1680713660046-67b7350ed679?auto=format&fit=crop&q=75&w=1600&h=900");--hero-photo-pos:center 45%}
+.hero-photo--benevolat{--hero-photo-img:url("../assets/images/terrain/terrain-13.webp");--hero-photo-pos:center 40%}
+.hero-photo--rejoindre{--hero-photo-img:url("../assets/images/terrain/terrain-15.webp");--hero-photo-pos:center 55%}
+.hero-photo--partenariats{--hero-photo-img:url("../assets/images/terrain/terrain-partenaires.webp");--hero-photo-pos:center 45%}
+.hero-photo--transparence{--hero-photo-img:url("../assets/images/terrain/terrain-06.webp");--hero-photo-pos:center 45%}
+.hero-photo--missions{--hero-photo-img:url("../assets/images/terrain/terrain-36.webp");--hero-photo-pos:center 40%}
+.hero-photo--approche{--hero-photo-img:url("../assets/images/terrain/terrain-04.webp");--hero-photo-pos:center 45%}
+.hero-photo--mission-sante{--hero-photo-img:url("../assets/images/terrain/terrain-19.webp");--hero-photo-pos:center 50%}
+.hero-photo--a-propos{--hero-photo-img:url("../assets/images/terrain/terrain-11.webp");--hero-photo-pos:center 45%}
+.hero-photo--actions{--hero-photo-img:url("../assets/images/terrain/terrain-44.webp");--hero-photo-pos:center 45%}
+.hero-photo--legales{--hero-photo-img:url("../assets/images/terrain/terrain-54.webp");--hero-photo-pos:center 50%}
+.hero-photo--cgu{--hero-photo-img:url("../assets/images/terrain/terrain-40.webp");--hero-photo-pos:center 50%}
+.hero-photo--confidentialite{--hero-photo-img:url("../assets/images/terrain/terrain-16.webp");--hero-photo-pos:center 50%}
 
 /* ===== Cartes (T10) : recette unique =====
    Fond blanc, bordure --clr-border-card, ombre --shadow-card, rayon --radius-card ; survol = bordure + ombre seulement, sans deplacement.
