@@ -295,3 +295,77 @@ input[type="checkbox"]:not(.form-checkbox):focus,input[type="checkbox"]:not(.for
 :root body :is(input,textarea,select):not([type=checkbox]):not([type=radio]):not([type=submit]):not([type=button]):not([type=reset]):not([type=hidden])[aria-invalid="true"]:focus-visible,
 :root body :is(.form-input,.form-control,.benevolat-input,.contact-form__input,.contact-form__textarea,.actualites-nl__input,.article-nl__input,.search-input)[aria-invalid="true"]:focus-visible{box-shadow:inset 0 0 0 1px var(--clr-urgent) !important}
 @media (forced-colors:active){:root body :is(input,textarea,select):focus-visible{outline:2px solid Highlight}}
+
+/* Badge du logo : marge sous le badge (il pend du haut sans toucher le bas du header) */
+.navbar .navbar__logo-mark{margin-bottom:0.75rem}
+.navbar.is-scrolled .navbar__logo-mark{margin-bottom:0.625rem}
+@media (max-width:767px){.navbar .navbar__logo-mark{margin-bottom:0.625rem}}
+
+/* Transparence : sections fonds / documents / gouvernance / demande / bandeau (mise en page institutionnelle : titre à gauche, contenu à droite) */
+.transp-split{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);column-gap:var(--gutter);row-gap:var(--rhythm-media);align-items:start}
+.transp-head{min-width:0}
+@media (min-width:1024px){.transp-head{position:sticky;top:var(--anchor-offset)}}
+.transp-head__lead{color:var(--clr-text-soft);font-size:var(--fs-body)}
+.transp-body{min-width:0}
+.transp-split .transparence-title{margin-bottom:0}
+.transp-h3{display:flex;align-items:center;gap:0.625rem;font-family:var(--font-display);font-size:var(--fs-h4);font-weight:var(--fw-h4);line-height:var(--lh-h4);letter-spacing:var(--ls-h4);color:var(--clr-secondary)}
+.transp-h3 i{color:var(--clr-accent-dark)}
+@media (max-width:1023px){.transp-split{grid-template-columns:minmax(0,1fr)}}
+/* Emploi des fonds */
+.funds-panel{background:var(--clr-white);border:1px solid var(--clr-border-card);border-radius:var(--radius-card);box-shadow:var(--shadow-card);padding:2rem}
+.funds-panel__period{font-size:var(--fs-xs);font-weight:600;letter-spacing:var(--ls-caps);text-transform:uppercase;color:var(--clr-text-soft);margin-bottom:1.5rem}
+.funds-panel__figures{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:1.5rem;margin-bottom:1.5rem}
+.funds-figure{display:flex;flex-direction:column;gap:0.5rem}
+.funds-figure__value{font-family:var(--font-display);font-size:var(--fs-stat);font-weight:500;line-height:var(--lh-none);letter-spacing:var(--ls-stat);color:var(--clr-secondary)}
+.funds-figure__label{display:flex;align-items:center;gap:0.5rem;font-size:var(--fs-base-sm);color:var(--clr-text-soft)}
+.legend-dot{display:inline-block;width:0.75rem;height:0.75rem;border-radius:var(--radius-sm);flex-shrink:0}
+.funds-panel .bar-chart{height:14px;margin-bottom:2rem}
+.funds-table{width:100%;border-collapse:collapse;font-size:var(--fs-base-sm)}
+.funds-table thead th{text-align:left;padding:0 0 0.75rem;font-size:var(--fs-xs);font-weight:600;letter-spacing:var(--ls-caps);text-transform:uppercase;color:var(--clr-text-soft);border-bottom:1px solid var(--clr-border-card)}
+.funds-table thead th:last-child,.funds-table td{text-align:right}
+.funds-table tbody th{text-align:left;padding:1rem 1rem 1rem 0;font-weight:600;color:var(--clr-secondary);border-bottom:1px solid var(--clr-border)}
+.funds-table tbody th span{display:block;margin-top:0.25rem;font-weight:400;color:var(--clr-text-soft)}
+.funds-table td{padding:1rem 0;font-weight:600;white-space:nowrap;color:var(--clr-secondary);border-bottom:1px solid var(--clr-border)}
+.funds-table tbody tr:last-child :is(th,td){border-bottom:0;padding-bottom:0}
+@media (max-width:479px){.funds-panel{padding:1.25rem}}
+/* Centre de téléchargement */
+.transparence-docs .docs-toolbar{justify-content:space-between;margin-bottom:1.5rem}
+.transparence-docs .docs-toolbar__search{flex:1 1 16rem;width:auto;max-width:28rem}
+.docs-toolbar__count{font-size:var(--fs-base-sm);color:var(--clr-text-soft)}
+.docs-toolbar[hidden],.docs-empty[hidden],.doc-item[hidden]{display:none}
+.docs-list{border:1px solid var(--clr-border-card);border-radius:var(--radius-card);background:var(--clr-white);overflow:hidden}
+.docs-list .doc-item{flex-wrap:nowrap;padding:1.25rem 1.5rem;gap:1.25rem;border-bottom:1px solid var(--clr-border)}
+.docs-list .doc-item:last-child{border-bottom:0}
+.docs-list .doc-icon{display:flex;align-items:center;justify-content:center;width:3rem;height:3rem;flex-shrink:0;border-radius:var(--radius-card);background:var(--clr-secondary-soft);color:var(--clr-secondary);font-size:var(--fs-h4)}
+.docs-list .doc-info{flex:1;min-width:0}
+.docs-list .doc-title{font-weight:600;color:var(--clr-secondary);margin-bottom:0.375rem;overflow-wrap:break-word}
+.docs-list .doc-item .btn{flex-shrink:0}
+.docs-empty{margin-top:1rem;font-size:var(--fs-base-sm);color:var(--clr-text-soft)}
+@media (max-width:599px){.docs-list .doc-item{flex-wrap:wrap;padding:1.25rem}.docs-list .doc-info{flex-basis:calc(100% - 4.25rem)}.docs-list .doc-item .btn{width:100%}}
+/* Gouvernance : trois lignes titre / éléments */
+.gov-rows{display:flex;flex-direction:column;border-top:1px solid var(--on-dark-line)}
+.gov-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:1.5rem;padding:2rem 0;border-bottom:1px solid var(--on-dark-line)}
+.transparence-gov .transp-h3{color:var(--clr-white);align-self:start}
+.transparence-gov .transp-h3 i{color:var(--footer-accent-text,var(--clr-accent-soft))}
+.transparence-gov .transp-head__lead{color:var(--on-dark-text-soft)}
+.gov-list{display:flex;flex-direction:column;gap:0.875rem;list-style:none}
+.gov-list li{display:flex;align-items:flex-start;gap:0.75rem;margin:0;padding:0;color:var(--on-dark-text)}
+.gov-list li::before{content:none}
+.gov-list li i{margin-top:0.25rem;color:var(--clr-accent-soft)}
+@media (max-width:767px){.gov-row{grid-template-columns:minmax(0,1fr);gap:1rem;padding:1.5rem 0}}
+/* Formulaire de demande */
+.form-aide{margin-top:var(--rhythm-block);padding-top:var(--rhythm-block);border-top:1px solid var(--clr-border-card)}
+.form-aide p{margin-top:0.5rem;margin-bottom:0;font-size:var(--fs-base-sm)}
+.form-aide h3{margin-bottom:0}
+.transparence-form .form-card{padding:2rem}
+.transparence-form .form-consent a{color:var(--clr-primary-dark);text-decoration:underline;text-underline-offset:0.18em}
+@media (max-width:479px){.transparence-form .form-card{padding:1.25rem}}
+/* Bandeau final : trois cartes lien */
+.transparence-cta{background-color:var(--clr-white)}
+.transparence-cta .cta-grid{align-items:stretch;text-align:left}
+.transparence-cta .cta-card{display:flex;flex-direction:column;align-items:flex-start;gap:0.5rem;padding:1.75rem 1.5rem;color:var(--clr-text)}
+.cta-card__icon{font-size:2rem;color:var(--clr-accent-dark);margin-bottom:0.5rem}
+.cta-card__title{font-family:var(--font-display);font-size:var(--fs-h4);font-weight:var(--fw-h4);line-height:var(--lh-h4);color:var(--clr-secondary)}
+.cta-card__text{font-weight:400;font-size:var(--fs-base-sm);line-height:var(--lh-compact);color:var(--clr-text-soft)}
+.cta-card__more{display:inline-flex;align-items:center;gap:0.5rem;margin-top:auto;padding-top:0.75rem;font-size:var(--fs-base-sm);font-weight:600;color:var(--clr-primary-dark)}
+

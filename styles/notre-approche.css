@@ -285,3 +285,28 @@ input[type="checkbox"]:not(.form-checkbox):focus,input[type="checkbox"]:not(.for
 :root body :is(input,textarea,select):not([type=checkbox]):not([type=radio]):not([type=submit]):not([type=button]):not([type=reset]):not([type=hidden])[aria-invalid="true"]:focus-visible,
 :root body :is(.form-input,.form-control,.benevolat-input,.contact-form__input,.contact-form__textarea,.actualites-nl__input,.article-nl__input,.search-input)[aria-invalid="true"]:focus-visible{box-shadow:inset 0 0 0 1px var(--clr-urgent) !important}
 @media (forced-colors:active){:root body :is(input,textarea,select):focus-visible{outline:2px solid Highlight}}
+
+/* Badge du logo : marge sous le badge (il pend du haut sans toucher le bas du header) */
+.navbar .navbar__logo-mark{margin-bottom:0.75rem}
+.navbar.is-scrolled .navbar__logo-mark{margin-bottom:0.625rem}
+@media (max-width:767px){.navbar .navbar__logo-mark{margin-bottom:0.625rem}}
+
+/* Notre approche : valeurs, principes, engagements (cartes sur la recette T10, en-têtes centrés) */
+.approche-head{text-align:center;margin-bottom:var(--rhythm-media)}
+.approche-head__lead{max-width:44rem;margin-inline:auto;font-size:var(--fs-lead);color:var(--clr-text-soft)}
+.approche-values{grid-template-columns:repeat(4,minmax(0,1fr));gap:1.5rem}
+.approche-value,.approche-card,.approche-docs{background:var(--clr-white);border:1px solid var(--clr-border-card);border-radius:var(--radius-card);box-shadow:var(--shadow-card);transition:border-color var(--dur-base) ease,box-shadow var(--dur-base) ease}
+.approche-value,.approche-card{padding:1.75rem 1.5rem}
+@media (hover:hover){.approche-value:hover,.approche-card:hover{border-color:var(--clr-border-hover);box-shadow:var(--shadow-hover);transform:none}}
+.approche-value__icon{display:block;font-size:2.25rem;margin-bottom:1rem}
+.approche-value__title,.approche-value__text{overflow-wrap:break-word}
+.approche-principles,.approche-commits,.approche-docs{max-width:68rem;margin-inline:auto}
+.approche-principles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem}
+.approche-commits{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem}
+.approche-card__num{display:block;margin-bottom:1rem;font-family:var(--font-display);font-size:var(--fs-h3);font-weight:500;line-height:var(--lh-none);color:var(--clr-accent-dark)}
+.approche-docs{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;margin-top:1.5rem;padding:1.75rem 2rem;background:var(--clr-off-white)}
+.approche-docs__text{min-width:0}
+.approche-docs .btn{flex-shrink:0}
+@media (max-width:1023px){.approche-values{grid-template-columns:repeat(2,minmax(0,1fr))}.approche-principles{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:767px){.approche-commits{grid-template-columns:minmax(0,1fr)}.approche-docs{flex-direction:column;align-items:stretch;padding:1.5rem}}
+@media (max-width:599px){.approche-values,.approche-principles{grid-template-columns:minmax(0,1fr)}}

@@ -416,35 +416,42 @@
       </div>
     </section>
 
-    <!-- 3. GRAPHIQUES -->
+    <!-- 3. EMPLOI DES FONDS -->
     <section class="transparence-section transparence-graphs" aria-labelledby="transparence-graphs-title">
-      <div class="container">
-        <div class="eyebrow">
-          <span class="eyebrow__line" aria-hidden="true"></span>
-          <span class="eyebrow__label">Où vont les fonds</span>
-        </div>
-        <h2 id="transparence-graphs-title" class="transparence-title">Emploi et origine <em>des fonds</em></h2>
-
-        <div class="graphs-wrapper">
-          <div class="graph-block">
-            <h3>Emploi des fonds</h3>
-            <div class="bar-chart" role="img" aria-label="Graphique : 94 % sur le terrain, 6 % frais de structure">
-              <div class="bar-segment bg-terrain">94 %</div>
-              <div class="bar-segment bg-structure">6 %</div>
+      <div class="container transp-split">
+        <header class="transp-head">
+          <div class="eyebrow">
+            <span class="eyebrow__line" aria-hidden="true"></span>
+            <span class="eyebrow__label">Où vont les fonds</span>
+          </div>
+          <h2 id="transparence-graphs-title" class="transparence-title">Emploi <em>des fonds</em></h2>
+          <p class="transp-head__lead">Part des dépenses de l'exercice 2024 consacrée aux missions sociales et au fonctionnement de la structure.</p>
+        </header>
+        <div class="transp-body">
+          <div class="funds-panel">
+            <p class="funds-panel__period">Exercice 2024 · en % des dépenses totales</p>
+            <div class="funds-panel__figures">
+              <div class="funds-figure">
+                <span class="funds-figure__value">94&nbsp;%</span>
+                <span class="funds-figure__label"><span class="legend-dot bg-terrain" aria-hidden="true"></span> Missions sociales</span>
+              </div>
+              <div class="funds-figure">
+                <span class="funds-figure__value">6&nbsp;%</span>
+                <span class="funds-figure__label"><span class="legend-dot bg-structure" aria-hidden="true"></span> Fonctionnement</span>
+              </div>
             </div>
-            <ul class="graph-legend">
-              <li class="legend-item"><span class="legend-dot bg-terrain" aria-hidden="true"></span> Missions sociales</li>
-              <li class="legend-item"><span class="legend-dot bg-structure" aria-hidden="true"></span> Fonctionnement</li>
-            </ul>
-            <details class="data-table">
-              <summary>Voir les données en tableau</summary>
-              <table>
-                <caption class="visually-hidden">Emploi des fonds</caption>
-                <tr><th scope="col">Catégorie</th><th scope="col">Pourcentage</th></tr>
-                <tr><td>Missions sociales (Terrain)</td><td>94 %</td></tr>
-                <tr><td>Frais de structure</td><td>6 %</td></tr>
-              </table>
-            </details>
+            <div class="bar-chart" role="img" aria-label="Graphique : 94 % sur le terrain, 6 % frais de structure">
+              <div class="bar-segment bg-terrain"></div>
+              <div class="bar-segment bg-structure"></div>
+            </div>
+            <table class="funds-table">
+              <caption class="visually-hidden">Emploi des fonds, exercice 2024</caption>
+              <thead><tr><th scope="col">Catégorie</th><th scope="col">Part</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Missions sociales<span>Soins, kits de protection, scolarité, sensibilisation</span></th><td>94&nbsp;%</td></tr>
+                <tr><th scope="row">Frais de structure<span>Administration, comptabilité, audit</span></th><td>6&nbsp;%</td></tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
@@ -452,95 +459,108 @@
 
     <!-- 4. DOCUMENTS -->
     <section id="documents" class="transparence-section transparence-docs" aria-labelledby="transparence-docs-title">
-      <div class="container">
-        <div class="eyebrow">
-          <span class="eyebrow__line" aria-hidden="true"></span>
-          <span class="eyebrow__label">Tous nos documents</span>
-        </div>
-        <h2 id="transparence-docs-title" class="transparence-title">Centre de <em>téléchargement</em></h2>
-
-        <div class="docs-toolbar">
-          <input type="text" class="form-control docs-toolbar__search" placeholder="Rechercher un document..." aria-label="Rechercher un document">
-          <span>12 documents trouvés</span>
-        </div>
-
-        <ul class="docs-list">
-        <li class="doc-item">
-          <i class="ri-file-pdf-line doc-icon" aria-hidden="true"></i>
-          <div class="doc-info">
-            <div class="doc-title">Rapport annuel 2025</div>
-            <div class="doc-meta">
-              <span class="transparence-badge">Rapport</span>
-              <span>2025</span>
-              <span>PDF, 2.4 Mo</span>
-            </div>
+      <div class="container transp-split">
+        <header class="transp-head">
+          <div class="eyebrow">
+            <span class="eyebrow__line" aria-hidden="true"></span>
+            <span class="eyebrow__label">Tous nos documents</span>
           </div>
-          <a href="maintenance.html" class="btn btn--primary"><i class="ri-download-line" aria-hidden="true"></i> Télécharger<span class="visually-hidden"> : Rapport annuel 2025 (PDF)</span></a>
-        </li>
-        <li class="doc-item">
-          <i class="ri-file-pdf-line doc-icon" aria-hidden="true"></i>
-          <div class="doc-info">
-            <div class="doc-title">États financiers audités 2024</div>
-            <div class="doc-meta">
-              <span class="transparence-badge">Comptes</span>
-              <span>2024</span>
-              <span>PDF, 1.1 Mo</span>
-            </div>
+          <h2 id="transparence-docs-title" class="transparence-title">Centre de <em>téléchargement</em></h2>
+          <p class="transp-head__lead">Rapports d'activité et états financiers de l'ONG, à consulter ou à télécharger au format PDF.</p>
+        </header>
+        <div class="transp-body">
+          <div class="docs-toolbar" data-docs-bar hidden>
+            <input type="search" class="form-control docs-toolbar__search" placeholder="Rechercher un document…" aria-label="Rechercher un document" data-docs-search>
+            <span class="docs-toolbar__count" role="status" aria-live="polite" data-docs-count>2 documents</span>
           </div>
-          <a href="maintenance.html" class="btn btn--primary"><i class="ri-download-line" aria-hidden="true"></i> Télécharger<span class="visually-hidden"> : États financiers audités 2024 (PDF)</span></a>
-        </li>
-        </ul>
+          <ul class="docs-list" data-docs-list>
+          <li class="doc-item">
+            <span class="doc-icon" aria-hidden="true"><i class="ri-file-pdf-line"></i></span>
+            <div class="doc-info">
+              <div class="doc-title">Rapport annuel 2025</div>
+              <div class="doc-meta">
+                <span class="transparence-badge">Rapport</span>
+                <span>2025</span>
+                <span>PDF, 2,4&nbsp;Mo</span>
+              </div>
+            </div>
+            <a href="maintenance.html" class="btn btn--ghost"><i class="ri-download-line" aria-hidden="true"></i> Télécharger<span class="visually-hidden"> : Rapport annuel 2025 (PDF)</span></a>
+          </li>
+          <li class="doc-item">
+            <span class="doc-icon" aria-hidden="true"><i class="ri-file-pdf-line"></i></span>
+            <div class="doc-info">
+              <div class="doc-title">États financiers audités 2024</div>
+              <div class="doc-meta">
+                <span class="transparence-badge">Comptes</span>
+                <span>2024</span>
+                <span>PDF, 1,1&nbsp;Mo</span>
+              </div>
+            </div>
+            <a href="maintenance.html" class="btn btn--ghost"><i class="ri-download-line" aria-hidden="true"></i> Télécharger<span class="visually-hidden"> : États financiers audités 2024 (PDF)</span></a>
+          </li>
+          </ul>
+          <p class="docs-empty" data-docs-empty hidden>Aucun document ne correspond à votre recherche. Utilisez le formulaire de demande ci-dessous.</p>
+        </div>
       </div>
     </section>
 
-    <!-- 6. GOUVERNANCE -->
+    <!-- 5. GOUVERNANCE -->
     <section class="transparence-section transparence-gov" aria-labelledby="transparence-gov-title">
-      <div class="container">
-        <div class="eyebrow">
-          <span class="eyebrow__line" aria-hidden="true"></span>
-          <span class="eyebrow__label">Preuves</span>
-        </div>
-        <h2 id="transparence-gov-title" class="transparence-title">Qui décide, <em>qui contrôle</em>, qui certifie</h2>
-
-        <div class="gov-grid">
-          <div class="gov-card">
-            <h3><i class="ri-bank-line" aria-hidden="true"></i> Gouvernance</h3>
-            <ul>
-              <li>Conseil d'administration bénévole</li>
-              <li>Assemblée générale annuelle</li>
-              <li>Statuts publics</li>
+      <div class="container transp-split">
+        <header class="transp-head">
+          <div class="eyebrow">
+            <span class="eyebrow__line" aria-hidden="true"></span>
+            <span class="eyebrow__label">Preuves</span>
+          </div>
+          <h2 id="transparence-gov-title" class="transparence-title">Qui décide, <em>qui contrôle</em>, qui certifie</h2>
+          <p class="transp-head__lead">Les instances, les contrôles et les reconnaissances qui encadrent l'action de Holly Services.</p>
+        </header>
+        <div class="transp-body gov-rows">
+          <div class="gov-row">
+            <h3 class="transp-h3"><i class="ri-bank-line" aria-hidden="true"></i> Gouvernance</h3>
+            <ul class="gov-list" role="list">
+              <li><i class="ri-check-line" aria-hidden="true"></i><span>Conseil d'administration bénévole</span></li>
+              <li><i class="ri-check-line" aria-hidden="true"></i><span>Assemblée générale annuelle</span></li>
+              <li><i class="ri-check-line" aria-hidden="true"></i><span>Statuts publics</span></li>
             </ul>
           </div>
-          <div class="gov-card">
-            <h3><i class="ri-shield-check-line" aria-hidden="true"></i> Contrôle</h3>
-            <ul>
-              <li>Audit financier annuel indépendant</li>
-              <li>Politique stricte anti-fraude</li>
-              <li>Canal de signalement externe</li>
+          <div class="gov-row">
+            <h3 class="transp-h3"><i class="ri-shield-check-line" aria-hidden="true"></i> Contrôle</h3>
+            <ul class="gov-list" role="list">
+              <li><i class="ri-check-line" aria-hidden="true"></i><span>Audit financier annuel indépendant</span></li>
+              <li><i class="ri-check-line" aria-hidden="true"></i><span>Politique stricte anti-fraude</span></li>
+              <li><i class="ri-check-line" aria-hidden="true"></i><span>Canal de signalement externe</span></li>
             </ul>
           </div>
-          <div class="gov-card">
-            <h3><i class="ri-award-line" aria-hidden="true"></i> Labels</h3>
-            <ul>
-              <li>Certification ISO 9001 (en cours)</li>
-              <li>Conformité RGPD auditée</li>
-              <li>Agréée par l'État</li>
+          <div class="gov-row">
+            <h3 class="transp-h3"><i class="ri-award-line" aria-hidden="true"></i> Labels</h3>
+            <ul class="gov-list" role="list">
+              <li><i class="ri-check-line" aria-hidden="true"></i><span>Certification ISO 9001 (en cours)</span></li>
+              <li><i class="ri-check-line" aria-hidden="true"></i><span>Conformité RGPD auditée</span></li>
+              <li><i class="ri-check-line" aria-hidden="true"></i><span>Agréée par l'État</span></li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 8. DEMANDE -->
+    <!-- 6. DEMANDE -->
     <section id="demande" class="transparence-section transparence-form" aria-labelledby="transparence-demande-title">
-      <div class="container">
-        <div class="eyebrow">
-          <span class="eyebrow__line" aria-hidden="true"></span>
-          <span class="eyebrow__label">Un document introuvable ?</span>
-        </div>
-        <h2 id="transparence-demande-title" class="transparence-title">Contactez <em>notre équipe</em></h2>
-
-        <div class="form-wrapper">
+      <div class="container transp-split">
+        <header class="transp-head">
+          <div class="eyebrow">
+            <span class="eyebrow__line" aria-hidden="true"></span>
+            <span class="eyebrow__label">Un document introuvable ?</span>
+          </div>
+          <h2 id="transparence-demande-title" class="transparence-title">Contactez <em>notre équipe</em></h2>
+          <p class="transp-head__lead">Indiquez-nous le document recherché&nbsp;: nous vous répondons sous 5 jours ouvrés.</p>
+          <div class="form-aide">
+            <h3 class="transp-h3">Votre interlocuteur</h3>
+            <p>Direction administrative et financière</p>
+            <p><i class="ri-mail-line" aria-hidden="true"></i> <a href="mailto:onghollyservices@gmail.com">onghollyservices@gmail.com</a></p>
+          </div>
+        </header>
+        <div class="transp-body">
           <div class="form-card">
             <form data-form method="post" class="transparence-form__form">
               <!-- data-endpoint absent = mode démo (voir docs/FORMULAIRES.md) -->
@@ -554,37 +574,51 @@
                 <input type="email" id="demande-email" name="email" class="form-control" required autocomplete="email">
                 <p class="form__error" id="demande-email-err" hidden></p>
               </div>
+              <div class="form__field form-group">
+                <label for="demande-message">Document recherché</label>
+                <textarea id="demande-message" name="message" class="form-control" rows="4" required></textarea>
+                <p class="form__error" id="demande-message-err" hidden></p>
+              </div>
 
               <div class="form__hp"><label>Ne pas remplir <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
 
               <div class="form__field form-consent">
-                <label for="demande-consent"><input type="checkbox" id="demande-consent" name="consent" required> [À COMPLÉTER] Texte de consentement (traitement des données de la demande).</label>
+                <label for="demande-consent"><input type="checkbox" id="demande-consent" name="consent" required> <span>J'accepte que mes données soient utilisées pour traiter ma demande, conformément à la <a href="politique-confidentialite.html">politique de confidentialité</a>.</span></label>
                 <p class="form__error" id="demande-consent-err" hidden></p>
               </div>
 
               <button type="submit" class="btn btn--primary">Envoyer la demande</button>
               <div data-form-status></div>
-              <div data-form-success hidden>[À COMPLÉTER] Message de confirmation de la demande.</div>
+              <div data-form-success hidden>Merci, votre demande a bien été envoyée. Nous vous répondrons sous 5 jours ouvrés.</div>
             </form>
-          </div>
-          <div class="form-aide">
-            <h3>Votre interlocuteur</h3>
-            <p>Direction administrative et financière</p>
-            <p><i class="ri-mail-line" aria-hidden="true"></i> <a href="mailto:onghollyservices@gmail.com">onghollyservices@gmail.com</a></p>
-            <p>Réponse sous 5 jours ouvrés.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 10. BANDEAU -->
+    <!-- 7. BANDEAU -->
     <section class="transparence-section transparence-cta" aria-labelledby="transparence-cta-title">
       <div class="container">
         <h2 id="transparence-cta-title" class="transparence-title">La confiance se <em>construit</em> dans la durée.</h2>
         <div class="cta-grid">
-          <a href="../index.html#dons" class="cta-card">Faire un don</a>
-          <a href="../pages/devenir-partenaire.html" class="cta-card">Devenir partenaire</a>
-          <a href="../pages/actions.html" class="cta-card">Voir nos actions</a>
+          <a href="../index.html#dons" class="cta-card">
+            <i class="ri-heart-3-line cta-card__icon" aria-hidden="true"></i>
+            <span class="cta-card__title">Faire un don</span>
+            <span class="cta-card__text">Financer directement les actions de terrain auprès des familles.</span>
+            <span class="cta-card__more">En savoir plus <i class="ri-arrow-right-line" aria-hidden="true"></i></span>
+          </a>
+          <a href="../pages/devenir-partenaire.html" class="cta-card">
+            <i class="ri-building-line cta-card__icon" aria-hidden="true"></i>
+            <span class="cta-card__title">Devenir partenaire</span>
+            <span class="cta-card__text">Construire un partenariat institutionnel, associatif ou d'entreprise.</span>
+            <span class="cta-card__more">En savoir plus <i class="ri-arrow-right-line" aria-hidden="true"></i></span>
+          </a>
+          <a href="../pages/actions.html" class="cta-card">
+            <i class="ri-map-pin-line cta-card__icon" aria-hidden="true"></i>
+            <span class="cta-card__title">Voir nos actions</span>
+            <span class="cta-card__text">Découvrir les actions en cours et leurs résultats.</span>
+            <span class="cta-card__more">En savoir plus <i class="ri-arrow-right-line" aria-hidden="true"></i></span>
+          </a>
         </div>
       </div>
     </section>
@@ -950,5 +984,6 @@
   <script src="../scripts/components/sticky-header.js"></script>
   <script src="../scripts/components/back-to-top.js"></script>
   <script src="../scripts/components/form.js" defer></script>
+  <script src="../scripts/pages/transparence-rapports/docs-filter.js" defer></script>
 </body>
 </html>

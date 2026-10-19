@@ -20,7 +20,7 @@ Suivi : `grep -rn "À COMPLÉTER" pages index.html 404.html` · `grep -rn "PAR L
 - [ ] **Nos missions** : textes des blocs Santé (suite coupée), Droits humains, Éducation (description + puces).
 - [ ] **Mission Santé** : résultats chiffrés de « Ce que nos actions ont permis » (chiffres retirés tant que non validés), sources des 3 points de « Ce qui est en jeu », autres cartes de programmes.
 - [ ] **Rapport Dassa** : « Résultats détaillés », « Méthodologie », « Enseignements », étape « Trois jours de consultations » ; données `[fictif]` / `[à confirmer]` (3 jours, 310 bénéficiaires, 280 protections solaires, 24 cas, validation par le coordinateur des programmes).
-- [ ] **Notre approche** : sections « Nos principes d'action » (`#principes`) et « Nos chartes et engagements » (`#engagements`), autres valeurs que « Humanité ».
+- [ ] **Notre approche** : valeurs (4), principes d'action (6) et engagements (4) rédigés provisoirement (V133, contenu illustratif) : à relire et valider par l'ONG ; documents officiels (statuts, chartes) à fournir si l'ONG souhaite les rendre téléchargeables.
 - [ ] **Offres d'emploi** (rejoindre-equipe) : liste réelle, fiches détaillées (missions, profil, conditions), étapes 2 et 3 du formulaire, processus de recrutement, engagements, FAQ.
 - [ ] **Missions bénévoles** : liste réelle et statuts, étapes 2 « Engagement » et 3 « Motivation », domaines et formats du filtre (option « Traduction » ajoutée).
 - [ ] **Témoignage** : champs des étapes 1 à 4, médias acceptés, protections (anonymat, validation, retrait), sections « Trois façons de témoigner », « Et ensuite ? », FAQ ; page « Témoignages » dédiée ; canal confidentiel de signalement (« Signaler une préoccupation » → maintenance).
@@ -33,7 +33,7 @@ Suivi : `grep -rn "À COMPLÉTER" pages index.html 404.html` · `grep -rn "PAR L
 - [ ] Campagne « Protéger 500 enfants » : 7 800 € / 10 000 € (78 %), 214 donateurs, 342 enfants, reste 2 200 €, « 10 € = 1 kit » ; date de clôture (voir P3).
 - [ ] Article « cancer de la peau » : 340 enfants / 340 kits, 20 relais, 5 espaces d'ombre, citation du « Dr. Amina D., Coordinatrice médicale », date du 18 avril 2025, auteur, 5 min de lecture, légende photo (auteur, lieu, année, consentement des familles).
 - [ ] Actualités : « plus de 250 enfants », dates des articles, titres `[fictif]` (3 articles).
-- [ ] Témoignage de nos-missions (« Parent d'un enfant accompagné ») ; phrase de conviction de notre-approche (« [formulation à valider] »).
+- [ ] Témoignage de nos-missions (« Parent d'un enfant accompagné ») ; phrase de conviction de notre-approche (validée provisoirement, sans marqueur depuis V133).
 - [ ] Meta descriptions rédigées d'après le chapô (campagne, bénévole, 404) : relecture.
 
 ## P3 — Décisions à trancher (incohérences relevées)
@@ -66,4 +66,4 @@ Suivi : `grep -rn "À COMPLÉTER" pages index.html 404.html` · `grep -rn "PAR L
 - [ ] Pour chaque groupe de photos (soins dentaires, école et pirogue, distribution de cadeaux, grande salle, cérémonie avec sachets) : date, lieu, partenaire, nom de l'événement, afin de corriger les légendes encore fictives.
 - [ ] Portraits réels (avec accord) du bureau pour remplacer les 7 portraits externes de l'équipe fictive.
 - [ ] Orthographe des lieux (Tangbo / Tangbodjédié, Sèkanmè, Banikanni), pays de SOBEDO et de la Dra. Stevanato, nom exact du dermatologue et lien avec SANAA, autres partenaires, validation écrite de l'histoire par M. Amoussou (voir docs/INFOS-ONG.md).
-
+- [ ] **Transparence — Preuves** : confirmer ou retirer « Certification ISO 9001 (en cours) », « Conformité RGPD auditée », « Agréée par l'État » ; texte de consentement et message de confirmation du formulaire de demande rédigés provisoirement (V134).

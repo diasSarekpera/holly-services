@@ -343,3 +343,8 @@ input[type="checkbox"]:not(.form-checkbox):focus,input[type="checkbox"]:not(.for
 .partner-logo-tile__caption{margin:0;padding-top:0.8rem;border-top:1px solid var(--clr-border-card);text-align:center;font-size:var(--fs-sm);line-height:1.45;color:var(--clr-text-soft)}
 .partner-logo-tile__caption strong{color:var(--clr-secondary);font-weight:600}
 @media (max-width:767px){.partner-logo-tile{padding:1rem 0.875rem 0.875rem}.partner-logo-tile__logo{height:96px}.partner-logo-tile__caption{font-size:var(--fs-xs)}}
+
+/* Badge du logo : marge sous le badge (il pend du haut sans toucher le bas du header) */
+.navbar .navbar__logo-mark{margin-bottom:0.75rem}
+.navbar.is-scrolled .navbar__logo-mark{margin-bottom:0.625rem}
+@media (max-width:767px){.navbar .navbar__logo-mark{margin-bottom:0.625rem}}
