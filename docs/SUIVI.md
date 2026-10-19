@@ -234,3 +234,13 @@ Composant `.hero-photo` (voir CONVENTIONS.md « Hero photo »). Une ligne de che
 - Rejoindre l'équipe : bandeau de repères superposé au hero, section « Pourquoi » avec photo terrain (terrain-12), bande des valeurs marine, offres en liste structurée (liseré d'accent), métiers numérotés, formulaire en carte avec progression en 3 étapes, aide en carte marine, bandeau final marine.
 - Actualités : « À la une » en carte image + texte (terrain-13), cartes d'articles avec photo 3:2 (terrain-36, 11, 07), filtres en pilules, newsletter marine.
 - Photos terrain locales **provisoires** : à remplacer par les photos réelles des articles (voir A-FOURNIR.md). Styles ajoutés en fin de `styles/rejoindre-equipe.css` et `styles/actualites.css` (bloc « V141 »).
+
+## V142 — Équipe réelle (bureau de l'ONG)
+- Principe appliqué : on remplace ce qui est confirmé par l'ONG, on laisse en l'état ce qui ne l'est pas (rien n'est supprimé au motif qu'il serait faux ou incertain).
+- Accueil (`index.html`, section Équipe) : les 4 membres fictifs (photos Unsplash, biographies, mots-clés, boutons LinkedIn vers la maintenance, badge « Fondatrice ») sont remplacés par les 9 membres reçus de l'ONG, en cartes photo + nom + fonction. Président en carte « featured ». Pas de biographie, de réseau ni d'e-mail individuel : l'ONG n'en a pas fourni.
+- À propos (`pages/a-propos.html`, « Notre équipe dirigeante ») : les 3 membres fictifs (et leurs statistiques « ans / projets ») sont remplacés par les mêmes 9 membres.
+- Photos : 9 portraits carrés recadrés sur le visage, métadonnées retirées, WebP, noms neutres `assets/images/equipe/equipe-01…09.webp` (≈ 190 Ko au total). `alt` = « Portrait de <nom>, <fonction> », `width`/`height` carrés, `loading="lazy"`.
+- CSS : fin de `styles/home.css` (3 colonnes dès 1024 px, 2 en tablette, 1 en mobile ; cadrage `center top`) et de `styles/a-propos.css` (photo carrée sur desktop, texte centré).
+- Ordre d'affichage (hiérarchique) : Président, Vice-Présidente, Directeur exécutif, Secrétaire générale, Trésorier général et Coordonnateur, Trésorière adjointe, Secrétaire à l'organisation, Secrétaire à l'information et à la communication, Rapporteur.
+- Laissés en l'état (non confirmés) : noms fictifs hors équipe (rapport Dassa, article, témoignages, placeholder du formulaire) listés dans `docs/A-FOURNIR.md`. Détail des membres et points à confirmer : `docs/INFOS-ONG.md`.
+

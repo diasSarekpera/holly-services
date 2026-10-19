@@ -11,7 +11,7 @@ Suivi : `grep -rn "À COMPLÉTER" pages index.html 404.html` · `grep -rn "PAR L
 - [ ] **Politique de confidentialité** (`pages/politique-confidentialite.html`, incomplète) : responsable du traitement et contact, données collectées, finalités, bases légales, durées (dont CV), destinataires, droits, cookies ; version et date de mise à jour (« 1 Octobre 2026 · Version 1.0 » à valider) ; 2 puces de l'encadré « En bref ». Version et date des deux pages légales à renseigner, puis retrait du bandeau « Contenu provisoire ».
 - [ ] **Endpoints des formulaires** (`data-endpoint`, absent = mode démo : rien n'est envoyé) pour les 6 formulaires : newsletter (actualités, article), bénévole, candidature (CV : prestataire acceptant les fichiers), témoignage (données sensibles : prestataire à valider), demande de documents (transparence). Voir `docs/FORMULAIRES.md`. Pour chacun : texte de consentement, message de confirmation `[data-form-success]`.
 - [ ] **Coordonnées à valider** : téléphone « +229 97 00 00 00 » (footer, JSON-LD, page maintenance ; ressemble à un placeholder), horaires « du lundi au vendredi, de 8h00 à 17h00 », e-mails `contact@`, `presse@`, `recrutement@hollyservices.org` (décodés du prototype), indicatif du placeholder téléphone « +33 6 … » à adapter.
-- [ ] **Réseaux sociaux** : URLs Facebook, Instagram, LinkedIn, YouTube (partial footer) et 4 profils LinkedIn de l'équipe (`index.html`) ; en attendant → `maintenance.html`.
+- [ ] **Réseaux sociaux** : URLs Facebook, Instagram, LinkedIn, YouTube (partial footer) ; en attendant → `maintenance.html`.
 - [ ] **Passerelle de don** : « Faire un don » renvoie vers `index.html#dons` (aucune page de paiement ; montant et fréquence choisis non transmis) → choisir le prestataire et fournir la page cible.
 
 ## P1 — Contenu manquant (pages visiblement incomplètes)
@@ -62,9 +62,10 @@ Suivi : `grep -rn "À COMPLÉTER" pages index.html 404.html` · `grep -rn "PAR L
 ## Toujours à fournir (laissé en l'état sur le site)
 - [ ] Directeur de la publication, hébergeur, version et date des pages légales.
 - [ ] Réseaux sociaux, horaires, numéro WhatsApp à afficher, moyen de don Mobile Money (opérateur, numéro, titulaire).
-- [ ] Équipe réelle avec photos et accord de chaque membre ; chiffres, témoignages, campagnes, rapports.
+- [ ] Équipe : 9 membres du bureau publiés en V142 (photo, nom, fonction). Reste : autres membres à envoyer, accord écrit de chacun pour la photo, biographies si l'ONG le souhaite (rien n'est publié au-delà du nom et de la fonction) ; chiffres, témoignages, campagnes, rapports.
 - [ ] Pour chaque groupe de photos (soins dentaires, école et pirogue, distribution de cadeaux, grande salle, cérémonie avec sachets) : date, lieu, partenaire, nom de l'événement, afin de corriger les légendes encore fictives.
-- [ ] Portraits réels (avec accord) du bureau pour remplacer les 7 portraits externes de l'équipe fictive.
+- [x] Portraits réels du bureau : remplacés en V142 (équipe fictive de l'accueil et de À propos supprimée, car remplacée par les vrais membres).
 - [ ] Orthographe des lieux (Tangbo / Tangbodjédié, Sèkanmè, Banikanni), pays de SOBEDO et de la Dra. Stevanato, nom exact du dermatologue et lien avec SANAA, autres partenaires, validation écrite de l'histoire par M. Amoussou (voir docs/INFOS-ONG.md).
 - [ ] **Transparence — Preuves** : confirmer ou retirer « Certification ISO 9001 (en cours) », « Conformité RGPD auditée », « Agréée par l'État » ; texte de consentement et message de confirmation du formulaire de demande rédigés provisoirement (V134).
 - [ ] **Nos missions** : textes des trois missions (chapôs, listes, public concerné) rédigés provisoirement (V135) ; pages dédiées « Droits humains » et « Éducation » à créer si l'ONG le souhaite (boutons aujourd'hui vers `actions.html`).
+- [ ] **Noms fictifs encore présents, non remplaçables sans confirmation** (V142) : « David Koffi, Coordinateur des Programmes [à confirmer] » (page rapport Dassa), « Dr. Amina D., Coordinatrice médicale du projet » (citation de l'article cancer de la peau), témoignages « Dr. Kofi Mensah » et « Sarah Adjovi » (accueil), exemple « Ex : Clarisse Mensah » du champ Nom du formulaire de contact. À remplacer par les vrais intervenants ou retirer dès confirmation de l'ONG.

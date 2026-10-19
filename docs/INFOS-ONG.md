@@ -28,3 +28,19 @@ Source : messages relayés par le chargé du site, déclarés par l'ONG. Pas de 
 
 ## Reste à demander
 Orthographe exacte des lieux (Tangbo / Tangbodjédié, Sèkanmè, Banikanni), pays de SOBEDO et de la Dra. Stevanato, nom exact du docteur dermatologue et lien avec SANAA, nombre d'élèves aidés par SOBEDO, les autres partenaires, date d'ouverture du siège et de l'annexe, hommage éventuel au cofondateur décédé, accord de M. Amoussou pour l'histoire.
+
+## Membres du bureau (photos et fonctions reçues le 19 octobre 2026)
+Source : photos et intitulés envoyés par l'ONG via le chargé du site (accord de chaque membre pour la publication **non confirmé par écrit**). Ordre d'affichage choisi : hiérarchique.
+| N° | Nom | Fonction | Fichier |
+|---|---|---|---|
+| 01 | CURTIS Nounagnon Sylvain | Président | `equipe-01.webp` |
+| 02 | ZOUNON Fidèle Hubertine | Vice-Présidente | `equipe-02.webp` |
+| 03 | AMOUSSOU Florentin | Directeur exécutif | `equipe-03.webp` |
+| 04 | FANOU Nadège | Secrétaire générale | `equipe-04.webp` |
+| 05 | AMOUSSOU François Xavier | Trésorier général et Coordonnateur chargé de la mission sanitaire | `equipe-05.webp` |
+| 06 | HOUEDANOU Josiane | Trésorière adjointe | `equipe-06.webp` |
+| 07 | KADANI N'DAH Thomas | Secrétaire à l'organisation | `equipe-07.webp` |
+| 08 | AGOKOLI Emmanuelle Miribelle | Secrétaire à l'information et à la communication | `equipe-08.webp` |
+| 09 | WINSOU Dah-yovo Laurenda | Rapporteur | `equipe-09.webp` |
+
+À confirmer : « Nadège » (envoyé « NADAGE ») ; féminins « Vice-Présidente », « Secrétaire générale », « Trésorière adjointe » (envoyés « Vice Présidente », « Secrétaire général », « Trésorier adjointe ») ; « Rapporteur » gardé au masculin comme envoyé ; « Coordonnateur chargé de la mission sanitaire » (envoyé « Condonateur changer de la mission sanitaire ») ; « Zinsou Xavier Amoussou » (fondateur, cité plus haut) et « AMOUSSOU François Xavier » (trésorier général) : même personne ? D'autres membres doivent encore être envoyés.
