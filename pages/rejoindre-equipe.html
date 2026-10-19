@@ -357,49 +357,78 @@
       </div>
     </header>
 
-    <!-- 2. POURQUOI NOUS REJOINDRE -->
-    <section class="rejoindre-section" aria-labelledby="rejoindre-why-title">
+    <!-- 2. REPÈRES (bandeau superposé au hero) -->
+    <section class="rj-facts" aria-label="Repères">
       <div class="container">
-        <div class="rejoindre-intro">
-          <div class="rejoindre-intro__actions">
-            <a href="#offres" class="btn btn--primary">Voir les offres</a>
-            <a href="#candidature" class="btn btn--ghost">Candidature spontanée</a>
+        <ul class="rj-facts__card" role="list">
+          <li class="rj-fact">
+            <span class="rj-fact__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+            <span><span class="rj-fact__label">Siège</span><span class="rj-fact__value">Zè (Tangbo)</span></span>
+          </li>
+          <li class="rj-fact">
+            <span class="rj-fact__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span>
+            <span><span class="rj-fact__label">Présence</span><span class="rj-fact__value">Bénin · Togo · Tanzanie</span></span>
+          </li>
+          <li class="rj-fact">
+            <span class="rj-fact__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span>
+            <span><span class="rj-fact__label">Création</span><span class="rj-fact__value">Fondée en 2024</span></span>
+          </li>
+          <li class="rj-fact">
+            <span class="rj-fact__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg></span>
+            <span><span class="rj-fact__label">Recrutement</span><span class="rj-fact__value" data-offers-total>3 offres ouvertes</span></span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 3. POURQUOI NOUS REJOINDRE -->
+    <section class="rejoindre-section rj-why" aria-labelledby="rejoindre-why-title">
+      <div class="container">
+        <div class="rj-why__grid">
+          <figure class="rj-why__media">
+            <img src="../assets/images/terrain/terrain-12.webp" alt="" width="1280" height="960" loading="lazy" decoding="async" />
+          </figure>
+          <div class="rj-why__content">
+            <div class="eyebrow">
+              <span class="eyebrow__line" aria-hidden="true"></span>
+              <span class="eyebrow__label">Pourquoi nous rejoindre</span>
+            </div>
+            <h2 id="rejoindre-why-title" class="rejoindre-title">Pourquoi <em>nous rejoindre</em></h2>
+            <div class="why-us-grid">
+              <div class="why-card">
+                <i class="ri-bar-chart-box-line why-icon" aria-hidden="true"></i>
+                <h3>Impact concret</h3>
+                <p>Mesurez directement l'effet de votre travail sur le terrain.</p>
+              </div>
+              <div class="why-card">
+                <i class="ri-earth-line why-icon" aria-hidden="true"></i>
+                <h3>Ancrage local</h3>
+                <p>Une approche profondément ancrée dans les réalités locales.</p>
+              </div>
+              <div class="why-card">
+                <i class="ri-scales-3-line why-icon" aria-hidden="true"></i>
+                <h3>Éthique exigeante</h3>
+                <p>Des standards stricts pour la protection des plus vulnérables.</p>
+              </div>
+              <div class="why-card">
+                <i class="ri-arrow-up-line why-icon" aria-hidden="true"></i>
+                <h3>Cadre qui fait progresser</h3>
+                <p>Formation continue et évolution de carrière encouragées.</p>
+              </div>
+            </div>
+            <div class="rejoindre-intro__actions">
+              <a href="#offres" class="btn btn--primary">Voir les offres</a>
+              <a href="#candidature" class="btn btn--ghost">Candidature spontanée</a>
+            </div>
           </div>
-          <ul class="rejoindre-intro__stats" role="list">
-            <li><i class="ri-map-pin-line" aria-hidden="true"></i> Siège à Zè (Tangbo)</li>
-            <li>Bénin · Togo · Tanzanie</li>
-            <li>Fondée en 2024</li>
-            <li><span data-offers-total>3 offres ouvertes</span></li>
-          </ul>
         </div>
-        <div class="eyebrow">
-            <span class="eyebrow__line" aria-hidden="true"></span>
-            <span class="eyebrow__label">Pourquoi nous rejoindre</span>
-          </div>
-        <h2 id="rejoindre-why-title" class="rejoindre-title">Pourquoi <em>nous rejoindre</em></h2>
-        <div class="why-us-grid">
-        <div class="why-card">
-          <i class="ri-bar-chart-box-line why-icon" aria-hidden="true"></i>
-          <h3>Impact concret</h3>
-          <p>Mesurez directement l'effet de votre travail sur le terrain.</p>
-        </div>
-        <div class="why-card">
-          <i class="ri-earth-line why-icon" aria-hidden="true"></i>
-          <h3>Ancrage local</h3>
-          <p>Une approche profondément ancrée dans les réalités locales.</p>
-        </div>
-        <div class="why-card">
-          <i class="ri-scales-3-line why-icon" aria-hidden="true"></i>
-          <h3>Éthique exigeante</h3>
-          <p>Des standards stricts pour la protection des plus vulnérables.</p>
-        </div>
-        <div class="why-card">
-          <i class="ri-arrow-up-line why-icon" aria-hidden="true"></i>
-          <h3>Cadre qui fait progresser</h3>
-          <p>Formation continue et évolution de carrière encouragées.</p>
-        </div>
-        </div>
-        <ul class="values-row" aria-label="Nos valeurs">
+      </div>
+    </section>
+
+    <!-- 4. VALEURS -->
+    <section class="rj-values" aria-label="Nos valeurs">
+      <div class="container">
+        <ul class="values-row" role="list">
           <li class="value-item"><i class="ri-heart-line" aria-hidden="true"></i> Humanité</li>
           <li class="value-item"><i class="ri-shield-check-line" aria-hidden="true"></i> Intégrité</li>
           <li class="value-item"><i class="ri-group-line" aria-hidden="true"></i> Solidarité</li>
@@ -408,14 +437,18 @@
       </div>
     </section>
 
-    <!-- 3. OFFRES OUVERTES -->
+    <!-- 5. OFFRES OUVERTES -->
     <section id="offres" class="rejoindre-section offres-section" aria-labelledby="rejoindre-offres-title">
       <div class="container">
-        <div class="eyebrow">
-            <span class="eyebrow__line" aria-hidden="true"></span>
-            <span class="eyebrow__label">Les offres ouvertes</span>
+        <div class="rj-head">
+          <div>
+            <div class="eyebrow">
+              <span class="eyebrow__line" aria-hidden="true"></span>
+              <span class="eyebrow__label">Les offres ouvertes</span>
+            </div>
+            <h2 id="rejoindre-offres-title" class="rejoindre-title">Les <em>offres</em> ouvertes</h2>
           </div>
-        <h2 id="rejoindre-offres-title" class="rejoindre-title">Les <em>offres</em> ouvertes</h2>
+        </div>
 
         <!-- Filtres&nbsp;: masqués sans JS (attribut hidden), activés par scripts/pages/rejoindre-equipe/page.js -->
         <div class="filters-bar" data-offers-toolbar hidden>
@@ -436,15 +469,14 @@
         <article class="job-row" data-categorie="sante">
           <div class="job-header">
             <div class="job-info">
-              <h3>Infirmier·ère coordinateur·rice campagnes médicales</h3>
+              <h3>Infirmier·ère coordinateur·rice campagnes médicales <span class="rejoindre-badge rejoindre-badge--urgent">Nouveau</span></h3>
               <div class="job-meta">
                 <span class="rejoindre-badge">Santé</span>
                 <span class="rejoindre-badge">CDD 12 mois</span>
                 <span><i class="ri-map-pin-line" aria-hidden="true"></i> Cotonou</span>
-                <span>Clôture : 31 octobre 2026</span>
+                <span>Clôture : 31 octobre 2026</span>
               </div>
             </div>
-            <div><span class="rejoindre-badge rejoindre-badge--urgent">Nouveau</span></div>
             <div class="job-actions">
               <button type="button" class="btn btn--ghost" data-job-toggle aria-expanded="false" aria-controls="offre-1-detail" hidden>Voir le détail<span class="visually-hidden"> : Infirmier·ère coordinateur·rice campagnes médicales</span></button>
               <a href="#candidature" class="btn btn--primary">Postuler<span class="visually-hidden"> : Infirmier·ère coordinateur·rice campagnes médicales</span></a>
@@ -457,10 +489,10 @@
                 <p>[À COMPLÉTER] Missions, profil recherché et conditions du poste.</p>
               </div>
               <div class="job-sidebar">
-                <p><strong>Domaine :</strong> Santé</p>
-                <p><strong>Contrat :</strong> CDD 12 mois</p>
-                <p><strong>Lieu :</strong> Cotonou</p>
-                <p><strong>Clôture :</strong> 31 octobre 2026</p>
+                <p><strong>Domaine :</strong> Santé</p>
+                <p><strong>Contrat :</strong> CDD 12 mois</p>
+                <p><strong>Lieu :</strong> Cotonou</p>
+                <p><strong>Clôture :</strong> 31 octobre 2026</p>
               </div>
             </div>
           </div>
@@ -473,10 +505,9 @@
                 <span class="rejoindre-badge">Programmes</span>
                 <span class="rejoindre-badge">CDI</span>
                 <span><i class="ri-map-pin-line" aria-hidden="true"></i> Cotonou</span>
-                <span>Clôture : 15 novembre 2026</span>
+                <span>Clôture : 15 novembre 2026</span>
               </div>
             </div>
-            <div></div>
             <div class="job-actions">
               <button type="button" class="btn btn--ghost" data-job-toggle aria-expanded="false" aria-controls="offre-2-detail" hidden>Voir le détail<span class="visually-hidden"> : Responsable suivi-évaluation</span></button>
               <a href="#candidature" class="btn btn--primary">Postuler<span class="visually-hidden"> : Responsable suivi-évaluation</span></a>
@@ -489,10 +520,10 @@
                 <p>[À COMPLÉTER] Missions, profil recherché et conditions du poste.</p>
               </div>
               <div class="job-sidebar">
-                <p><strong>Domaine :</strong> Programmes</p>
-                <p><strong>Contrat :</strong> CDI</p>
-                <p><strong>Lieu :</strong> Cotonou</p>
-                <p><strong>Clôture :</strong> 15 novembre 2026</p>
+                <p><strong>Domaine :</strong> Programmes</p>
+                <p><strong>Contrat :</strong> CDI</p>
+                <p><strong>Lieu :</strong> Cotonou</p>
+                <p><strong>Clôture :</strong> 15 novembre 2026</p>
               </div>
             </div>
           </div>
@@ -505,10 +536,9 @@
                 <span class="rejoindre-badge">Communication</span>
                 <span class="rejoindre-badge">CDI</span>
                 <span><i class="ri-map-pin-line" aria-hidden="true"></i> Cotonou</span>
-                <span>Clôture : 30 novembre 2026</span>
+                <span>Clôture : 30 novembre 2026</span>
               </div>
             </div>
-            <div></div>
             <div class="job-actions">
               <button type="button" class="btn btn--ghost" data-job-toggle aria-expanded="false" aria-controls="offre-3-detail" hidden>Voir le détail<span class="visually-hidden"> : Chargé·e collecte de fonds</span></button>
               <a href="#candidature" class="btn btn--primary">Postuler<span class="visually-hidden"> : Chargé·e collecte de fonds</span></a>
@@ -521,10 +551,10 @@
                 <p>[À COMPLÉTER] Missions, profil recherché et conditions du poste.</p>
               </div>
               <div class="job-sidebar">
-                <p><strong>Domaine :</strong> Communication</p>
-                <p><strong>Contrat :</strong> CDI</p>
-                <p><strong>Lieu :</strong> Cotonou</p>
-                <p><strong>Clôture :</strong> 30 novembre 2026</p>
+                <p><strong>Domaine :</strong> Communication</p>
+                <p><strong>Contrat :</strong> CDI</p>
+                <p><strong>Lieu :</strong> Cotonou</p>
+                <p><strong>Clôture :</strong> 30 novembre 2026</p>
               </div>
             </div>
           </div>
@@ -534,36 +564,42 @@
       </div>
     </section>
 
-    <!-- 4. NOS METIERS -->
-    <section class="rejoindre-section" aria-labelledby="rejoindre-metiers-title">
+    <!-- 6. NOS METIERS -->
+    <section class="rejoindre-section rj-metiers" aria-labelledby="rejoindre-metiers-title">
       <div class="container">
         <div class="eyebrow">
-            <span class="eyebrow__line" aria-hidden="true"></span>
-            <span class="eyebrow__label">Des métiers au service de la mission</span>
-          </div>
+          <span class="eyebrow__line" aria-hidden="true"></span>
+          <span class="eyebrow__label">Des métiers au service de la mission</span>
+        </div>
         <h2 id="rejoindre-metiers-title" class="rejoindre-title">Des <em>métiers</em> variés</h2>
         <div class="metiers-grid">
         <div class="metier-card">
+          <span class="metier-card__n" aria-hidden="true">01</span>
           <h3>Santé</h3>
           <p>Dermatologues, infirmiers, ophtalmologues engagés sur le terrain.</p>
         </div>
         <div class="metier-card">
+          <span class="metier-card__n" aria-hidden="true">02</span>
           <h3>Programmes</h3>
           <p>Coordination, suivi et évaluation des actions menées.</p>
         </div>
         <div class="metier-card">
+          <span class="metier-card__n" aria-hidden="true">03</span>
           <h3>Éducation</h3>
           <p>Sensibilisation dans les écoles et accompagnement communautaire.</p>
         </div>
         <div class="metier-card">
+          <span class="metier-card__n" aria-hidden="true">04</span>
           <h3>Collecte de fonds</h3>
           <p>Recherche de partenariats et financements institutionnels.</p>
         </div>
         <div class="metier-card">
+          <span class="metier-card__n" aria-hidden="true">05</span>
           <h3>Communication</h3>
           <p>Plaidoyer, relations presse et communication digitale.</p>
         </div>
         <div class="metier-card">
+          <span class="metier-card__n" aria-hidden="true">06</span>
           <h3>Finance &amp; Admin</h3>
           <p>Gestion rigoureuse des ressources et de la logistique.</p>
         </div>
@@ -571,13 +607,13 @@
       </div>
     </section>
 
-    <!-- 7. CANDIDATURE (formulaire&nbsp;: prompt suivant) -->
-    <section id="candidature" class="rejoindre-section" aria-labelledby="rejoindre-candidature-title">
+    <!-- 7. CANDIDATURE -->
+    <section id="candidature" class="rejoindre-section rj-apply" aria-labelledby="rejoindre-candidature-title">
       <div class="container">
         <div class="eyebrow">
-            <span class="eyebrow__line" aria-hidden="true"></span>
-            <span class="eyebrow__label">Postulez en quelques minutes</span>
-          </div>
+          <span class="eyebrow__line" aria-hidden="true"></span>
+          <span class="eyebrow__label">Postulez en quelques minutes</span>
+        </div>
         <h2 id="rejoindre-candidature-title" class="rejoindre-title">Votre <em>candidature</em></h2>
 
         <div class="candidature-layout">
@@ -608,7 +644,7 @@
                 <p class="form__error" id="email-err" hidden></p>
               </div>
               <div class="form__field form-group">
-                <label for="cv">CV <span class="form-hint">(PDF, 5 Mo maximum)</span></label>
+                <label for="cv">CV <span class="form-hint">(PDF, 5 Mo maximum)</span></label>
                 <input type="file" id="cv" name="cv" accept=".pdf" data-max-size="5" aria-describedby="cv-err">
                 <p class="form__error" id="cv-err" hidden></p>
               </div>
@@ -626,10 +662,10 @@
             </form>
           </div>
           <aside class="help-col">
-            <h3>Besoin d'aide ?</h3>
+            <h3>Besoin d'aide ?</h3>
             <p class="help-col__text">
               Notre équipe s'engage à vous répondre sous 10 jours ouvrés.<br><br>
-              Pour toute question technique :<br>
+              Pour toute question technique :<br>
               <strong><a href="mailto:recrutement@hollyservices.org">recrutement@hollyservices.org</a></strong>
             </p>
             <div class="val-tag">[À valider par la direction]</div>
@@ -638,10 +674,10 @@
       </div>
     </section>
 
-    <!-- 9. BANDEAU FINAL -->
+    <!-- 8. BANDEAU FINAL -->
     <section class="final-banner" aria-labelledby="rejoindre-banner-title">
       <div class="container">
-        <h2 id="rejoindre-banner-title" class="rejoindre-title">Vous préférez <em>vous engager autrement</em> ?</h2>
+        <h2 id="rejoindre-banner-title" class="rejoindre-title">Vous préférez <em>vous engager autrement</em> ?</h2>
         <div class="banner-links">
           <a href="../pages/devenir-benevole.html" class="banner-card">Devenir bénévole</a>
           <a href="../pages/devenir-partenaire.html" class="banner-card">Devenir partenaire</a>

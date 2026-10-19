@@ -313,3 +313,58 @@ input[type="checkbox"]:not(.form-checkbox):focus,input[type="checkbox"]:not(.for
 .navbar .navbar__logo-mark{margin-bottom:0.75rem}
 .navbar.is-scrolled .navbar__logo-mark{margin-bottom:0.625rem}
 @media (max-width:767px){.navbar .navbar__logo-mark{margin-bottom:0.625rem}}
+
+/* Remplissage automatique (autofill) : le navigateur ne repeint plus le champ (fond jaune / bleu, texte noir). Le fond et la bordure du site sont conservés, la couleur du texte suit la charte. Bloc identique dans toutes les feuilles. */
+:root{--autofill-text:var(--clr-text)}
+.footer,.navbar,.mobile-menu,[data-surface="dark"]{--autofill-text:var(--clr-white)}
+:root body :is(input,textarea,select):is(:-webkit-autofill,:-webkit-autofill:hover,:-webkit-autofill:focus,:-webkit-autofill:active){-webkit-text-fill-color:var(--autofill-text);caret-color:var(--autofill-text);transition:background-color 99999s ease-in-out 0s,color 99999s ease-in-out 0s}
+:root body :is(input,textarea,select):autofill{-webkit-text-fill-color:var(--autofill-text);caret-color:var(--autofill-text)}
+
+/* ===== V141 : refonte visuelle « Actualités » (éditorial institutionnel) =====
+   À la une en carte image + texte, cartes avec photo 3:2 (zoom doux au survol), barre d'outils épurée, pagination, newsletter marine. Photos terrain locales provisoires. Tokens uniquement. */
+:root body .actualites-featured{position:relative;z-index:2;padding-block:0 clamp(2.5rem,5vw,4rem);background:var(--clr-off-white)}
+.actualites-featured__grid{grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:0;align-items:stretch;background:var(--clr-white);border:1px solid var(--clr-border-card);border-radius:var(--radius-card);box-shadow:var(--shadow-lg);overflow:hidden;margin-top:calc(-1 * clamp(4rem,7vw,5.5rem))}
+:root body .hero-photo--actualites{padding-bottom:clamp(5.5rem,10vw,8rem)}
+:root body .actualites-featured__img{aspect-ratio:auto;min-height:22rem;border:0;border-radius:0;background:var(--clr-secondary-soft)}
+.actualites-featured__img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.actualites-featured__img::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(16,35,63,0.35),transparent 45%)}
+.actualites-featured__badge{z-index:1}
+.actualites-featured__content{justify-content:center;gap:0.9rem;padding:clamp(1.5rem,3.5vw,3rem)}
+.actualites-featured__title{font-size:var(--fs-h2);line-height:var(--lh-h2)}
+.actualites-featured__actions{gap:1.25rem}
+
+:root body .actualites-toolbar{padding:1.25rem 0;background:var(--clr-white);border-top:0}
+.actualites-filter{border-radius:var(--radius-pill);padding-inline:1.1rem}
+.actualites-filter [data-filter-count]{margin-left:0.35rem;opacity:0.7;font-size:var(--fs-xs)}
+.actualites-toolbar__search{border-radius:var(--radius-sm)}
+
+:root body .actualites-grid-sec{padding-block:clamp(2.5rem,5vw,4rem)}
+.actualites-grid{gap:1.75rem}
+:root body .actualites-card{border-radius:var(--radius-card);transition:border-color var(--dur-base) ease,box-shadow var(--dur-base) ease}
+.actualites-card__img{position:relative;overflow:hidden;aspect-ratio:3 / 2;background:var(--clr-secondary-soft)}
+.actualites-card__img img{width:100%;height:100%;object-fit:cover;transition:transform 0.6s var(--ease-out)}
+.actualites-card__img::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(16,35,63,0.22),transparent 50%);pointer-events:none}
+@media (hover:hover){.actualites-card:hover .actualites-card__img img{transform:scale(1.04)}}
+.actualites-card__body{padding:1.5rem 1.5rem 1.25rem}
+.actualites-card__title{font-size:var(--fs-h3)}
+.actualites-card__read{transition:gap var(--dur-base) ease}
+@media (hover:hover){.actualites-card:hover .actualites-card__read{gap:0.5rem}}
+.actualites-page{border-radius:var(--radius-sm)}
+
+:root body .actualites-nl{background:var(--clr-secondary);color:var(--on-dark-text)}
+.actualites-nl__title{color:var(--clr-white);font-size:var(--fs-h2)}
+.actualites-nl__title em{color:var(--clr-accent-soft)}
+.actualites-nl .eyebrow__label{color:var(--clr-accent-soft)}
+.actualites-nl p{color:var(--on-dark-text-soft)}
+.actualites-nl__interests label,.actualites-nl__consent label{color:var(--on-dark-text)}
+.actualites-nl .form__error{color:var(--clr-primary-soft)}
+
+@media (max-width:1023px){
+  .actualites-featured__grid{grid-template-columns:1fr}
+  :root body .actualites-featured__img{min-height:0;aspect-ratio:16 / 9}
+  .actualites-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:767px){
+  .actualites-grid{grid-template-columns:1fr}
+}
+/* ===== fin V141 Actualités ===== */

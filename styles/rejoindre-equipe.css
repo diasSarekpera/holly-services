@@ -299,3 +299,117 @@ input[type="checkbox"]:not(.form-checkbox):focus,input[type="checkbox"]:not(.for
 .navbar .navbar__logo-mark{margin-bottom:0.75rem}
 .navbar.is-scrolled .navbar__logo-mark{margin-bottom:0.625rem}
 @media (max-width:767px){.navbar .navbar__logo-mark{margin-bottom:0.625rem}}
+
+/* Remplissage automatique (autofill) : le navigateur ne repeint plus le champ (fond jaune / bleu, texte noir). Le fond et la bordure du site sont conservés, la couleur du texte suit la charte. Bloc identique dans toutes les feuilles. */
+:root{--autofill-text:var(--clr-text)}
+.footer,.navbar,.mobile-menu,[data-surface="dark"]{--autofill-text:var(--clr-white)}
+:root body :is(input,textarea,select):is(:-webkit-autofill,:-webkit-autofill:hover,:-webkit-autofill:focus,:-webkit-autofill:active){-webkit-text-fill-color:var(--autofill-text);caret-color:var(--autofill-text);transition:background-color 99999s ease-in-out 0s,color 99999s ease-in-out 0s}
+:root body :is(input,textarea,select):autofill{-webkit-text-fill-color:var(--autofill-text);caret-color:var(--autofill-text)}
+
+/* ===== V141 : refonte visuelle « Rejoindre l'équipe » (institutionnel) =====
+   Bandeau de repères superposé au hero, section « Pourquoi » avec photo, bande des valeurs marine, offres en liste structurée, métiers numérotés, candidature en carte, bandeau final marine. Tokens uniquement. */
+:root body .hero-photo--rejoindre{padding-bottom:clamp(5rem,9vw,7rem)}
+:root body .rejoindre-title{margin-bottom:clamp(1.5rem,3vw,2.25rem);margin-top:1rem;font-size:var(--fs-h2);line-height:var(--lh-h2)}
+:root body .rejoindre-section{background-color:var(--clr-off-white)}
+
+/* Repères */
+.rj-facts{position:relative;z-index:2;margin-top:calc(-1 * clamp(2.25rem,4vw,3rem))}
+.rj-facts__card{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));background:var(--clr-white);border:1px solid var(--clr-border);border-top:3px solid var(--clr-primary);border-radius:var(--radius-card);box-shadow:0 20px 44px -22px rgba(16,35,63,0.35)}
+.rj-fact{display:flex;align-items:center;gap:1rem;padding:1.5rem 1.75rem;min-width:0}
+.rj-fact + .rj-fact{border-left:1px solid var(--clr-divider)}
+.rj-fact__icon{display:grid;place-items:center;flex:none;width:2.75rem;height:2.75rem;border-radius:50%;background:var(--clr-secondary-soft);color:var(--clr-secondary)}
+.rj-fact__icon svg{width:1.25rem;height:1.25rem;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.rj-fact__label{display:block;margin-bottom:0.15rem;font-size:var(--fs-xs);font-weight:600;letter-spacing:var(--ls-eyebrow);text-transform:uppercase;color:var(--clr-text-soft)}
+.rj-fact__value{display:block;font-family:var(--font-display);font-size:1.375rem;font-weight:500;line-height:1.2;color:var(--clr-secondary)}
+
+/* Pourquoi nous rejoindre */
+.rj-why{padding-top:calc(var(--section-pad-y) * 0.9);padding-bottom:var(--section-pad-y)}
+.rj-why__grid{display:grid;grid-template-columns:5fr 6fr;gap:clamp(2rem,6vw,5.5rem);align-items:center}
+.rj-why__media{position:relative;isolation:isolate;margin:0}
+.rj-why__media::before{content:"";position:absolute;z-index:-1;inset:1.5rem -1.5rem -1.5rem 1.5rem;border:1.5px solid var(--clr-accent);border-radius:var(--radius-card)}
+.rj-why__media img{width:100%;aspect-ratio:4 / 5;object-fit:cover;border-radius:var(--radius-card);box-shadow:var(--shadow-lg)}
+.rj-why__content .why-us-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:1.75rem 2rem;margin-bottom:2.25rem}
+:root body .why-card,:root body .why-card:hover{padding:0;background:none;border:0;border-radius:0;box-shadow:none}
+:root body .why-card{padding-top:1.25rem;border-top:2px solid var(--clr-border-strong)}
+:root body .why-icon{margin-bottom:0.9rem;font-size:2rem;color:var(--clr-primary)}
+.why-card h3{font-size:var(--fs-lead);color:var(--clr-secondary)}
+
+/* Valeurs */
+.rj-values{background:var(--clr-secondary);padding:clamp(1.75rem,3vw,2.5rem) 0}
+.rj-values .values-row{margin:0;padding:0;border:0;gap:1rem clamp(1.5rem,5vw,4rem)}
+.rj-values .value-item{color:var(--clr-white);font-size:var(--fs-h3)}
+.rj-values .value-item i{display:grid;place-items:center;width:2.25rem;height:2.25rem;border:1px solid var(--on-dark-border);border-radius:50%;color:var(--on-dark-text);font-size:1rem}
+
+/* Offres */
+:root body .offres-section{background-color:var(--clr-section-alt)}
+.filters-bar{padding:1rem 1.25rem;margin-bottom:1.5rem;background:var(--clr-white);border:1px solid var(--clr-border);border-radius:var(--radius-card)}
+:root body .filter-btn{border-radius:var(--radius-pill);padding-inline:1.1rem}
+.search-input{border-radius:var(--radius-sm)}
+.job-list{gap:0.875rem}
+:root body .job-row{position:relative;border-left:4px solid var(--clr-border-strong);box-shadow:var(--shadow-card);transition:border-color var(--dur-base) ease,box-shadow var(--dur-base) ease}
+@media (hover:hover){:root body .job-row:hover{border-left-color:var(--clr-primary)}}
+.job-header{grid-template-columns:minmax(0,1fr) auto;padding:1.5rem 1.75rem;gap:1.5rem}
+.job-info h3{display:flex;flex-wrap:wrap;align-items:center;gap:0.5rem 0.75rem;margin-bottom:0.75rem;font-size:1.1875rem;line-height:1.35}
+.job-meta{gap:0.5rem 1.1rem}
+.job-meta .rejoindre-badge:first-child{background:var(--clr-secondary);color:var(--clr-white)}
+.job-details{background:var(--clr-off-white);padding:1.75rem}
+.job-sidebar{background:var(--clr-white)}
+
+/* Métiers */
+:root body .rj-metiers{background-color:var(--clr-white)}
+.metiers-grid{gap:1.5rem}
+:root body .metier-card{position:relative;padding:2rem 1.75rem 1.75rem;background:var(--clr-off-white);border:1px solid var(--clr-border);border-top:3px solid var(--clr-secondary);border-radius:var(--radius-card);box-shadow:none}
+@media (hover:hover){:root body .metier-card:hover{border-top-color:var(--clr-primary);background:var(--clr-white)}}
+.metier-card__n{display:block;margin-bottom:1rem;font-family:var(--font-display);font-size:2rem;line-height:1;color:var(--clr-accent)}
+.metier-card h3{margin-bottom:0.6rem;color:var(--clr-secondary)}
+
+/* Candidature */
+:root body .rj-apply,:root body #candidature{background-color:var(--clr-off-white);padding-top:var(--section-pad-y)}
+.candidature-layout{grid-template-columns:minmax(0,8fr) minmax(0,4fr);gap:clamp(1.5rem,4vw,3rem);align-items:start}
+.form-area{padding:clamp(1.5rem,3vw,2.5rem);background:var(--clr-white);border:1px solid var(--clr-border-card);border-radius:var(--radius-card);box-shadow:var(--shadow-md)}
+.form-stepper{display:grid;grid-template-columns:repeat(3,1fr);gap:0.75rem;padding:0 0 1.5rem;margin-bottom:1.75rem;border-bottom:1px solid var(--clr-divider)}
+.step{flex-direction:column;align-items:flex-start;gap:0.5rem;padding-top:0.75rem;border-top:3px solid var(--clr-border-strong);font-size:var(--fs-base-sm)}
+.step[aria-current="step"]{border-top-color:var(--clr-primary);color:var(--clr-secondary);font-weight:600}
+.step-num{width:1.75rem;height:1.75rem}
+:root body .help-col{padding:2rem;background:var(--clr-secondary);color:var(--on-dark-text);border:0;border-radius:var(--radius-card);box-shadow:var(--shadow-lg)}
+.help-col h3{color:var(--clr-white);font-size:var(--fs-h3)}
+.help-col__text{color:var(--on-dark-text-soft)}
+.help-col a{color:var(--clr-white);text-decoration:underline;text-underline-offset:3px}
+.help-col .val-tag{background:var(--on-dark-fill);color:var(--on-dark-text);border:1px solid var(--on-dark-line)}
+
+/* Bandeau final */
+.final-banner{background:var(--clr-secondary-deep);padding-block:var(--section-pad-y)}
+.final-banner .rejoindre-title{color:var(--clr-white);margin-top:0}
+.final-banner .rejoindre-title em{color:var(--clr-accent-soft)}
+:root body .banner-card{display:flex;align-items:center;justify-content:center;width:260px;min-height:64px;background:var(--on-dark-fill);border:1px solid var(--on-dark-border);border-radius:var(--radius-card);box-shadow:none;color:var(--clr-white);font-size:var(--fs-body-sm);letter-spacing:0.02em;transition:background var(--transition-cta),border-color var(--transition-cta)}
+@media (hover:hover){:root body .banner-card:hover{background:var(--on-dark-line);border-color:var(--clr-white)}}
+:root body .banner-card--accent{background:var(--clr-primary);border-color:var(--clr-primary);color:var(--clr-white)}
+@media (hover:hover){:root body .banner-card--accent:hover{background:var(--clr-primary-dark);border-color:var(--clr-primary-dark)}}
+:root body .banner-card:focus-visible{outline-color:var(--focus-ring-on-dark)}
+
+/* Responsive */
+@media (max-width:1023px){
+  .rj-facts__card{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .rj-fact:nth-child(3){border-left:0}
+  .rj-fact:nth-child(n+3){border-top:1px solid var(--clr-divider)}
+  .rj-why__grid{grid-template-columns:1fr}
+  .rj-why__media{max-width:30rem}
+  .rj-why__media img{aspect-ratio:4 / 3}
+  .rj-why__media::before{inset:1rem -1rem -1rem 1rem}
+  .metiers-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .candidature-layout{grid-template-columns:1fr}
+}
+@media (max-width:639px){
+  .rj-facts__card{grid-template-columns:1fr}
+  .rj-fact + .rj-fact{border-left:0;border-top:1px solid var(--clr-divider)}
+  .rj-fact{padding:1.1rem 1.25rem}
+  .rj-why__media::before{display:none}
+  .rj-why__content .why-us-grid{grid-template-columns:1fr}
+  .metiers-grid{grid-template-columns:1fr}
+  .job-header{grid-template-columns:1fr;padding:1.25rem}
+  .job-actions .btn{flex:1 1 auto}
+  .form-stepper{gap:0.5rem}
+  .step{font-size:var(--fs-sm)}
+  .banner-card{width:100%}
+}
+/* ===== fin V141 Rejoindre l'équipe ===== */

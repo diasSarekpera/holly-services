@@ -310,3 +310,9 @@ input[type="checkbox"]:not(.form-checkbox):focus,input[type="checkbox"]:not(.for
 @media (max-width:1023px){.approche-values{grid-template-columns:repeat(2,minmax(0,1fr))}.approche-principles{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:767px){.approche-commits{grid-template-columns:minmax(0,1fr)}.approche-docs{flex-direction:column;align-items:stretch;padding:1.5rem}}
 @media (max-width:599px){.approche-values,.approche-principles{grid-template-columns:minmax(0,1fr)}}
+
+/* Remplissage automatique (autofill) : le navigateur ne repeint plus le champ (fond jaune / bleu, texte noir). Le fond et la bordure du site sont conservés, la couleur du texte suit la charte. Bloc identique dans toutes les feuilles. */
+:root{--autofill-text:var(--clr-text)}
+.footer,.navbar,.mobile-menu,[data-surface="dark"]{--autofill-text:var(--clr-white)}
+:root body :is(input,textarea,select):is(:-webkit-autofill,:-webkit-autofill:hover,:-webkit-autofill:focus,:-webkit-autofill:active){-webkit-text-fill-color:var(--autofill-text);caret-color:var(--autofill-text);transition:background-color 99999s ease-in-out 0s,color 99999s ease-in-out 0s}
+:root body :is(input,textarea,select):autofill{-webkit-text-fill-color:var(--autofill-text);caret-color:var(--autofill-text)}

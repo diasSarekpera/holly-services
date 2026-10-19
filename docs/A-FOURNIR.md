@@ -67,3 +67,4 @@ Suivi : `grep -rn "À COMPLÉTER" pages index.html 404.html` · `grep -rn "PAR L
 - [ ] Portraits réels (avec accord) du bureau pour remplacer les 7 portraits externes de l'équipe fictive.
 - [ ] Orthographe des lieux (Tangbo / Tangbodjédié, Sèkanmè, Banikanni), pays de SOBEDO et de la Dra. Stevanato, nom exact du dermatologue et lien avec SANAA, autres partenaires, validation écrite de l'histoire par M. Amoussou (voir docs/INFOS-ONG.md).
 - [ ] **Transparence — Preuves** : confirmer ou retirer « Certification ISO 9001 (en cours) », « Conformité RGPD auditée », « Agréée par l'État » ; texte de consentement et message de confirmation du formulaire de demande rédigés provisoirement (V134).
+- [ ] **Nos missions** : textes des trois missions (chapôs, listes, public concerné) rédigés provisoirement (V135) ; pages dédiées « Droits humains » et « Éducation » à créer si l'ONG le souhaite (boutons aujourd'hui vers `actions.html`).

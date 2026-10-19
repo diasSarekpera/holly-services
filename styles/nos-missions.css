@@ -299,3 +299,57 @@ input[type="checkbox"]:not(.form-checkbox):focus,input[type="checkbox"]:not(.for
 .navbar .navbar__logo-mark{margin-bottom:0.75rem}
 .navbar.is-scrolled .navbar__logo-mark{margin-bottom:0.625rem}
 @media (max-width:767px){.navbar .navbar__logo-mark{margin-bottom:0.625rem}}
+
+/* Nos missions : trois missions en détail (photo, chapô, liste, public concerné) */
+.missions-detail__lead{max-width:44rem;font-size:var(--fs-lead);color:var(--clr-text-soft)}
+.mission-block{align-items:center}
+.mission-img{height:auto;aspect-ratio:4 / 3;margin:0;overflow:hidden;background:var(--clr-surface);border:1px solid var(--clr-border-card);box-shadow:var(--shadow-card)}
+.mission-img img{width:100%;height:100%;object-fit:cover}
+.mission-num{line-height:var(--lh-none);margin-bottom:0.75rem}
+.mission-lead{color:var(--clr-text-soft);margin-top:0.75rem}
+.mission-list{display:flex;flex-direction:column;gap:0.625rem;margin:1.25rem 0 0}
+.mission-list li{align-items:flex-start;gap:0.75rem}
+.mission-list i{margin-top:0.25rem}
+.mission-public{display:flex;align-items:flex-start;gap:0.75rem;margin-top:1.5rem;padding:1rem 1.25rem;background:var(--clr-white);border:1px solid var(--clr-border-card);border-radius:var(--radius-card);font-size:var(--fs-base-sm);color:var(--clr-text-soft)}
+.mission-public i{margin-top:0.125rem;font-size:1.25rem;color:var(--clr-accent-dark)}
+.mission-public strong{display:block;margin-bottom:0.125rem;font-weight:600;color:var(--clr-secondary)}
+.mission-text .btn{margin-top:1.5rem}
+@media (max-width:1023px){.mission-img{height:auto}}
+
+
+/* Nos missions : section « L'impact de vos dons » (bandeau marine, chiffres alignés sur une grille à filets) */
+.resultats{position:relative;overflow:hidden}
+.resultats::before{content:'';position:absolute;top:-140px;right:-140px;width:420px;height:420px;border-radius:var(--radius-full);border:1px solid var(--clr-accent-overlay);pointer-events:none;z-index:var(--z-deco)}
+.resultats .container{position:relative;z-index:var(--z-base)}
+.resultats .eyebrow__label{color:color-mix(in srgb,var(--clr-accent) 55%,var(--clr-white))}
+.impact-head{display:flex;flex-direction:column;align-items:flex-start;gap:1.5rem;margin-bottom:var(--rhythm-media)}
+.impact-head h2{margin-bottom:0}
+.impact-stats{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);border-block:1px solid rgba(255,255,255,0.16)}
+.impact-stat{display:flex;flex-direction:column;align-items:flex-start;padding:2.25rem 2rem;border-left:1px solid rgba(255,255,255,0.12)}
+.impact-stat:first-child{padding-left:0;border-left:0}
+.impact-stat__icon{display:flex;align-items:center;justify-content:center;width:2.75rem;height:2.75rem;margin-bottom:1.25rem;border-radius:var(--radius-full);border:1px solid rgba(255,255,255,0.18);background:rgba(255,255,255,0.05);font-size:1.25rem;color:color-mix(in srgb,var(--clr-accent) 55%,var(--clr-white))}
+.impact-stat__num{font-family:var(--font-display);font-size:var(--fs-stat);font-weight:500;line-height:var(--lh-none);letter-spacing:var(--ls-stat);font-variant-numeric:lining-nums tabular-nums;white-space:nowrap;color:var(--clr-white)}
+.impact-stat__label{margin-top:0.75rem;font-size:var(--fs-body);line-height:var(--lh-snug);color:rgba(255,255,255,0.8)}
+.impact-stat__bar{display:block;width:100%;max-width:11rem;height:3px;margin-top:1rem;border-radius:var(--radius-pill);background:rgba(255,255,255,0.16);overflow:hidden}
+.impact-stat__bar > span{display:block;height:100%;border-radius:inherit;background:color-mix(in srgb,var(--clr-accent) 55%,var(--clr-white))}
+.impact-stat__bar--94 > span{width:94%}
+@media (min-width:1024px){.impact-head{flex-direction:row;align-items:flex-end;justify-content:space-between}}
+@media (max-width:1023px){
+  .impact-stats{grid-template-columns:repeat(2,1fr)}
+  .impact-stat:nth-child(odd){padding-left:0;border-left:0}
+  .impact-stat:nth-child(n+3){border-top:1px solid rgba(255,255,255,0.12)}
+}
+@media (max-width:479px){
+  .impact-stats{grid-template-columns:1fr}
+  .impact-stat{display:grid;grid-template-columns:auto 1fr;column-gap:1.25rem;align-items:center;padding:1.5rem 0;border-left:0}
+  .impact-stat:nth-child(n+2){border-top:1px solid rgba(255,255,255,0.12)}
+  .impact-stat__icon{grid-row:1 / span 3;margin-bottom:0}
+  .impact-stat__label{margin-top:0.5rem}
+  .impact-stat__bar{grid-column:2;max-width:none}
+}
+
+/* Remplissage automatique (autofill) : le navigateur ne repeint plus le champ (fond jaune / bleu, texte noir). Le fond et la bordure du site sont conservés, la couleur du texte suit la charte. Bloc identique dans toutes les feuilles. */
+:root{--autofill-text:var(--clr-text)}
+.footer,.navbar,.mobile-menu,[data-surface="dark"]{--autofill-text:var(--clr-white)}
+:root body :is(input,textarea,select):is(:-webkit-autofill,:-webkit-autofill:hover,:-webkit-autofill:focus,:-webkit-autofill:active){-webkit-text-fill-color:var(--autofill-text);caret-color:var(--autofill-text);transition:background-color 99999s ease-in-out 0s,color 99999s ease-in-out 0s}
+:root body :is(input,textarea,select):autofill{-webkit-text-fill-color:var(--autofill-text);caret-color:var(--autofill-text)}
