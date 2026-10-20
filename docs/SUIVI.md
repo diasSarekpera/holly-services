@@ -254,3 +254,8 @@ Composant `.hero-photo` (voir CONVENTIONS.md « Hero photo »). Une ligne de che
 ## V144 — Équipe : 10e membre
 - Ajout de HOUNDOUNOUGBO Saliou, Président de l'organe de contrôle (reçu le 20 octobre 2026), en dernière position (n° 10) sur l'accueil et sur À propos. Photo : `assets/images/equipe/equipe-10.webp` (carrée 500 px, recadrée sur le visage, métadonnées retirées). Même format que les 9 autres : photo, nom, fonction.
 
+## V145 — Logo officiel (remplace celui de V143)
+- L'ONG a envoyé « le véritable logo » : même emblème, avec « ONG » en haut et « HOLLY SERVICES » en bas. Remplacement de `logo.svg`, `logo-emblem.svg`, `logo-full.svg`, `favicon.svg`, `logo-512.png` et `apple-touch-icon.png` (mêmes noms, aucun lien modifié). Le « E » de « SERVICES » touchait la vague de l'emblème : séparé à la main pour que le tracé du texte reste fidèle. Le logo complet (`logo-full.svg`) contient maintenant « ONG Holly Services ».
+- Source archivée : `assets/byONG/logo-holly-services-officiel-2026-10-20.jpeg`. Documentation : `docs/LOGOS.md`.
+- Inchangé : palette du site (rose / marine / or) ; texte « Holly Services / ONG INTERNATIONALE » à côté du logo dans le header (HTML, non touché).
+

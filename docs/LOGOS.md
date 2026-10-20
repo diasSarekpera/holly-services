@@ -1,12 +1,12 @@
 # Logos : fichiers, provenance et remplacement
 
-## Logo de l'ONG (nouvelle version reçue le 20 octobre 2026)
-Source reçue : `assets/byONG/logo-holly-services-2026-10.jpeg` (1080 x 1080, bleu / orange sur fond blanc, envoyé par l'ONG via le chargé du site ; une capture d'écran de téléphone du même logo a été écartée). Il remplace l'ancien logo (IMG-20261008-WA0033, conservé dans `assets/byONG/`). Redessiné en vecteur (3 calques : bleu de l'emblème `#0061D2`, orange `#FD7601`, texte « HOLLY SERVICES » `#0055CA`), sans modifier la palette du site (identité = rose / marine / or, inchangée).
+## Logo de l'ONG (logo officiel reçu le 20 octobre 2026 à 20 h 29)
+Source reçue : `assets/byONG/logo-holly-services-officiel-2026-10-20.jpeg` (1080 x 1080, bleu / orange, « ONG » en haut, « HOLLY SERVICES » en bas). L'ONG le présente comme **le véritable logo** : il remplace la version précédente (`logo-holly-services-2026-10.jpeg`, livrée en V143, conservée dans `assets/byONG/` à titre d'historique) et l'ancien logo de 2026-10-08 (IMG-20261008-WA0033). Redessiné en vecteur (bleu de l'emblème `#005CC4`, orange `#FD7603`, texte `#0055BF`), sans modifier la palette du site (identité = rose / marine / or, inchangée).
 
 | Fichier | Usage |
 |---|---|
 | `assets/images/logo.svg` | Médaillon (emblème dans un disque blanc, 120 x 120) : menu mobile, footer, fond sombre. |
-| `assets/images/logo-emblem.svg` | **Header** : emblème seul (presque carré, 743 x 746), affiché dans un badge blanc collé en haut (CSS « Logo du header »). Attributs HTML `width="100" height="100"`. |
+| `assets/images/logo-emblem.svg` | **Header** : emblème seul (presque carré, 751 x 747), affiché dans un badge blanc collé en haut (CSS « Logo du header »). Attributs HTML `width="100" height="100"`. |
 | `assets/images/logo-full.svg` | Logo complet avec texte, fond transparent (fonds clairs, impression, documents). |
 | `assets/images/logo-512.png` | PNG 512 px du médaillon (JSON-LD `logo`). |
 | `assets/images/apple-touch-icon.png` | 180 px sur fond blanc, **non référencé** dans les `<head>` (à ajouter si souhaité). |
