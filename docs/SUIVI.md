@@ -244,3 +244,13 @@ Composant `.hero-photo` (voir CONVENTIONS.md « Hero photo »). Une ligne de che
 - Ordre d'affichage (hiérarchique) : Président, Vice-Présidente, Directeur exécutif, Secrétaire générale, Trésorier général et Coordonnateur, Trésorière adjointe, Secrétaire à l'organisation, Secrétaire à l'information et à la communication, Rapporteur.
 - Laissés en l'état (non confirmés) : noms fictifs hors équipe (rapport Dassa, article, témoignages, placeholder du formulaire) listés dans `docs/A-FOURNIR.md`. Détail des membres et points à confirmer : `docs/INFOS-ONG.md`.
 
+## V143 — Nouveau logo de l'ONG
+- L'ONG a revu son logo : remplacement complet des fichiers `assets/images/logo.svg`, `logo-emblem.svg`, `logo-full.svg`, `favicon.svg`, `logo-512.png` et `apple-touch-icon.png` (même noms, aucun lien à modifier). Vectorisation du JPEG reçu en 3 calques (bleu emblème, orange, texte), fond transparent pour `logo-full.svg` et `logo-emblem.svg`, disque blanc pour le médaillon.
+- Le nouvel emblème est presque carré (l'ancien était plus large que haut) : attributs `width="100" height="100"` de l'image du header mis à jour dans toutes les pages (19 balises). Rendu vérifié (header ordinateur et mobile, footer).
+- Source archivée : `assets/byONG/logo-holly-services-2026-10.jpeg`. Documentation : `docs/LOGOS.md`.
+- Non modifié volontairement : la palette du site (rose / marine / or) reste celle d'avant ; le logo est bleu / orange. À trancher avec l'ONG si elle veut aligner les couleurs du site.
+- Membres : HOUNDOUNOUGBO Saliou (Président de l'organe de contrôle) est reçu mais **pas encore publié** (en attente du « c'est tout pour l'instant »).
+
+## V144 — Équipe : 10e membre
+- Ajout de HOUNDOUNOUGBO Saliou, Président de l'organe de contrôle (reçu le 20 octobre 2026), en dernière position (n° 10) sur l'accueil et sur À propos. Photo : `assets/images/equipe/equipe-10.webp` (carrée 500 px, recadrée sur le visage, métadonnées retirées). Même format que les 9 autres : photo, nom, fonction.
+

@@ -42,5 +42,6 @@ Source : photos et intitulés envoyés par l'ONG via le chargé du site (accord 
 | 07 | KADANI N'DAH Thomas | Secrétaire à l'organisation | `equipe-07.webp` |
 | 08 | AGOKOLI Emmanuelle Miribelle | Secrétaire à l'information et à la communication | `equipe-08.webp` |
 | 09 | WINSOU Dah-yovo Laurenda | Rapporteur | `equipe-09.webp` |
+| 10 | HOUNDOUNOUGBO Saliou | Président de l'organe de contrôle | `equipe-10.webp` |
 
 À confirmer : « Nadège » (envoyé « NADAGE ») ; féminins « Vice-Présidente », « Secrétaire générale », « Trésorière adjointe » (envoyés « Vice Présidente », « Secrétaire général », « Trésorier adjointe ») ; « Rapporteur » gardé au masculin comme envoyé ; « Coordonnateur chargé de la mission sanitaire » (envoyé « Condonateur changer de la mission sanitaire ») ; « Zinsou Xavier Amoussou » (fondateur, cité plus haut) et « AMOUSSOU François Xavier » (trésorier général) : même personne ? D'autres membres doivent encore être envoyés.

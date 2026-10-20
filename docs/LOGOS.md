@@ -1,16 +1,16 @@
 # Logos : fichiers, provenance et remplacement
 
-## Logo de l'ONG (provisoire : l'ONG prévoit de changer de logo)
-Sources reçues : `assets/byONG/` (JPG WhatsApp). Le logo de Holly Services (IMG-20261008-WA0033) a été redessiné en vecteur (couleurs aplaties, halos retirés), sans modifier la palette du site (identité = rose / marine / or, inchangée).
+## Logo de l'ONG (nouvelle version reçue le 20 octobre 2026)
+Source reçue : `assets/byONG/logo-holly-services-2026-10.jpeg` (1080 x 1080, bleu / orange sur fond blanc, envoyé par l'ONG via le chargé du site ; une capture d'écran de téléphone du même logo a été écartée). Il remplace l'ancien logo (IMG-20261008-WA0033, conservé dans `assets/byONG/`). Redessiné en vecteur (3 calques : bleu de l'emblème `#0061D2`, orange `#FD7601`, texte « HOLLY SERVICES » `#0055CA`), sans modifier la palette du site (identité = rose / marine / or, inchangée).
 
 | Fichier | Usage |
 |---|---|
 | `assets/images/logo.svg` | Médaillon (emblème dans un disque blanc, 120 x 120) : menu mobile, footer, fond sombre. |
-| `assets/images/logo-emblem.svg` | **Header** : affiché dans un badge blanc collé en haut (CSS « Logo du header »). |
+| `assets/images/logo-emblem.svg` | **Header** : emblème seul (presque carré, 743 x 746), affiché dans un badge blanc collé en haut (CSS « Logo du header »). Attributs HTML `width="100" height="100"`. |
 | `assets/images/logo-full.svg` | Logo complet avec texte, fond transparent (fonds clairs, impression, documents). |
 | `assets/images/logo-512.png` | PNG 512 px du médaillon (JSON-LD `logo`). |
-| `assets/images/apple-touch-icon.png` | 180 px, **non référencé** dans les `<head>` (à ajouter si souhaité). |
-| `assets/images/favicon.svg` | Favicon allégé (4 Ko). |
+| `assets/images/apple-touch-icon.png` | 180 px sur fond blanc, **non référencé** dans les `<head>` (à ajouter si souhaité). |
+| `assets/images/favicon.svg` | Favicon allégé (9 Ko, détails fins lissés). |
 
 **Changer de logo plus tard** : remplacer `logo.svg` (garder un viewBox carré 0 0 120 120, fond blanc circulaire recommandé), puis `logo-full.svg`, `logo-emblem.svg`, `logo-512.png`, `favicon.svg`. Aucun HTML ni CSS à modifier.
 
