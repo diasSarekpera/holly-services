@@ -45,3 +45,41 @@ Source : photos et intitulés envoyés par l'ONG via le chargé du site (accord 
 | 10 | HOUNDOUNOUGBO Saliou | Président de l'organe de contrôle | `equipe-10.webp` |
 
 À confirmer : « Nadège » (envoyé « NADAGE ») ; féminins « Vice-Présidente », « Secrétaire générale », « Trésorière adjointe » (envoyés « Vice Présidente », « Secrétaire général », « Trésorier adjointe ») ; « Rapporteur » gardé au masculin comme envoyé ; « Coordonnateur chargé de la mission sanitaire » (envoyé « Condonateur changer de la mission sanitaire ») ; « Zinsou Xavier Amoussou » (fondateur, cité plus haut) et « AMOUSSOU François Xavier » (trésorier général) : même personne ? D'autres membres doivent encore être envoyés.
+
+## Zones d'intervention (messages du 21 octobre 2026)
+- **Pays confirmés par l'ONG : Bénin, Togo (Lomé) et Côte d'Ivoire.** La Tanzanie, annoncée par le site d'origine, n'est pas confirmée.
+- **Bénin :** au moins **25 écoles privées parcourues à Porto-Novo** pour leur mission (nature de la mission à préciser : sensibilisation, dons, appui scolaire ?) ; villes citées : Porto-Novo, Zè, Abomey-Calavi, Adjarra, Pobè. L'ONG dit avoir parcouru « toutes les communes du Bénin » : **affirmation non vérifiée, non publiée** ; formulation prudente possible : « de nombreuses communes du Bénin ».
+- Dates et nature des missions au Togo et en Côte d'Ivoire : inconnues.
+
+## Missions, priorités et chiffres (messages du 21 octobre 2026)
+- **Domaines :** santé des prisonniers ; micro-entrepreneuriat des jeunes et des femmes ; santé reproductive ; aide aux enfants albinos. **L'accent est mis sur les enfants albinos**, parce que l'ONG constate qu'ils sont délaissés et parfois rejetés.
+- **Autres actions :** dépistage gratuit du cancer du sein, ophtalmologie pour les personnes albinos, produits de soin du corps, etc.
+- **Troisième âge :** prévu, mais **peu prioritaire faute de fonds**.
+- **En projet :** construire un **orphelinat** (programme en préparation) ; ajouter des missions à l'objet légal auprès du **ministère de la Santé**.
+- **Couverture :** **tous les départements du Bénin** et **presque toutes les communes**. Hors Bénin : **quelques enfants aidés à Lomé (Togo)** et **3 enfants en Côte d'Ivoire** (scolarité). Expansion prévue vers tous les pays d'Afrique de l'Ouest.
+
+### Mission dermatologique 2026 (chiffres déclarés par écrit)
+| Élément | Quantité |
+|---|---|
+| Personnes albinos consultées | **406** |
+| Crèmes solaires | 338 |
+| Chapeaux à bord | 104 |
+| Lunettes de soleil | 118 |
+| Lunettes médicales avec loupes à manche | 275 |
+| Baumes solaires pour les lèvres | 132 |
+| Brosses à dents + dentifrice | 234 |
+
+D'autres distributions existent, non détaillées. Date exacte, lieux et part d'enfants parmi les 406 : à préciser. Les nombres entendus dans les audios précédents (1115, 130...) étaient erronés : **ces chiffres écrits font foi**.
+
+## Attestation de dépôt de déclaration de mise en conformité (reçue le 22 octobre 2026)
+- **Document :** accusé de réception électronique du ministère de l'Intérieur (Direction des affaires intérieures et des cultes, DAIC), dossier **PS01509-260423-76C3Gc**, déposé le **23 avril 2026**. Dénomination saisie : « HOLLY SERVICES HOLLY SERVICES » (doublon de saisie), type : ONG.
+- **Mission déclarée :** « contribuer à l'amélioration durablement des conditions de vie des populations vulnérables en renforçant leur accès aux services essentiels, en promouvant l'inclusion sociale, et en soutenant leur autonomie économique et sociale. »
+- **Objectifs déclarés (4) :** (1) actions humanitaires de santé au profit des couches vulnérables, en particulier les prisonniers, prévention des maladies, personnes atteintes d'albinisme, cancer de la peau ; (2) micro-entrepreneuriat des jeunes et des femmes contre le chômage ; (3) santé reproductive et sexuelle des jeunes et des femmes ; (4) **assister et protéger les orphelins et les personnes du troisième âge**. Le **4e domaine annoncé par l'ONG est donc identifié** (jusque-là, seuls 3 étaient dans le récépissé de 2025).
+- **Siège déclaré :** Atlantique, Zè, Tangbo, Glégbodji-Do, maison Dansou Gaspard Prosper (identique au récépissé).
+- **Déclarant :** Zinsou Xavier Amoussou. Ses coordonnées personnelles figurent sur le document : **ne pas publier**.
+- **Point juridique important :** il s'agit d'un **accusé de réception**. Le document précise que la **recevabilité reste subordonnée à la validation de complétude par la DAIC**, et que la **non-conformité dans le délai fixé par la loi entraîne de plein droit la dissolution** de l'organisation, qui ne pourrait plus mener d'activités légalement ni exécuter d'accords avec l'État. Il faut savoir si la validation a été obtenue (document final attendu).
+- Ne pas écrire sur le site que l'ONG est « agréée » ou « en règle » tant que la validation n'est pas confirmée par écrit.
+
+## Autre document reçu
+- Extrait de définition de la **carte d'égalité de chances** (document officiel délivré aux personnes en situation de handicap pour leur garantir des droits et avantages sociaux). Rôle de l'ONG vis-à-vis de cette carte : **inconnu** (information, aide à l'obtention ?).
+

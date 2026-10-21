@@ -69,3 +69,8 @@ Suivi : `grep -rn "À COMPLÉTER" pages index.html 404.html` · `grep -rn "PAR L
 - [ ] **Transparence — Preuves** : confirmer ou retirer « Certification ISO 9001 (en cours) », « Conformité RGPD auditée », « Agréée par l'État » ; texte de consentement et message de confirmation du formulaire de demande rédigés provisoirement (V134).
 - [ ] **Nos missions** : textes des trois missions (chapôs, listes, public concerné) rédigés provisoirement (V135) ; pages dédiées « Droits humains » et « Éducation » à créer si l'ONG le souhaite (boutons aujourd'hui vers `actions.html`).
 - [ ] **Noms fictifs encore présents, non remplaçables sans confirmation** (V142) : « David Koffi, Coordinateur des Programmes [à confirmer] » (page rapport Dassa), « Dr. Amina D., Coordinatrice médicale du projet » (citation de l'article cancer de la peau), témoignages « Dr. Kofi Mensah » et « Sarah Adjovi » (accueil), exemple « Ex : Clarisse Mensah » du champ Nom du formulaire de contact. À remplacer par les vrais intervenants ou retirer dès confirmation de l'ONG.
+- [ ] Mission dermatologique 2026 : date exacte, lieux, part d'enfants parmi les 406 personnes consultées ; chiffres cumulés réels depuis la création pour remplacer ceux, encore inventés, de `nos-missions.html` et `transparence-rapports.html` ; « 94 % des fonds » à confirmer ou retirer.
+- [ ] **Urgent** : la mise en conformité du 23 avril 2026 est-elle validée par la DAIC ? Document final (récépissé ou attestation de validation) à obtenir.
+- [ ] Certifications annoncées par le site (ISO 9001, RGPD, Coordination Sud) : preuves, sinon retrait.
+- [ ] Carte d'égalité de chances : l'ONG aide-t-elle à l'obtenir ? Si oui, procédure à documenter pour une page d'information.
+
