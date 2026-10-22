@@ -1,5 +1,5 @@
 /*
- * form.js — validation et envoi des formulaires `<form data-form>` (JS vanilla).
+ * form.js - validation et envoi des formulaires `<form data-form>` (JS vanilla).
  *
  * Balisage attendu (tout est optionnel sauf data-form) :
  *   <form data-form data-endpoint="https://…">        sans data-endpoint = MODE DÉMO (rien n'est envoyé)

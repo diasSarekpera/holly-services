@@ -106,3 +106,10 @@ Décisions de la charte, vérifiées par `python3 tools/regress.py` (Playwright,
 - Aucun défilement horizontal de 320 à 1920 px.
 - Limites connues : `tools/check.py` n'existe pas dans le projet (la section « Contrôle » ci-dessus est historique) ; regress.py ne contrôle que la 1re instance de chaque classe de carte par page et 4 boutons ghost par page.
 
+## Gouttière latérale (V155)
+- Une seule marge de bord de page : `--page-gutter` (2 rem dès 768 px ; 24 px à 320 px → 32 px dès 430 px en dessous). Tout conteneur de bord de page l'utilise (`padding-inline:var(--page-gutter)`), directement ou via `--container-pad` / `--section-pad-x` ; jamais de `rem` en dur pour la marge de bord.
+- Bande qui déborde volontairement (carrousel) : `margin-inline:calc(var(--page-gutter) * -1); padding-inline:var(--page-gutter); scroll-padding-inline:var(--page-gutter)`.
+- Nouveau conteneur propre à une page : l'ajouter au bloc « Gouttière mobile (V155) » de sa feuille (`tools/gutter_25a_apply.py`, dictionnaire `PAGE`) ; ne pas empiler une marge sur un parent déjà padé (double gouttière).
+
+## Ombres (V156)
+- Une ombre sépare un élément du fond (en-tête fixe, menu déroulant) ; elle ne le fait ni « flotter » ni « briller ». Maximum `0 3px 10px` à 22 % pour une surcouche, tokens `--shadow-*` pour le reste. Pas d'ombre colorée, pas de halo sur les boutons, pas de décalage vertical > 4 px.

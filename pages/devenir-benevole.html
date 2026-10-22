@@ -4,14 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Sur le terrain ou à distance, ponctuellement ou régulièrement : choisissez la mission bénévole qui correspond à votre profil. Chaque bénévole est accueilli, formé et encadré." />
-  <title>Devenir bénévole — Holly Services ONG</title>
+  <title>Devenir bénévole | Holly Services ONG</title>
   <!-- @partial:meta:start -->
   <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml" />
   <link rel="preload" href="../assets/fonts/outfit/outfit-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="../assets/fonts/nunito/nunito-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="../assets/fonts/cormorant-garamond/cormorant-garamond-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="canonical" href="https://www.EXEMPLE.org/pages/devenir-benevole.html" />
-  <meta property="og:title" content="Devenir bénévole — Holly Services ONG" />
+  <meta property="og:title" content="Devenir bénévole | Holly Services ONG" />
   <meta property="og:description" content="Sur le terrain ou à distance, ponctuellement ou régulièrement : choisissez la mission bénévole qui correspond à votre profil. Chaque bénévole est accueilli, formé et encadré." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.EXEMPLE.org/pages/devenir-benevole.html" />
@@ -50,7 +50,7 @@
     <header class="navbar">
       <div class="navbar__inner">
 
-        <a href="../index.html#hero" class="navbar__brand" aria-label="Holly Services ONG — Accueil">
+        <a href="../index.html#hero" class="navbar__brand" aria-label="Holly Services ONG, accueil">
           <div class="navbar__logo-mark" aria-hidden="true">
             <img src="../assets/images/logo-emblem.svg" alt="" decoding="async" width="100" height="100" />
           </div>
@@ -214,12 +214,13 @@
         </nav>
 
         <div class="navbar__actions">
-          <button class="navbar__lang" aria-label="Changer de langue — actuellement Français">
+          <button class="navbar__lang" aria-label="Changer de langue (actuellement Français)">
             <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <circle cx="12" cy="12" r="10"/>
               <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
             </svg>
             FR
+          <svg class="navbar__caret" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
           <a href="../index.html#soutenir" class="navbar__cta btn btn--primary btn--sm" aria-label="Faire un don">
             <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -229,7 +230,7 @@
           </a>
         </div>
 
-        <!-- Hamburger — visible uniquement sur mobile (≤ 1023px via CSS) -->
+        <!-- Hamburger - visible uniquement sur mobile (≤ 1023px via CSS) -->
         <button
           class="navbar__hamburger"
           id="nav-toggle"
@@ -255,7 +256,7 @@
       </div>
 
       <div class="mobile-menu__head">
-        <a href="../index.html#hero" class="mobile-menu__brand" aria-label="Holly Services ONG — Accueil" data-mobile-link>
+        <a href="../index.html#hero" class="mobile-menu__brand" aria-label="Holly Services ONG, accueil" data-mobile-link>
           <div class="mobile-menu__logo" aria-hidden="true">
             <img src="../assets/images/logo.svg" alt="" loading="lazy" decoding="async" width="120" height="120" />
           </div>
@@ -329,9 +330,10 @@
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
           Faire un don
         </a>
-        <button class="mobile-menu__lang" type="button" aria-label="Changer de langue — actuellement Français">
+        <button class="mobile-menu__lang" type="button" aria-label="Changer de langue (actuellement Français)">
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
           Français
+        <svg class="navbar__caret" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
         </button>
       </div>
 
@@ -414,30 +416,10 @@
         </div>
             <h2 id="benevolat-missions-title" class="benevolat-section-title benevolat-section-title--flush">Les <em>missions</em> ouvertes</h2>
           </div>
-          <!-- Filtres&nbsp;: masqués sans JS (attribut hidden), activés par scripts/pages/devenir-benevole/filter.js -->
-          <div class="benevolat-filters" data-mission-filters hidden>
-            <div class="benevolat-filters__group" role="group" aria-labelledby="filtre-domaine-label">
-              <span id="filtre-domaine-label" class="benevolat-filters__label">Domaine</span>
-              <button type="button" class="benevolat-filter" data-filter-group="domaine" data-filter="all" aria-pressed="true">Tous</button>
-              <button type="button" class="benevolat-filter" data-filter-group="domaine" data-filter="sante" aria-pressed="false">Santé</button>
-              <button type="button" class="benevolat-filter" data-filter-group="domaine" data-filter="com" aria-pressed="false">Communication</button>
-              <button type="button" class="benevolat-filter" data-filter-group="domaine" data-filter="traduction" aria-pressed="false">Traduction</button>
-            </div>
-            <div class="benevolat-filters__group" role="group" aria-labelledby="filtre-format-label">
-              <span id="filtre-format-label" class="benevolat-filters__label">Format</span>
-              <button type="button" class="benevolat-filter" data-filter-group="format" data-filter="all" aria-pressed="true">Tous</button>
-              <button type="button" class="benevolat-filter" data-filter-group="format" data-filter="terrain" aria-pressed="false">Terrain</button>
-              <button type="button" class="benevolat-filter" data-filter-group="format" data-filter="distance" aria-pressed="false">À distance</button>
-            </div>
-            <div class="benevolat-filters__meta">
-              <p class="benevolat-filters__count" data-mission-count role="status" aria-live="polite" aria-atomic="true"></p>
-              <button type="button" class="benevolat-filters__reset" data-mission-reset hidden>Réinitialiser les filtres</button>
-            </div>
-          </div>
         </div>
 
-        <div class="benevolat-missions__grid" data-mission-grid>
-        <article class="benevolat-mission-card" data-domaine="sante" data-format="terrain">
+        <div class="benevolat-missions__grid">
+        <article class="benevolat-mission-card">
           <div class="benevolat-mission-card__badges">
             <span class="benevolat-badge benevolat-badge--domain">Santé</span>
             <span class="benevolat-badge benevolat-badge--status-limited">Places limitées</span>
@@ -449,7 +431,7 @@
           </div>
           <a href="#candidature" class="btn btn--primary benevolat-mission-card__btn">Postuler<span class="visually-hidden"> : Infirmier·ère</span></a>
         </article>
-        <article class="benevolat-mission-card" data-domaine="com" data-format="distance">
+        <article class="benevolat-mission-card">
           <div class="benevolat-mission-card__badges">
             <span class="benevolat-badge benevolat-badge--domain">Communication</span>
             <span class="benevolat-badge benevolat-badge--status-open">Ouvert</span>
@@ -461,7 +443,7 @@
           </div>
           <a href="#candidature" class="btn btn--primary benevolat-mission-card__btn">Postuler<span class="visually-hidden"> : Chargé·e de communication</span></a>
         </article>
-        <article class="benevolat-mission-card" data-domaine="traduction" data-format="distance">
+        <article class="benevolat-mission-card">
           <div class="benevolat-mission-card__badges">
             <span class="benevolat-badge benevolat-badge--domain">Traduction</span>
             <span class="benevolat-badge benevolat-badge--status-open">Ouvert</span>
@@ -474,7 +456,6 @@
           <a href="#candidature" class="btn btn--primary benevolat-mission-card__btn">Postuler<span class="visually-hidden"> : Traducteur·rice EN/FR</span></a>
         </article>
         </div>
-        <p class="benevolat-missions__empty" data-mission-empty hidden>Aucune mission ne correspond à ces critères. Modifiez les filtres ou réinitialisez-les pour voir toutes les missions ouvertes.</p>
       </div>
     </section>
 
@@ -542,7 +523,7 @@
   <!-- @partial:footer:start -->
   <footer class="footer" id="footer">
 
-    <!-- Zone 1 — Bande mission -->
+    <!-- Zone 1 - Bande mission -->
     <div class="footer__mission-band">
       <div class="footer__mission-inner">
 
@@ -575,14 +556,14 @@
       </div>
     </div>
 
-    <!-- Zone 2 — Corps principal -->
+    <!-- Zone 2 - Corps principal -->
     <div class="footer__body">
       <div class="footer__inner">
 
-        <!-- Col 1 — Identité & réseaux -->
+        <!-- Col 1 - Identité & réseaux -->
         <div class="footer__col footer__col--brand">
 
-          <a href="../index.html#hero" class="footer__logo" aria-label="Holly Services ONG — Accueil">
+          <a href="../index.html#hero" class="footer__logo" aria-label="Holly Services ONG, accueil">
             <div class="footer__logo-mark" aria-hidden="true">
               <img src="../assets/images/logo.svg" alt="" loading="lazy" decoding="async" width="120" height="120" />
             </div>
@@ -655,7 +636,7 @@
 
         </div>
 
-        <!-- Col 2 — Navigation -->
+        <!-- Col 2 - Navigation -->
         <div class="footer__col footer__col--nav">
 
           <h3 class="footer__col-title">
@@ -680,7 +661,7 @@
 
         </div>
 
-        <!-- Col 3 — Nous soutenir -->
+        <!-- Col 3 - Nous soutenir -->
         <div class="footer__col footer__col--support">
 
           <h3 class="footer__col-title">
@@ -749,7 +730,7 @@
 
         </div>
 
-        <!-- Col 4 — Contact & Légal -->
+        <!-- Col 4 - Contact & Légal -->
         <div class="footer__col footer__col--contact">
 
           <h3 class="footer__col-title">
@@ -813,7 +794,7 @@
       </div>
     </div>
 
-    <!-- Zone 3 — Bande certifications -->
+    <!-- Zone 3 - Bande certifications -->
     <div class="footer__certs-band">
       <div class="footer__certs-inner">
 
@@ -858,7 +839,7 @@
       </div>
     </div>
 
-    <!-- Zone 4 — Pied de page -->
+    <!-- Zone 4 - Pied de page -->
     <div class="footer__bottom">
       <div class="footer__bottom-inner">
 
@@ -899,6 +880,5 @@
   <script src="../scripts/components/sticky-header.js"></script>
   <script src="../scripts/components/back-to-top.js"></script>
   <script src="../scripts/components/form.js" defer></script>
-  <script src="../scripts/pages/devenir-benevole/filter.js" defer></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 /*
- * tabs.js — onglets accessibles sur `[data-tabs]` (JS vanilla).
+ * tabs.js - onglets accessibles sur `[data-tabs]` (JS vanilla).
  *
  * Balisage (voir CONVENTIONS.md) :
  *   <div data-tabs data-tabs-hash>                     data-tabs-hash : synchronise l'URL (#id), un seul par page

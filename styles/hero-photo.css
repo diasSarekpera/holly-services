@@ -1,4 +1,4 @@
-/* Photos d'arrière-plan des heros (pages intérieures) — voile marine pour garder le texte lisible */
+/* Photos d'arrière-plan des heros (pages intérieures) - voile marine pour garder le texte lisible */
 /* ===== Composant .hero-photo (hero minimal : fil d'Ariane, eyebrow, H1) ===== */
 .hero-photo{--hero-photo-img:none;--hero-photo-pos:center 40%;position:relative;padding-top:var(--navbar-h);padding-bottom:clamp(3rem,7vw,5rem);color:var(--clr-white);background:linear-gradient(to bottom,rgba(16,35,63,0.55) 0%,rgba(16,35,63,0) 30%),linear-gradient(100deg,rgba(16,35,63,0.94) 0%,rgba(16,35,63,0.84) 45%,rgba(16,35,63,0.70) 100%),var(--hero-photo-img) var(--hero-photo-pos)/cover no-repeat,var(--clr-secondary)}
 .hero-photo__inner{padding-top:clamp(2.5rem,6vw,4rem);text-align:left}

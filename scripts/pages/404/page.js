@@ -1,4 +1,4 @@
-/* 404 — amélioration progressive : adresse demandée, recherche de pages,
+/* 404 - amélioration progressive : adresse demandée, recherche de pages,
    plan du site en accordéon sur mobile, lien « Signaler ce lien » prérempli.
    Sans JS : tout reste visible et les liens fonctionnent. */
 (function () {

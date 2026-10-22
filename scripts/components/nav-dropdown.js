@@ -1,5 +1,5 @@
 /* ════════════════════════════════════════════════
-   HOLLY SERVICES ONG — nav-dropdown.js
+   HOLLY SERVICES ONG - nav-dropdown.js
    Sous-menus de la navbar desktop + accordéons du menu mobile.
 
    Clavier (sous-menus desktop) :
