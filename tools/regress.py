@@ -21,7 +21,7 @@ Interprétations (à ajuster ici si la charte évolue) :
 import argparse, glob, os, re, sys, collections, threading, functools, http.server, socketserver
 from playwright.sync_api import sync_playwright
 
-CARDS = """.why-card,.card-besoin,.erreur404-card,.mission-detail__card,.value-card,.team-card,.article-cta__card,
+CARDS = """.why-card,.card-besoin,.erreur404-card,.mission-detail__card,.team-card,.article-cta__card,
 .benevolat-format-card,.maintenance__contact-card,.action-card,.action-tile,.actualites-card,.article-card,.campagne-card,
 .campagne-don,.benevolat-mission-card,.job-sidebar,.temoignage-card,.rapport-result-card,.card-soutien,.reason-card,.form-card,
 .metier-card,.banner-card,.chiffre-card,.cta-card,.partner-logo-tile""".replace('\n', '')
@@ -84,7 +84,7 @@ JS_MISSION = """
   const out = {}; if (e && h) out.eh = h.getBoundingClientRect().top - e.getBoundingClientRect().bottom;
   if (ps.length > 1) out.pp = ps[1].getBoundingClientRect().top - ps[0].getBoundingClientRect().bottom; return out; }"""
 JS_VALUES = """
-() => { const s = document.querySelector('.values'); return s ? { bg: getComputedStyle(s).backgroundColor, cards: s.querySelectorAll('.value-card').length } : null; }"""
+() => { const s = document.querySelector('.values'); return s ? { bg: getComputedStyle(s).backgroundColor, cards: s.querySelectorAll('.value-item').length } : null; }"""
 JS_HEROPHOTO = """
 () => { const h = document.querySelector('.hero-photo'); if (!h) return null; const r = h.getBoundingClientRect();
   return { h: Math.round(r.height), h1: !!h.querySelector('h1'), css: [...document.styleSheets].some(s => (s.href || '').includes('hero-photo.css')) }; }"""

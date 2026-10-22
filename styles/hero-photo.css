@@ -48,7 +48,6 @@
 .card-besoin,
 .erreur404-card,
 .mission-detail__card,
-.value-card,
 .team-card,
 .article-cta__card,
 .benevolat-format-card,
@@ -71,7 +70,7 @@
 .chiffre-card,
 .cta-card,
 .partner-logo-tile{background:var(--clr-white);border:1px solid var(--clr-border-card);border-radius:var(--radius-card);box-shadow:var(--shadow-card);transition:border-color 0.2s ease,box-shadow 0.2s ease}
-@media (hover:hover){.why-card:hover,.card-besoin:hover,.erreur404-card:hover,.mission-detail__card:hover,.value-card:hover,.team-card:hover,.article-cta__card:hover,.benevolat-format-card:hover,.maintenance__contact-card:hover,.action-card:hover,.action-tile:hover,.actualites-card:hover,.article-card:hover,.campagne-card:hover,.campagne-don:hover,.benevolat-mission-card:hover,.job-sidebar:hover,.temoignage-card:hover,.rapport-result-card:hover,.card-soutien:hover,.reason-card:hover,.form-card:hover,.metier-card:hover,.banner-card:hover,.chiffre-card:hover,.cta-card:hover,.partner-logo-tile:hover{border-color:var(--clr-border-hover);box-shadow:var(--shadow-hover);transform:none}}
+@media (hover:hover){.why-card:hover,.card-besoin:hover,.erreur404-card:hover,.mission-detail__card:hover,.team-card:hover,.article-cta__card:hover,.benevolat-format-card:hover,.maintenance__contact-card:hover,.action-card:hover,.action-tile:hover,.actualites-card:hover,.article-card:hover,.campagne-card:hover,.campagne-don:hover,.benevolat-mission-card:hover,.job-sidebar:hover,.temoignage-card:hover,.rapport-result-card:hover,.card-soutien:hover,.reason-card:hover,.form-card:hover,.metier-card:hover,.banner-card:hover,.chiffre-card:hover,.cta-card:hover,.partner-logo-tile:hover{border-color:var(--clr-border-hover);box-shadow:var(--shadow-hover);transform:none}}
 /* ===== fin Cartes (T10) ===== */
 
 /* ===== Formulaires (T11) : socle des champs, labels, etats, cases, upload =====

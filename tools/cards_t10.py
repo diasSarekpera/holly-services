@@ -1,6 +1,6 @@
 """T10A : bloc partage « Cartes (T10) » (apply) et mesure par styles calcules (measure). Usage : cards_t10.py apply|measure|hash"""
 import sys,glob,re,hashlib,os,threading,functools,http.server,socketserver,json
-CARDS="why-card card-besoin erreur404-card mission-detail__card value-card team-card article-cta__card benevolat-format-card maintenance__contact-card action-card action-tile actualites-card article-card campagne-card campagne-don benevolat-mission-card job-sidebar temoignage-card rapport-result-card card-soutien reason-card form-card metier-card banner-card chiffre-card cta-card partner-logo-tile".split()
+CARDS="why-card card-besoin erreur404-card mission-detail__card team-card article-cta__card benevolat-format-card maintenance__contact-card action-card action-tile actualites-card article-card campagne-card campagne-don benevolat-mission-card job-sidebar temoignage-card rapport-result-card card-soutien reason-card form-card metier-card banner-card chiffre-card cta-card partner-logo-tile".split()
 SEL=',\n'.join('.'+c for c in CARDS); HSEL=',\n'.join('.'+c+':hover' for c in CARDS)
 START='/* ===== Cartes (T10) : recette unique ====='
 BLOCK=(START+'\n   Fond blanc, bordure --clr-border-card, ombre --shadow-card, rayon --radius-card ; survol = bordure + ombre seulement, sans deplacement.\n   Liste = docs/CARTES-AUDIT.md (une classe de carte ajoutee ici dans les 21 feuilles, identique). */\n'

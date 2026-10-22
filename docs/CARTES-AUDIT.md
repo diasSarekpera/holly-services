@@ -9,11 +9,12 @@ Inventaire = classes simples (toutes feuilles, hors @media) avec bordure + rayon
 - Survol : `--clr-border-hover` (0.32) + `--shadow-hover`, `transform:none`. Padding laissé aux règles locales.
 - Fond de section derrière les cartes (ex. #EDF0F4) : pas posé ici (10B-10G).
 
-## Classes du bloc (27) par type
+## Classes du bloc (26) par type
+_V170 : `value-card` (section « Nos valeurs », À propos) retirée de la recette ; la section n'est plus une grille de cartes mais une liste éditoriale (`.value-item`, à plat, sans fond ni bordure ni ombre)._
+
 | Type | Classes |
 |---|---|
 | contenu | why-card, card-besoin, erreur404-card, mission-detail__card, card-soutien, reason-card, metier-card, chiffre-card, banner-card, cta-card, form-card |
-| pilier | value-card |
 | équipe | team-card |
 | action | action-card, action-tile |
 | actualité / article | actualites-card, article-card |

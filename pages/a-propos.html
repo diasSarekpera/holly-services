@@ -438,7 +438,7 @@
 
     <!-- ═══════════════════════════════════════════════
          4. NOS VALEURS
-         Grille de cartes identiques (composant value-card).
+         Liste éditoriale numérotée (composant value-item), sans cartes ni icônes.
     ═══════════════════════════════════════════════ -->
     <section class="values" id="values" aria-labelledby="values-title">
       <div class="values__container">
@@ -459,42 +459,34 @@
 
         <ul class="values__grid" role="list">
 
-          <li class="value-card">
-            <div class="value-card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M20 8.5c0 4.5-8 9.5-8 9.5s-8-5-8-9.5a4.5 4.5 0 0 1 8-2.8 4.5 4.5 0 0 1 8 2.8z"/></svg>
-            </div>
-            <h3 class="value-card__title">Humanité</h3>
-            <p class="value-card__desc">
+          <li class="value-item">
+            <span class="value-item__num" aria-hidden="true">01</span>
+            <h3 class="value-item__title">Humanité</h3>
+            <p class="value-item__desc">
               Nous plaçons la dignité humaine au centre de toutes nos interventions.
             </p>
           </li>
 
-          <li class="value-card">
-            <div class="value-card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M2 12h4l3 8 4-16 3 8h6"/></svg>
-            </div>
-            <h3 class="value-card__title">Intégrité</h3>
-            <p class="value-card__desc">
+          <li class="value-item">
+            <span class="value-item__num" aria-hidden="true">02</span>
+            <h3 class="value-item__title">Intégrité</h3>
+            <p class="value-item__desc">
               Nous agissons avec transparence, honnêteté et responsabilité.
             </p>
           </li>
 
-          <li class="value-card">
-            <div class="value-card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M2 20c0-3.3 3-6 7-6s7 2.7 7 6M15 14c3 0 5 2 5 4.5"/></svg>
-            </div>
-            <h3 class="value-card__title">Solidarité</h3>
-            <p class="value-card__desc">
+          <li class="value-item">
+            <span class="value-item__num" aria-hidden="true">03</span>
+            <h3 class="value-item__title">Solidarité</h3>
+            <p class="value-item__desc">
               Nous croyons en la force du collectif et en la cohésion sociale.
             </p>
           </li>
 
-          <li class="value-card">
-            <div class="value-card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M12 22V10M12 10c0-4 3-7 7-7 0 4-3 7-7 7zM12 14c0-3-2.5-5-6-5 0 3 2.5 5 6 5z"/></svg>
-            </div>
-            <h3 class="value-card__title">Durabilité</h3>
-            <p class="value-card__desc">
+          <li class="value-item">
+            <span class="value-item__num" aria-hidden="true">04</span>
+            <h3 class="value-item__title">Durabilité</h3>
+            <p class="value-item__desc">
               Nous privilégions des solutions pérennes pour un impact à long terme.
             </p>
           </li>
