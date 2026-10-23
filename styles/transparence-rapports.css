@@ -115,7 +115,8 @@ input[type="checkbox"]:not(.form-checkbox):focus,input[type="checkbox"]:not(.for
 :root body h1,:root body .hero__title,:root body .hero-photo__title,:root body .erreur404-hero__title,:root body .maintenance__title{font-size:var(--fs-h1);font-weight:var(--fw-h1);line-height:var(--lh-h1);letter-spacing:var(--ls-h1)}
 :root body h2:not([class]),:root body .about__title,:root body .actualites-featured__title,:root body .actualites-nl__title,:root body .approche-banner__title,:root body .approche-conviction__statement,:root body .approche-section__title,:root body .benevolat-section-title,:root body .campagne-section__title,:root body .cta-contact__title,:root body .cta-support__title,:root body .contact__title,:root body .erreur404-find__title,:root body .erreur404-sitemap__title,:root body .partenariats-why__h2,:root body .partners-certif__title,:root body .rejoindre-title,:root body .section-title,:root body .soutenir__title,:root body .transparence-title{font-size:var(--fs-h2);font-weight:var(--fw-h2);line-height:var(--lh-h2);letter-spacing:var(--ls-h2)}
 :root body h3:not([class]),:root body .action-card--hero .action-card__title,:root body .actualites-card__title,:root body .approach__title,:root body .article-card__title,:root body .article-cta__title,:root body .benevolat-mission-card__title,:root body .camp-card__title,:root body .campagne-card__title,:root body .contact-form__title,:root body .contact__form-title,:root body .legal-section__title,:root body .mission__title,:root body .partenariats-why__title,:root body .soutenir__right-title{font-size:var(--fs-h3);font-weight:var(--fw-h3);line-height:var(--lh-h3);letter-spacing:var(--ls-h3)}
-:root body h4:not([class]),:root body h5,:root body h6,:root body .action-card__title,:root body .action-tile__title,:root body .approche-value__title,:root body .benevolat-format-card__title,:root body .camp-card__title.camp-card__title--sm,:root body .gal-item__caption-title,:root body .legal-section__subtitle,:root body .mission-detail__card-title,:root body .mission-detail__stake-title,:root body .partners-strip__title,:root body .post__title,:root body .soutenir__way-title,:root body .team-card__name,:root body .rapport-timeline__title{font-size:var(--fs-h4);font-weight:var(--fw-h4);line-height:var(--lh-h4);letter-spacing:var(--ls-h4)}
+:root body h4:not([class]),:root body h5,:root body h6,:root body .action-card__title,:root body .action-tile__title,:root body .approche-value__title,:root body .benevolat-format-card__title,:root body .camp-card__title.camp-card__title--sm,:root body .gal-item__caption-title,:root body .legal-section__subtitle,:root body .mission-detail__card-title,:root body .mission-detail__stake-title,:root body .partners-strip__title,:root body .post__title,:root body .soutenir__way-title,:root body .team-card__name,:root body .rapport-timeline__title{font-family:var(--font-body);font-size:var(--fs-h4);font-weight:var(--fw-h4);line-height:var(--lh-h4);letter-spacing:var(--ls-h4)}
+:root body .actualites-card__title,:root body .article-card__title,:root body .campagne-card__title,:root body .benevolat-mission-card__title{font-family:var(--font-body)}
 :root body .camp-card__raised--sm{font-size:var(--fs-h4)}
 :root body h1 em,:root body h2 em,:root body .hero__title-accent,:root body .section-title-accent,:root body .cta-support__title-accent,:root body .soutenir__title-accent,:root body .contact__title-accent,:root body .partners-certif__title-accent,:root body .maintenance__title-accent,:root body .about__accent{font-style:italic;font-weight:300}
 :root body .eyebrow__label,:root body .contact__eyebrow-label,:root body .footer__mission-eyebrow,:root body .footer__col-title{font-family:var(--font-body);font-size:var(--fs-eyebrow);font-weight:600;letter-spacing:var(--ls-eyebrow);line-height:1.4;text-transform:uppercase}
@@ -405,3 +406,56 @@ input[type="checkbox"]:not(.form-checkbox):focus,input[type="checkbox"]:not(.for
 
 /* Pied de page : ONG au-dessus du nom (V174) */
 .footer__logo-tag{margin-top:0;margin-bottom:0.25rem;line-height:1}
+
+/* Menu mobile en panneau latéral, depuis la droite (V180) */
+.mobile-menu{inset:0 0 0 auto;width:min(88vw,420px);transform:translateX(100%);border-left:1px solid rgba(255,255,255,0.08);box-shadow:-28px 0 70px rgba(5,12,24,0.5)}
+.mobile-menu.is-open{transform:translateX(0)}
+@media (prefers-reduced-motion:reduce){.mobile-menu,.mobile-menu.is-open{transform:none}}
+@media (max-width:1023px){
+  body::after{content:"";position:fixed;inset:0;z-index:calc(var(--z-menu) - 1);background:rgba(8,16,30,0.58);opacity:0;visibility:hidden;pointer-events:none;transition:opacity 0.35s ease,visibility 0s linear 0.35s}
+  body.nav-mobile-open::after{opacity:1;visibility:visible;pointer-events:auto;transition:opacity 0.35s ease,visibility 0s linear 0s}
+}
+
+/* V183 Footer : pastilles d'icônes en fonds pleins (fin de l'effet verre) */
+.footer__social,.footer__contact-icon{background:#1B3355;border-color:#2D4B76}
+@media (hover:hover){.footer__social:hover{background:#264670;border-color:#3A5F94}}
+.footer__social:active{background:#2A4B47}
+.footer__support-icon--donate{background:#3A1B3B}
+.footer__support-icon--volunteer{background:#22403A}
+.footer__support-icon--partner{background:#1D3A63}
+.footer__support-icon--campagne{background:#22403A}
+
+/* V184 Header et menu mobile : boutons en fonds pleins (fin de l'effet verre) */
+.navbar__hamburger{background:#1B3355;border-color:#35588A}
+.mobile-menu__close{background:#1B3355;border-color:#2D4B76}
+.mobile-menu__lang{background:#1B3355;border-color:#2D4B76;color:#C3CFE1}
+.navbar__lang{background:#1B3355;border-color:#2D4B76}
+@media (hover:hover){
+  .navbar__hamburger:hover,.mobile-menu__close:hover,.mobile-menu__lang:hover,.navbar__lang:hover{background:#264670}
+  .mobile-menu__lang:hover{color:#EAF0F8}
+}
+
+/* V188 Pied de page mobile : liens légaux empilés moins espacés (zone de toucher 44 px -> 36 px, au-dessus du minimum WCAG 2.2 de 24 px) */
+@media (max-width:640px){
+  .footer__bottom-inner{gap:0.75rem}
+  .footer__bottom-links .footer__bottom-link{min-height:36px}
+}
+
+/* V189 Pied de page mobile : mêmes espacements resserrés pour Navigation, Nous soutenir, Contact et les liens légaux de la colonne contact */
+@media (max-width:640px){
+  .footer__nav-link{min-height:36px}
+  .footer__support-list{gap:0.25rem}
+  .footer__support-item{min-height:0;padding-block:0.125rem}
+  .footer__contact-list{gap:0.25rem}
+  .footer__contact-item{min-height:40px}
+  .footer__legal-link{min-height:36px}
+}
+
+/* V190 Transparence : sur mobile / tablette, les 4 faits passent en liste verticale alignée (avant : séparateurs « · » orphelins en début de ligne, retours à la ligne irréguliers) */
+@media (max-width:900px){
+  .transparence-intro__facts{display:grid;grid-template-columns:minmax(0,1fr);gap:0.75rem}
+  .transparence-intro__facts li{display:flex;align-items:center;gap:0.75rem;line-height:1.4}
+  .transparence-intro__facts li::before,.transparence-intro__facts li+li::before{content:'';flex:0 0 auto;width:6px;height:6px;margin:0;border-radius:50%;background:var(--clr-primary)}
+}
+
+/* V192 titres de cartes et petits titres : style « Écouter avant d'agir » (Outfit, marche h4) */

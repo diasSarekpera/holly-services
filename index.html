@@ -248,7 +248,7 @@
     <!-- @partial:navbar:end -->
 
     <!-- @partial:mobile-menu:start -->
-    <!-- Menu mobile plein écran -->
+    <!-- Menu mobile : panneau latéral (droite) -->
     <div class="mobile-menu" id="nav-mobile" role="dialog" aria-modal="true" aria-label="Menu principal" aria-hidden="true">
 
       <div class="mobile-menu__deco" aria-hidden="true">
@@ -424,8 +424,8 @@
         <div class="about__img-overlay" aria-hidden="true"></div>
       </div>
 
-      <div class="about__stat-card" aria-label="9 années d'engagement sur le terrain">
-        <span class="about__stat-number" aria-hidden="true">9+</span>
+      <div class="about__stat-card" aria-label="4 années d'engagement sur le terrain">
+        <span class="about__stat-number" aria-hidden="true">4+</span>
         <span class="about__stat-label" aria-hidden="true">années d'engagement<br />sur le terrain</span>
         <div class="about__stat-line" aria-hidden="true"></div>
       </div>
@@ -1326,7 +1326,8 @@
         Wrapper de scroll - comportement mobile uniquement (scroll horizontal snappé).
         Sans impact sur desktop&nbsp;: le wrapper n'a aucun style propre en desktop.
       -->
-      <div class="soutenir__impact-scroller">
+      <div class="soutenir__impact-wrap" data-scroll-hint>
+      <div class="soutenir__impact-scroller" data-scroll-hint-target>
         <ul class="soutenir__impact-list" aria-label="Impact de votre soutien">
           <li class="soutenir__impact-item">
             <span class="soutenir__impact-num">725</span>
@@ -1341,6 +1342,12 @@
             <span class="soutenir__impact-lbl">partenaires mobilisés autour de notre cause</span>
           </li>
         </ul>
+      </div>
+      <span class="soutenir__impact-hint" aria-hidden="true">
+        <svg viewBox="0 0 12 22" fill="none"><polyline points="2,3 10,11 2,19"/></svg>
+        <svg viewBox="0 0 12 22" fill="none"><polyline points="2,3 10,11 2,19"/></svg>
+        <svg viewBox="0 0 12 22" fill="none"><polyline points="2,3 10,11 2,19"/></svg>
+      </span>
       </div>
 
       <div class="soutenir__trust">
@@ -2822,6 +2829,7 @@
 
   <script src="scripts/components/nav-dropdown.js"></script>
   <script src="scripts/components/hero-mobile.js"></script>
+  <script src="scripts/components/scroll-hint.js"></script>
   <script src="scripts/pages/home/about-mobile.js"></script>
   <script src="scripts/components/sticky-header.js"></script>
   <script src="scripts/components/back-to-top.js"></script>
