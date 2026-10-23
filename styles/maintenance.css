@@ -193,3 +193,7 @@
 }
 
 /* V192 titres de cartes et petits titres : style « Écouter avant d'agir » (Outfit, marche h4) */
+
+/* V195 règle typographique : grands titres en Cormorant Garamond, titres secondaires en Outfit */
+:root body h3,:root body h4,:root body h5,:root body h6,:root body h2.article-cta__title,:root body h2.contact-form__title,:root body h2.legal-section__title,:root body .erreur404-sitemap__toggle,:root body .cta-card__title,:root body .mission__objectives-intro,:root body .legal-toc__title,:root body .approach__title,:root body .camp-card__title,:root body .contact__form-title,:root body .mission__title,:root body .partenariats-why__title,:root body .soutenir__right-title,:root body .transp-h3,:root body .value-item__title{font-family:var(--font-body)}
+:root body .approach__title-accent{font-style:normal}
