@@ -148,3 +148,6 @@
 :root body :is(input,textarea,select):not([type=checkbox]):not([type=radio]):not([type=submit]):not([type=button]):not([type=reset]):not([type=hidden])[aria-invalid="true"]:focus-visible,
 :root body :is(.form-input,.form-control,.benevolat-input,.contact-form__input,.contact-form__textarea,.actualites-nl__input,.article-nl__input,.search-input)[aria-invalid="true"]:focus-visible{box-shadow:inset 0 0 0 1px var(--clr-urgent) !important}
 @media (forced-colors:active){:root body :is(input,textarea,select):focus-visible{outline:2px solid Highlight}}
+
+/* V199 Chiffres clés : Outfit sans empattements (même famille que les sous-titres) */
+:root:root:root body :is(.about__stat-number,.mission__img-kpi-num,.stats__item-num,.action-card__kpi-number,.action-card__kpi-inline-number,.camp-card__hero-pct,.camp-card__raised,.camp-card__days-left,.camp-card__pct,.camp-card__pct-overlay,.soutenir__impact-num,.partners__stat-num,.post__impact-num,.mission__figure-badge-number,.stat-item__number,.action-tile__stat-number,.campagne-don__amount,.mission-detail__fact-val,.impact-stat__num,.rapport-result-card__value,.chiffre-card strong,.funds-figure__value,.rj-fact__value){font-family:var(--font-body);font-variant-numeric:lining-nums;letter-spacing:-0.01em}

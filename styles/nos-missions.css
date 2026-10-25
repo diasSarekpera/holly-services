@@ -446,3 +446,17 @@ input[type="checkbox"]:not(.form-checkbox):focus,input[type="checkbox"]:not(.for
 .mobile-menu__close{width:48px;height:48px;border-color:#35588A}
 .mobile-menu__close svg{width:36.77px;height:36.77px;overflow:visible;stroke:rgba(255,255,255,0.95);stroke-width:2.5px}
 .mobile-menu__close svg line{vector-effect:non-scaling-stroke}
+
+/* V198 Dégradés décoratifs -> couleurs unies (propre, institutionnel) */
+.navbar__progress::after{background:var(--clr-primary)}
+.mission-img{background:var(--clr-accent-soft)}
+
+/* V199 Chiffres clés : Outfit sans empattements (même famille que les sous-titres) */
+:root:root:root body :is(.about__stat-number,.mission__img-kpi-num,.stats__item-num,.action-card__kpi-number,.action-card__kpi-inline-number,.camp-card__hero-pct,.camp-card__raised,.camp-card__days-left,.camp-card__pct,.camp-card__pct-overlay,.soutenir__impact-num,.partners__stat-num,.post__impact-num,.mission__figure-badge-number,.stat-item__number,.action-tile__stat-number,.campagne-don__amount,.mission-detail__fact-val,.impact-stat__num,.rapport-result-card__value,.chiffre-card strong,.funds-figure__value,.rj-fact__value){font-family:var(--font-body);font-variant-numeric:lining-nums;letter-spacing:-0.01em}
+
+/* V201 Listes des missions : lignes à filet fin + repère rond rose (remplace les coches) */
+.mission-list{display:block;margin:1.5rem 0 0;padding:0;list-style:none;border-bottom:1px solid var(--clr-border-strong)}
+.mission-list li{display:grid;grid-template-columns:1rem 1fr;align-items:start;column-gap:0.875rem;padding:0.75rem 0;border-top:1px solid var(--clr-border-strong);font-size:var(--fs-body);font-weight:500;line-height:1.5;color:var(--clr-secondary)}
+.mission-list li::before{content:"";justify-self:center;width:6px;height:6px;margin-top:0.5625rem;border-radius:var(--radius-full);background:var(--clr-primary);box-shadow:0 0 0 5px var(--clr-primary-soft);transition:box-shadow var(--dur-slow) var(--ease-out)}
+@media (hover:hover){.mission-list li:hover::before{box-shadow:0 0 0 7px var(--clr-primary-soft)}}
+@media (prefers-reduced-motion:reduce){.mission-list li::before{transition:none}}

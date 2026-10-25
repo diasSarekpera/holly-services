@@ -460,3 +460,23 @@ input[type="checkbox"]:not(.form-checkbox):focus,input[type="checkbox"]:not(.for
 .mobile-menu__close{width:48px;height:48px;border-color:#35588A}
 .mobile-menu__close svg{width:36.77px;height:36.77px;overflow:visible;stroke:rgba(255,255,255,0.95);stroke-width:2.5px}
 .mobile-menu__close svg line{vector-effect:non-scaling-stroke}
+
+/* V198 Dégradés décoratifs -> couleurs unies (propre, institutionnel) */
+.navbar__progress::after{background:var(--clr-primary)}
+
+/* V199 Chiffres clés : Outfit sans empattements (même famille que les sous-titres) */
+:root:root:root body :is(.about__stat-number,.mission__img-kpi-num,.stats__item-num,.action-card__kpi-number,.action-card__kpi-inline-number,.camp-card__hero-pct,.camp-card__raised,.camp-card__days-left,.camp-card__pct,.camp-card__pct-overlay,.soutenir__impact-num,.partners__stat-num,.post__impact-num,.mission__figure-badge-number,.stat-item__number,.action-tile__stat-number,.campagne-don__amount,.mission-detail__fact-val,.impact-stat__num,.rapport-result-card__value,.chiffre-card strong,.funds-figure__value,.rj-fact__value){font-family:var(--font-body);font-variant-numeric:lining-nums;letter-spacing:-0.01em}
+
+/* V202 Filtres d'actualités : grille régulière sur mobile (libellé à gauche, compteur à droite) */
+@media (max-width:767px){
+.actualites-toolbar__filters{display:grid;width:100%;grid-template-columns:repeat(3,minmax(0,1fr));gap:0.5rem}
+.actualites-filter{display:flex;align-items:center;justify-content:space-between;gap:0.375rem;width:100%;min-width:0;padding-inline:0.875rem;text-align:left;line-height:1.25}
+.actualites-filter [data-filter-count]{flex-shrink:0;margin-left:0}
+.actualites-filter[data-filter="tous"]{grid-column:1 / -1}
+}
+@media (max-width:519px){
+.actualites-toolbar__filters{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:359px){
+.actualites-filter{padding-inline:0.75rem;font-size:var(--fs-sm)}
+}

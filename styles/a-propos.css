@@ -448,9 +448,9 @@ input[type="checkbox"]:not(.form-checkbox):focus,input[type="checkbox"]:not(.for
 :root body .impact .stats-banner__list--impact .stat-item--feature{min-height:300px}
 :root body .impact .stats-banner__list--impact .stat-item--feature .stat-item__number{font-size:clamp(3.4rem,17vw,4.5rem)}
 .impact .stat-item__photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%;z-index:-2}
-.impact .stat-item--feature::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(to top,#0E1F38 6%,rgba(14,31,56,0.72) 38%,rgba(14,31,56,0.10) 100%)}
+.impact .stat-item--photo::after{content:"";position:absolute;inset:0;z-index:-1;background:rgba(14,31,56,0.66)}
 .impact .stat-item__bar{display:block;width:100%;height:6px;margin-top:0.5rem;border-radius:999px;background:#2C4872;overflow:hidden;position:relative;z-index:1}
-.impact .stat-item__bar-fill{display:block;height:100%;width:95%;border-radius:inherit;background:linear-gradient(90deg,#C2185B,#F08AA8);transition:width 1.4s cubic-bezier(0.22,1,0.36,1)}
+.impact .stat-item__bar-fill{display:block;height:100%;width:95%;border-radius:inherit;background:var(--clr-primary);transition:width 1.4s cubic-bezier(0.22,1,0.36,1)}
 .has-countup .impact:not(.is-visible) .stat-item__bar-fill{width:0}
 @media (min-width:901px){
   .impact .stats-banner__list--impact{grid-template-columns:1.6fr 1fr 1fr 1fr;gap:1.25rem}
@@ -504,3 +504,12 @@ input[type="checkbox"]:not(.form-checkbox):focus,input[type="checkbox"]:not(.for
 .mobile-menu__close{width:48px;height:48px;border-color:#35588A}
 .mobile-menu__close svg{width:36.77px;height:36.77px;overflow:visible;stroke:rgba(255,255,255,0.95);stroke-width:2.5px}
 .mobile-menu__close svg line{vector-effect:non-scaling-stroke}
+
+/* V198 Dégradés décoratifs -> couleurs unies (propre, institutionnel) */
+.navbar__progress::after{background:var(--clr-primary)}
+.impact::after{background:none}
+.partners-certif::after{background:none}
+.cta-contact__cta::after{background:none}
+
+/* V199 Chiffres clés : Outfit sans empattements (même famille que les sous-titres) */
+:root:root:root body :is(.about__stat-number,.mission__img-kpi-num,.stats__item-num,.action-card__kpi-number,.action-card__kpi-inline-number,.camp-card__hero-pct,.camp-card__raised,.camp-card__days-left,.camp-card__pct,.camp-card__pct-overlay,.soutenir__impact-num,.partners__stat-num,.post__impact-num,.mission__figure-badge-number,.stat-item__number,.action-tile__stat-number,.campagne-don__amount,.mission-detail__fact-val,.impact-stat__num,.rapport-result-card__value,.chiffre-card strong,.funds-figure__value,.rj-fact__value){font-family:var(--font-body);font-variant-numeric:lining-nums;letter-spacing:-0.01em}
