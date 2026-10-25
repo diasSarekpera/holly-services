@@ -513,3 +513,34 @@ input[type="checkbox"]:not(.form-checkbox):focus,input[type="checkbox"]:not(.for
 
 /* V199 Chiffres clés : Outfit sans empattements (même famille que les sous-titres) */
 :root:root:root body :is(.about__stat-number,.mission__img-kpi-num,.stats__item-num,.action-card__kpi-number,.action-card__kpi-inline-number,.camp-card__hero-pct,.camp-card__raised,.camp-card__days-left,.camp-card__pct,.camp-card__pct-overlay,.soutenir__impact-num,.partners__stat-num,.post__impact-num,.mission__figure-badge-number,.stat-item__number,.action-tile__stat-number,.campagne-don__amount,.mission-detail__fact-val,.impact-stat__num,.rapport-result-card__value,.chiffre-card strong,.funds-figure__value,.rj-fact__value){font-family:var(--font-body);font-variant-numeric:lining-nums;letter-spacing:-0.01em}
+
+/* V205 Réseaux sociaux du pied de page : icônes seules, blanches, grandes (sans cadre ni fond) */
+.footer__socials{gap:1.25rem}
+.footer__social{width:44px;height:44px;background:none;border:0;border-radius:0;color:var(--clr-white)}
+.footer__social svg{width:30px;height:30px;stroke:none;fill:currentColor}
+.footer__social svg.is-outline{fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.footer__social svg [fill="currentColor"]{fill:currentColor;stroke:none}
+@media (hover:hover){.footer__social:hover{background:none;border-color:transparent;color:var(--clr-white);opacity:0.75;transform:none}}
+@media (hover:none) and (pointer:coarse){.footer__social:active{background:none;color:var(--clr-white);opacity:0.75}}
+
+/* V206 Pied de page, « Nous soutenir » et « Contact » : icônes seules, blanches, grandes (sans pastille ni cadre) */
+.footer__support-icon,.footer__contact-icon{width:32px;height:32px;margin-top:0;background:none;border:0;border-radius:0;color:var(--clr-white);opacity:1}
+.footer__support-icon--donate,.footer__support-icon--volunteer,.footer__support-icon--partner,.footer__support-icon--campagne{background:none;color:var(--clr-white)}
+.footer__support-icon svg,.footer__contact-icon svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;opacity:1}
+.footer__support-icon--donate svg,.footer__support-icon--partner svg{fill:none;stroke:currentColor}
+.footer__support-list{gap:1.25rem}
+.footer__support-item,.footer__contact-item{gap:1rem}
+
+/* V207 Pied de page : rythme vertical homogène entre Navigation, Nous soutenir et Contact (les groupes respirent, même pas d'une colonne à l'autre) */
+.footer__support-list,.footer__contact-list{gap:1.25rem}
+.footer__support-item,.footer__contact-item{align-items:center}
+.footer__nav-list{gap:0.5rem}
+@media (max-width:640px){
+  .footer__inner{gap:2.75rem}
+  .footer__nav-list{gap:0.25rem}
+  .footer__nav-link{display:flex;align-items:center;min-height:40px}
+  .footer__support-list{gap:1.5rem}
+  .footer__support-item{padding-block:0}
+  .footer__contact-list{gap:1rem}
+  .footer__contact-item{min-height:44px}
+}
